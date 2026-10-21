@@ -15,11 +15,18 @@
 - [x] Update definition, requirements, HLD/LLD, extraction evaluation and security/telemetry plans. Retain [ADR 0003](../decisions/0003-visual-document-evidence.md) and the [source-specific lessons](../context/document-ingestion-lessons.md).
 - [ ] Implement and test PDF rendering, standalone image intake, visual fact extraction and page/region evidence after the agreed feasibility/design gates. No such behaviour or comparative tax-quality result exists yet.
 
-## TAX-001 Product discovery and feasibility design
+## Product baseline completed 21 October 2026
+
+- [x] Complete the Grill Me product interview and record actual owner answers, excluding private context from Git.
+- [x] Obtain explicit shared-understanding confirmation: “Yes, freeze this product baseline.”
+- [x] Freeze product/acceptance baseline 1.0 and trace 27 draft detailed requirements, including complete calculation and selected pilot targets.
+- [ ] Complete tax-rule feasibility, exact conditions/field mapping and independent validation. Product approval does not close these gates.
+
+## TAX-001 Detailed requirements and legal feasibility
 
 Requirements: SCOPE-001, FACT-001, RULE-001, CALC-001, REVIEW-001, EVAL-001.
 
-Continue the Grill Me interview using the [saved decisions and current frontier](discovery.md). The owner confirmed a guided Spanish workflow, PDF/optional JSON packet, all three value areas, an independent complete calculation within the supported profile and owner-only access with exported professional review. Establish exact calculation/deduction branches, workload, retention and acceptance criteria; propose representative layouts and tested engineering limits. Use the [deduction research](../context/deduction-feasibility.md) to select feasible reviewed branches. Agree a preliminary review method. TAX-002 resolves source-derived label ambiguities before an experimental rubric/case freeze. Exit with an owner-confirmed definition and feasible review plan. Private validation context stays in ignored local notes, not public quality evidence.
+The consolidated [definition](definition.md) and [acceptance baseline](acceptance.md) are owner-approved at version 1.0; see [discovery](discovery.md) for the actual confirmation. Specify explicit calculation/deduction conditions, source versions, input/output field mapping and representative layouts with tested engineering limits. The [deduction research](../context/deduction-feasibility.md) and [complete-calculation chain](../context/calculation-feasibility.md) identify source/reviewer work. TAX-002 resolves source-derived label ambiguities before an experimental rubric/case freeze. Exit with a feasible rule/coverage specification and concrete independent review plan. Private validation context stays in ignored local notes, not public quality evidence.
 
 ## TAX-002 Representative source pack and independent labels
 

@@ -52,6 +52,14 @@
       "evidence": []
     },
     {
+      "id": "DEDUCTION-001",
+      "kind": "functional",
+      "statement": "Include independently validated branches of both Balearics habitual-home rent and childcare/conciliation in the first complete release, publishing exact supported conditions and referring unresolved or unvalidated branches.",
+      "acceptance_evidence": "Retained official sources, reviewed condition/calculation/field mapping and positive, negative, incomplete and ambiguous-branch cases for each deduction.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
       "id": "CALC-001",
       "kind": "functional",
       "statement": "Independently calculate complete tax liability and payable/refundable balance for fully covered 2025 Balearics individual employment/bank-interest cases using confirmed facts and versioned deterministic rules; expose intermediate values and withhold a whole-return result for incomplete coverage.",
@@ -124,6 +132,14 @@
       "evidence": []
     },
     {
+      "id": "RETENTION-001",
+      "kind": "quality",
+      "statement": "Persist private cases between sessions until explicit owner deletion; delete source and derived records under a defined and tested active-storage/backup-retention policy before hosted private use.",
+      "acceptance_evidence": "Save/resume and deletion tests, derivative inventory, backup expiry/restore-deletion drill and owner inspection of retention notices.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
       "id": "RECOVERY-001",
       "kind": "quality",
       "statement": "Recover bounded durable work without duplicate effects or automatic uncertain provider retry.",
@@ -162,6 +178,54 @@
       "acceptance_evidence": "CI evidence, artifact identity, environment checks and rollback.",
       "status": "draft",
       "evidence": []
+    },
+    {
+      "id": "FAMILY-001",
+      "kind": "functional",
+      "statement": "Support confirmed personal/family minima and applicable family credits for people without dependants and straightforward cases with children; refer unvalidated shared-custody, disability and dependent-ascendant branches.",
+      "acceptance_evidence": "Reviewed entitlement, age/period, attribution and benefit/advance-payment cases; unsupported or unknown family conditions prevent an independent complete result.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "RELIEF-001",
+      "kind": "functional",
+      "statement": "Support standard employment expenses, evidenced union/mandatory professional fees, individual and employer pension contributions and donations under independently reviewed 2025 conditions; screen other reliefs/history rather than assume zero.",
+      "acceptance_evidence": "Source-derived condition, cap, ordering, attribution and interaction cases; field-level independent review and unsupported-relief gates.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "EXTRACT-001",
+      "kind": "quality",
+      "statement": "Target at least 95% of required readable facts correctly normalised and linked to the right evidence before human confirmation, counting missed readable facts as failures.",
+      "acceptance_evidence": "Independent value-plus-evidence labels, complete denominators, separate illegibility/abstention rubric and actual measured extraction results.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "PERF-001",
+      "kind": "quality",
+      "statement": "For the representative 30-file/100-page workload, target required reviewable outputs within five minutes of cumulative automated processing in at least 95% of attempts, with progress and resume; exclude human pauses and measure cold activation separately.",
+      "acceptance_evidence": "Actual end-to-end stage/queue/provider/validation timings, all-attempt outcomes with failed/timed-out attempts as misses, declared workload/config and separate cold-start/human-time measurements.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "VALUE-001",
+      "kind": "quality",
+      "statement": "Target at least 20% less hands-on review time than a comparable manual workflow, measuring evidence organisation, draft checking and supported deduction discovery while retaining all blocking safety/calculation gates.",
+      "acceptance_evidence": "Reviewed matched tasks with normal baseline tools, step-level/total human time, corrections and missed/incorrect findings; order/familiarity limits and complete outcome accounting.",
+      "status": "draft",
+      "evidence": []
     }
-  ]
+  ],
+  "owner_baseline": {
+    "version": "1.0",
+    "status": "approved",
+    "approved_on": "2026-10-21",
+    "answer": "Yes, freeze this product baseline",
+    "decision_record": "docs/product/discovery.md",
+    "detail_status": "Tax conditions, exact field mapping and verification design remain pending; no implementation or validation is claimed."
+  }
 }

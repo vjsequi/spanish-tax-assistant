@@ -2,7 +2,7 @@
 
 An evidence workbench for reviewing a Spanish personal income-tax draft: establish the facts, find missing or conflicting information, and explain proposed field changes before a person files in Renta WEB.
 
-**Current stage: product discovery and repository foundation, 21 October 2026.** The owner selected a first scope: tax year **2025**, a **Balearics resident employee**, employment income, bank interest and selected deductions. Childcare/conciliation and habitual-home rent are the first deduction research candidates. The first deliverable is a review packet with evidence and proposed field changes. Independent tax review is still to arrange; a potential reviewer exists. Tax extraction, calculations, AI investigation and deployment are not implemented.
+**Current stage: product baseline 1.0 approved; detailed tax specification next, 21 October 2026.** The owner selected a first scope: tax year **2025**, a **Balearics resident employee**, employment income, bank interest and selected deductions. Reviewed branches of childcare/conciliation and habitual-home rent are required in the first complete release. The deliverable includes a review packet with evidence and proposed field changes. Independent synthetic-case review is still to arrange. Tax extraction, calculations, AI investigation and deployment are not implemented.
 
 **Initial intake direction, confirmed 21 October:** PDFs, including scanned/image-only PDFs, and standalone images/screenshots are first-class evidence. Preserve original files and page images, use visual interpretation as the primary PDF/image path, and confirm extracted facts. Embedded text and OCR are supporting/comparison paths. The [visual-evidence decision](docs/decisions/0003-visual-document-evidence.md) records the requirement and the Oposiciones lessons; this intake is not implemented yet.
 
@@ -12,7 +12,7 @@ The agreed product also needs an **independent complete tax/refund calculation f
 
 ## Start here
 
-1. [Product definition](docs/product/definition.md) — user, outcome, scope and initial acceptance criteria.
+1. [Product definition](docs/product/definition.md) and [acceptance baseline](docs/product/acceptance.md) — user, outcome, scope, owner-selected pilot targets and blocking release checks.
 2. [Discovery decisions](docs/product/discovery.md) — actual owner answers and remaining questions.
 3. [Requirements](docs/requirements/README.md) and [backlog](docs/product/backlog.md) — traceable behaviour and delivery slices.
 4. [SDLC](docs/process/sdlc.md) — define, design, implement, inspect, evaluate, iterate, release and operate.

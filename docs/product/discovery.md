@@ -27,7 +27,7 @@ Recorded decision: visual PDF/page evidence, scanned/image-only PDFs and standal
 | Fact confirmation | “Yes, confirm facts before proposing changes” — show source images, allow batch confirmation of clear facts, resolve conflicts individually; model confidence is not confirmation |
 | Language | “Yes, Spanish product and English technical docs” — Spanish interface and review packet, English technical documentation |
 
-These are product decisions, not evidence of an implemented workflow. Draft intake representation and packet formats remain open.
+These are product decisions, not evidence of an implemented workflow. Packet formats were settled in the following round; exact media adapters and safe limits remain engineering work.
 
 ## Return branches and partial coverage 21 October 2026
 
@@ -74,13 +74,33 @@ The owner's full-calculation requirement supersedes the initial draft's suggesti
 
 “Straightforward” is not an executable rule. Turn it into explicit supported conditions, evidence and negative cases during specification; unknown family facts cannot default to inapplicable. The [calculation-chain research](../context/calculation-feasibility.md) identifies the stages and facts to validate.
 
-## Current frontier — asked, awaiting answers
+## Relief coverage and saved cases 21 October 2026
 
-18. **Common reliefs:** recommend standard employment expenses, evidenced union/mandatory professional fees and individual pension contributions; other unvalidated reliefs/history trigger referral.
-19. **Regional deductions:** recommend reviewed branches of both rent and childcare for the first complete release, with exact conditions and explicit unresolved/referral branches.
-20. **Retention:** recommend persisting private cases across sessions until explicit deletion, with tested hosted backup retention before private hosted use.
+| Decision | Actual owner answer and interpretation |
+|---|---|
+| Other reliefs | “Include more relief types initially” — broaden the proposed standard employment expenses, union/mandatory professional fees and individual pension-contribution coverage; exact additions still need to be named |
+| Regional deductions | “Yes, include reviewed branches of both” — both habitual-home rent and childcare/conciliation are first-complete-release requirements for independently validated branches; complex/unresolved branches remain explicit referrals |
+| Retention | “Yes, save cases until I delete them” — persist between sessions; deletion covers documents and derived records, with a tested backup-retention policy before hosted private use |
 
-No answer is assumed. Further decisions concern representative workload and acceptance targets. The [deduction feasibility brief](../context/deduction-feasibility.md) records official-source ambiguities for the professional, not choices the owner must resolve from memory. Visual intake is already settled.
+The earlier “investigate both” decision is now a commitment to include validated branches of both in the first complete release. It is not a finding that the conditions or calculations are validated.
+
+## Additional reliefs, workload and pilot targets 21 October 2026
+
+| Decision | Actual owner answer and accepted meaning |
+|---|---|
+| Additional reliefs | “donations and employer pension contributions” — add both to the proposed standard employment expenses, evidenced union/mandatory professional fees and individual pension contributions |
+| Workload | “Yes, about 30 files and 100 pages” — representative benchmark including PDFs and screenshots; safe technical limits still need testing |
+| Value | “Yes, use 20% as the initial pilot goal” — at least 20% less hands-on review time than a comparable manual workflow, subject to blocking calculation/safety checks |
+| Processing time | “Yes, use the five-minute pilot target” — at most five minutes of automated processing in at least 95% of attempts; progress/resume, exclude human pauses and measure cold activation separately |
+| Extraction | “Yes, use 95% as the initial extraction target” — at least 95% of required readable facts correctly extracted and linked before confirmation; missing readable facts count as failures |
+
+These are future targets, not measurements, provider authorisation or evidence of implemented tax behaviour. The [acceptance baseline](acceptance.md) makes their measurement boundaries and blocking checks explicit.
+
+## Consolidated confirmation — product baseline 1.0
+
+Asked whether the consolidated definition and acceptance baseline matched the intended product, including complete calculation, selected branches and pilot targets, while exact tax rules, independent labels and release evidence remained outstanding.
+
+Actual owner answer: **“Yes, freeze this product baseline.”** The product interview is closed for baseline 1.0, approved 21 October 2026. The [definition](definition.md) and [acceptance baseline](acceptance.md) are the approved direction for detailed requirements and design, not a validated legal specification or implemented release. No further owner preference is silently pending in this interview; the named source/reviewer/engineering work remains explicit.
 
 ## Remaining decision tree
 
@@ -90,17 +110,17 @@ Confirmed: profile/year, visual evidence, review packet/manual submission
 ├── Confirmed: individual returns, multiple employers, explicit partial coverage
 │   └── Draft representation, supported fields and scope/unknown screens
 ├── Confirmed: Spanish PDF/optional JSON, guided workflow, all three value areas
-│   └── Packet example, quantitative targets and first employer walkthrough
+│   └── Packet example and first employer walkthrough remain design/review work
 ├── Confirmed: complete deterministic calculation within supported profile
-│   └── Pending: full calculation chain, branch coverage and comparison rubric
+│   └── Source/rule/field specification and independent comparison evidence pending
 ├── Confirmed: owner-only application, professional review by export
 ├── Local/private validation context stays outside Git; synthetic review pending
 │   └── Treatment coverage and a preliminary field-level review rubric
 │       └── Synthetic pack → independent labels → experimental freeze
-└── Pending: intended private-use milestone and retention needs
-    └── Representative workload, measured baseline and release thresholds
+└── Confirmed: saved cases until deletion, 30 files/100 pages and pilot targets
+    └── Baseline measurement, tested limits and release evidence pending
 ```
 
-Investigating the two deductions does not yet commit both to the first usable release. Research their full conditions before asking for that coverage decision. Establish facts from official sources; ask the owner about preferences and trade-offs. Engineering should propose tested media/resource limits and representative layouts, rather than ask the owner to choose decoder internals. Security constraints and the zero inference allowance remain in force.
+Both deductions are now committed to the first complete release for independently validated branches. Their full conditions and source discrepancies still need professional review before implementation. Establish facts from official sources; ask the owner about preferences and trade-offs. Engineering should propose tested media/resource limits and representative layouts, rather than ask the owner to choose decoder internals. Security constraints and the zero inference allowance remain in force.
 
-The repository is ready for discovery work. Product discovery is not declared complete, and draft requirements are not an approved specification. Record future questions, exact answers, changed assumptions and their affected requirements here. Close the interview with the owner's shared-understanding confirmation before implementing the dependent product design.
+The next slice is detailed source/rule/field specification and legal feasibility, followed by the independently reviewed source pack and architecture alignment. Draft requirement details, labels and tax behaviour are not validated by product approval. If source review changes the supported product branches, reopen that specific decision, retain the owner answer and version the baseline explicitly. Live inference, cloud and AEAT authority remain unchanged.
