@@ -2,6 +2,8 @@
 
 **Proposed, 21 October 2026.** This is the first architecture hypothesis for the agreed review packet. The application and cloud components are not implemented.
 
+**Pending alignment after discovery:** the owner now requires an independently complete deterministic tax/refund calculation for covered cases. The initial graph below is not the complete architecture for that expanded requirement. Add the reviewed calculation stages and completeness gates when updating the design after the product-definition gate; do not read this graph as evidence of an implemented tax engine.
+
 ```mermaid
 flowchart LR
     U[Individual or authorised reviewer] --> UI[Review workbench]

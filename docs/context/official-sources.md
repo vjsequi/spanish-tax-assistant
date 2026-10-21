@@ -13,3 +13,7 @@
 Review all relevant conditions and underlying legislation with the tax professional before implementing a supported treatment. Candidate rent conditions involve the taxpayer's qualifying category, residence/contract facts, income limits and incompatibilities. Childcare/conciliation depends on qualifying services, family/work facts, payment and documentation conditions. No personal eligibility or numeric deduction is established here.
 
 Official publications are mutable and the manuals are informational. At corpus freeze, retain exact source bytes, retrieval time/hash, year/region, reviewed passages, legal references and reviewer decisions. A live web page must not silently change a saved case's applicable rules. Renta WEB Open was not operated and is not assumed to expose a supported automated API.
+
+The [candidate feasibility brief](deduction-feasibility.md) records the subsequent comparison of the two AEAT treatment manuals and completion-help pages, including source discrepancies requiring independent review. It is research for product scope, not an approved retrieval corpus or executable rule set.
+
+The [complete-calculation research](calculation-feasibility.md) maps the additional deterministic stages and completeness questions introduced by the owner's full tax/refund requirement. Its links also remain research sources pending retained versions and independent validation.

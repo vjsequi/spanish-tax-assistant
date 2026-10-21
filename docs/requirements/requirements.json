@@ -6,8 +6,24 @@
     {
       "id": "SCOPE-001",
       "kind": "functional",
-      "statement": "Establish year, region and supported profile before treatment; explain unsupported circumstances.",
+      "statement": "Establish year, region and supported ordinary annual individual-return profile before treatment; screen employment/family/relief branches and explain unsupported circumstances, including joint returns and formal filed-return corrections, while retaining required household facts.",
       "acceptance_evidence": "Supported profile and out-of-scope examples independently reviewed.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "SALARY-001",
+      "kind": "functional",
+      "statement": "Retain ordinary salary and documented benefits-in-kind records for multiple employers separately, compare combined supported fields without double-counting duplicate/superseded records and refer unvalidated special employment treatments.",
+      "acceptance_evidence": "Independently reviewed multiple-payer facts and field comparisons; duplicate/revised-certificate cases and exact-arithmetic tests.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "COVERAGE-001",
+      "kind": "functional",
+      "statement": "Permit a partial review and incomplete packet with prominent unsupported items; leave affected treatments unresolved when required facts are unknown and never imply whole-return validation.",
+      "acceptance_evidence": "Mixed-scope and unknown-dependency cases, inspected coverage warnings and independently reviewed safe stopping outcomes.",
       "status": "draft",
       "evidence": []
     },
@@ -22,8 +38,8 @@
     {
       "id": "FACT-001",
       "kind": "functional",
-      "statement": "Present visually extracted transcriptions and normalised facts, missing/illegible values, conflicts and explicit confirmation with reviewable text or image anchors.",
-      "acceptance_evidence": "Independent field-level values and source/page/region labels; legibility, conflict and useful-question review.",
+      "statement": "Present visually extracted transcriptions and normalised facts beside reviewable source images; require human confirmation of facts used in proposals, allow version-bound batch confirmation of clear facts and resolve conflicts individually.",
+      "acceptance_evidence": "Independent field-level values and source/page/region labels; confirmation/version and conflict tests; model confidence never marks a fact confirmed.",
       "status": "draft",
       "evidence": []
     },
@@ -32,6 +48,14 @@
       "kind": "functional",
       "statement": "Use only versioned supported rules applicable to year, region and treatment.",
       "acceptance_evidence": "Wrong-year/region negative tests and tax-professional review.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "CALC-001",
+      "kind": "functional",
+      "statement": "Independently calculate complete tax liability and payable/refundable balance for fully covered 2025 Balearics individual employment/bank-interest cases using confirmed facts and versioned deterministic rules; expose intermediate values and withhold a whole-return result for incomplete coverage.",
+      "acceptance_evidence": "Independently reviewed end-to-end and intermediate-field calculations, boundary/rounding cases and missing/out-of-scope gates; supplied AEAT totals cannot stand in for an independent result.",
       "status": "draft",
       "evidence": []
     },
@@ -46,15 +70,15 @@
     {
       "id": "CHANGE-001",
       "kind": "functional",
-      "statement": "Link each proposed draft-field change to facts, original/page/region or text evidence, applicable rule and deterministic calculation.",
-      "acceptance_evidence": "Source-membership validation and semantic review.",
+      "statement": "Allow evidence preparation without an AEAT draft; publish a proposed draft-field change only with supplied prior draft values, confirmed facts, original/page/region or text evidence, applicable rule and deterministic calculation.",
+      "acceptance_evidence": "No-draft preparation and proposal-gate tests; source/confirmation/version validation and semantic review.",
       "status": "draft",
       "evidence": []
     },
     {
       "id": "REVIEW-001",
       "kind": "functional",
-      "statement": "Permit authorised humans to accept, correct or defer exact fresh proposed changes.",
+      "statement": "Permit the authenticated case owner to accept, correct or defer exact fresh proposed changes; initially manage professional review through owner-controlled packet export rather than shared accounts.",
       "acceptance_evidence": "Authority, freshness, idempotency and audit integration tests.",
       "status": "draft",
       "evidence": []
@@ -62,8 +86,24 @@
     {
       "id": "EXPORT-001",
       "kind": "functional",
-      "statement": "Export a review packet distinguishing facts, proposals, unresolved issues and accepted decisions.",
-      "acceptance_evidence": "Owner walkthrough and independent completeness review.",
+      "statement": "Export a readable Spanish PDF review packet and optional structured JSON, distinguishing coverage limits, confirmed facts, proposals, evidence, calculations, unresolved issues and accepted decisions.",
+      "acceptance_evidence": "Owner walkthrough, PDF rendering/JSON inspection and independent completeness review.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "FLOW-001",
+      "kind": "functional",
+      "statement": "Guide the case through evidence organisation, fact confirmation, draft checking, supported deduction investigation, proposal review and export, with contextual case questions.",
+      "acceptance_evidence": "Owner walkthrough of the complete supported journey, including missing evidence and partial coverage; step-level effort and outcome measurements.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "LANG-001",
+      "kind": "functional",
+      "statement": "Provide the initial interface and review packet in Spanish, with technical documentation in English.",
+      "acceptance_evidence": "Owner walkthrough of Spanish screens and packet; technical-documentation inspection.",
       "status": "draft",
       "evidence": []
     },
@@ -78,8 +118,8 @@
     {
       "id": "PRIV-001",
       "kind": "quality",
-      "statement": "Keep sensitive originals, model text, sessions and identifiers outside Git and routine telemetry.",
-      "acceptance_evidence": "Intake/storage/telemetry redaction and public-inventory review.",
+      "statement": "Keep sensitive originals, model text, sessions and identifiers outside Git and routine telemetry; keep private reference material, private discovery context and derived taxpayer details local, outside cloud/public examples/external application providers.",
+      "acceptance_evidence": "Intake/storage/telemetry redaction, local-reference access/egress controls and public-inventory review; reported review remains distinct from inspected labels.",
       "status": "draft",
       "evidence": []
     },

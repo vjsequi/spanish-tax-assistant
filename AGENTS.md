@@ -14,6 +14,8 @@ The owner rejected a text-PDF-only start and confirmed certificates, receipts, s
 
 Product requirements and designs are drafts except for the recorded owner decisions. Implement the next agreed vertical slice, preserving the distinction between proposed, implemented, tested, independently reviewed and deployed. Do not silently replace unknown tax facts with defaults.
 
+Later owner answers require an independent complete tax/refund calculation for the supported 2025 individual-return profile; the original field-review-only calculation suggestion is superseded. Only the owner initially logs in, with professional review through exported packets. Preserve local-only private reference/discovery material outside Git, cloud and external application providers. See the current discovery record for exact branches and remaining questions; private details stay in ignored local notes.
+
 Current application inference allowance is zero. No model, gateway, cloud provisioning, AEAT login/download/import/filing, external messaging or publication is authorised by the architecture. A prior invoice-project experiment does not transfer authority or quality evidence here. Obtain concrete provider/model/call/time/cost bounds before live evaluation. Use local files for the initial backlog; creating issues or contacting a potential reviewer needs actual user authorisation.
 
 ## Engineering boundaries

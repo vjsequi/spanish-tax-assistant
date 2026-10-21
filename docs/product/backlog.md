@@ -7,6 +7,7 @@
 - [x] Prepare a draft requirements register, HLD/LLD, evaluation plan, security boundaries and staged delivery/operation plan.
 - [x] Vendor only the inspected pinned Grill Me pair, with licence and a review receipt.
 - [x] Add executable foundation/provenance checks, focused control tests and a CI workflow. See actual [verification](../process/verification.md).
+- [x] Push the committed foundation to the owner's existing public GitHub repository and verify the first hosted foundation CI run.
 
 ## Visual evidence scope correction 21 October 2026
 
@@ -16,13 +17,13 @@
 
 ## TAX-001 Product discovery and feasibility design
 
-Requirements: SCOPE-001, FACT-001, RULE-001, REVIEW-001, EVAL-001.
+Requirements: SCOPE-001, FACT-001, RULE-001, CALC-001, REVIEW-001, EVAL-001.
 
-Continue the Grill Me interview. Confirm reviewer participation and representative PDF/image layouts and limits; inspect the full conditions for the two candidate deductions. Refine the definition and freeze the first rubric. Exit with a product definition the owner understands and a feasible review plan. Finding a potential reviewer alone does not close this slice.
+Continue the Grill Me interview using the [saved decisions and current frontier](discovery.md). The owner confirmed a guided Spanish workflow, PDF/optional JSON packet, all three value areas, an independent complete calculation within the supported profile and owner-only access with exported professional review. Establish exact calculation/deduction branches, workload, retention and acceptance criteria; propose representative layouts and tested engineering limits. Use the [deduction research](../context/deduction-feasibility.md) to select feasible reviewed branches. Agree a preliminary review method. TAX-002 resolves source-derived label ambiguities before an experimental rubric/case freeze. Exit with an owner-confirmed definition and feasible review plan. Private validation context stays in ignored local notes, not public quality evidence.
 
 ## TAX-002 Representative source pack and independent labels
 
-Depends on TAX-001. Author a small synthetic development pack covering the selected formats and conditions. Proposed case types are in [evaluation planning](../evaluation/plan.md); source files and expected answers are not authored yet. Expected answers stay in evals/expected and outside application input. Obtain independent source-derived review and preserve all unresolved treatments. Exit with actual reviewed labels and provenance.
+Depends on TAX-001. Author a small synthetic development pack covering the selected formats, complete-calculation branches and conditions. Proposed case types are in [evaluation planning](../evaluation/plan.md); source files and expected answers are not authored yet. Expected answers stay in evals/expected and outside application input. Obtain independent source-derived review and preserve all unresolved treatments. Separately plan local-only private-reference handling; never copy taxpayer details into public inputs/labels. Exit with actual reviewed labels and provenance.
 
 ## TAX-003 Reuse assessment and architecture selection
 
@@ -31,6 +32,8 @@ Depends on sufficient TAX-001 findings; can research alongside TAX-002. Assess a
 ## TAX-004 First deterministic vertical slice
 
 Depends on TAX-001/002/003. Import supported synthetic PDFs/images, retain originals and versioned page/region evidence, support explicit manual fact confirmation and identify a simple discrepancy without inference. Do not substitute a text-only intake for the agreed visual path. A real vision-model extraction step belongs to separately authorised bounded inference. Add actual domain/security tests and observable failure paths. Demonstrate the output and inspect corrections with the owner.
+
+This first slice is an intermediate milestone. Further deterministic slices must implement the independently complete tax/refund calculation, intermediate-field checks and safe incomplete-coverage gates required by CALC-001 before the agreed first complete release. A discrepancy demonstration alone does not fulfil that release requirement.
 
 ## TAX-005 AI investigation and controlled comparison
 

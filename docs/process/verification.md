@@ -20,3 +20,13 @@ Initial helper execution needed an existing CA bundle for TLS; verification rema
 ## Visual evidence discovery update 21 October 2026
 
 Read the Oposiciones native ConceptLock source/design/tests and recorded source hashes and evidence limits. Updated product/discovery, requirements, proposed designs, evaluation/security/operation plans and the working handoff. No renderer, vision provider, tax extraction or quality comparison was executed. The repository checker passed for 47 Markdown files, twelve imported sources, four reviewed skill files and fifteen draft requirements; all seven existing repository-control tests passed. Lint/format checks also passed. These are documentation/control checks, not PDF rendering, visual-model or tax-domain tests.
+
+## First source push and hosted CI 21 October 2026
+
+At the owner's explicit request, verified GitHub authentication and the existing public `vjsequi/spanish-tax-assistant` destination, connected `origin`, fast-forwarded local `main` to the committed visual-evidence work and ran `git push --set-upstream origin main`. No force push or visibility change was needed. The working tree was clean before publication; the repository checker passed before the push.
+
+[Hosted run 39582623574](https://github.com/vjsequi/spanish-tax-assistant/actions/runs/39582623574) completed successfully for commit `bafff1ed7884659125628e923fb5477211633cf4`. GitHub Actions installed hash-locked development tools and passed repository/provenance checks, lint/format, strict types and the seven repository-control tests. Verified with `gh run view 39582623574 --repo vjsequi/spanish-tax-assistant --json status,conclusion,jobs,url,headSha`. This establishes hosted foundation CI only; application implementation, domain evaluation and deployment remain unstarted.
+
+## Continued product interview 21 October 2026
+
+Recorded the owner's actual interview answers, updated the definition and draft requirements, and retained unanswered questions and dependencies. No application behaviour, tax labels or provider calls were added. During this update, `.venv/bin/python scripts/check_repository.py`, `.venv/bin/ruff check .`, `.venv/bin/ruff format --check .`, `.venv/bin/mypy`, `.venv/bin/python -m unittest discover -s tests -v` and `git diff --check` passed. The tests remain the seven foundation controls. The repository checker was rerun after later documentation/register edits; the latest output is retained in the tool execution record. Proposed review-pack sizes are planning recommendations, not authored cases or independent labels.

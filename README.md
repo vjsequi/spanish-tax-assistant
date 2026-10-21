@@ -6,6 +6,10 @@ An evidence workbench for reviewing a Spanish personal income-tax draft: establi
 
 **Initial intake direction, confirmed 21 October:** PDFs, including scanned/image-only PDFs, and standalone images/screenshots are first-class evidence. Preserve original files and page images, use visual interpretation as the primary PDF/image path, and confirm extracted facts. Embedded text and OCR are supporting/comparison paths. The [visual-evidence decision](docs/decisions/0003-visual-document-evidence.md) records the requirement and the Oposiciones lessons; this intake is not implemented yet.
 
+**Further product decisions:** individual returns, multiple employers, optional AEAT draft at case start, confirmed facts before proposals, Spanish interface/packet and English technical documentation. A partial review must expose its coverage gaps and unresolved dependencies. See [discovery](docs/product/discovery.md) for actual answers; implementation and detailed acceptance remain pending.
+
+The agreed product also needs an **independent complete tax/refund calculation for fully covered cases**, alongside the evidence-backed PDF/optional JSON packet. Only the owner initially logs in; professional review is through exported packets. Private reference material stays local and is not part of the public repository or its quality evidence.
+
 ## Start here
 
 1. [Product definition](docs/product/definition.md) — user, outcome, scope and initial acceptance criteria.

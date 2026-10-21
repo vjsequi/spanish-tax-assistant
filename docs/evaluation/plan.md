@@ -1,6 +1,6 @@
 # Evaluation plan
 
-Begin with a small synthetic development pack and independently reviewed, source-derived expectations. A potential tax reviewer exists, but no case labels or review judgements have been obtained. No tax cases are authored in the bootstrap. The following are **proposed case types**, not a dataset or held-out reservations.
+Begin with a small synthetic development pack and independently reviewed, source-derived expectations. Synthetic review can be arranged later; no synthetic case labels or review judgements have been obtained. Private reference context stays in ignored local discovery notes; no reference files/review evidence have been inspected. No tax cases are authored in the bootstrap. The following are **proposed case types**, not a dataset or held-out reservations.
 
 | Proposed case | What the evaluation should distinguish |
 |---|---|
@@ -20,6 +20,8 @@ Keep inputs under evals/inputs and expected answers under evals/expected. Only t
 Compare checklist/rules, prepared retrieval plus a fixed model call, and bounded agent-directed retrieval. Hold evidence and declared tasks constant, and separate workflow policy, framework choice and model choice. Add agents only for an observed failure hypothesis. Use actual attempt/failed/skipped/completed denominators, pending human review, proposal precision/coverage and safe referral accounting.
 
 Check individual facts, field changes, rule applicability and unsupported deductions/omissions as well as totals. Measure reviewer corrections and time. Classify failures into extraction, retrieval, outdated rules, missing/conflicting facts, reasoning, validation and recovery. Known cost, unavailable cost and reservations are different quantities.
+
+The owner requires an independent complete calculation for fully covered cases. Validate each deterministic stage through the final payable/refundable balance against independently reviewed expectations; copied AEAT totals and cancelling field errors fail. Include multiple payers, benefits in kind, supported family branches and incomplete-coverage gates as their exact scope is settled. This calculator is a separately evaluated foundation shared by the rules/AI variants, not LLM arithmetic. Evaluate the three agreed value activities—evidence organisation, draft checking and supported deduction discovery—separately and end to end. Numeric targets remain pending.
 
 Select on development data, lock the candidate, then author and seal structurally separate final cases. An inspected demonstration is a regression example, not a fresh held-out result. Authored software responses verify plumbing only. Real provider comparisons need fresh explicit model/cost/call/time authorisation; current live allowance is zero.
 

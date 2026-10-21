@@ -2,6 +2,8 @@
 
 **Proposed interfaces, not implemented schemas.** Refine these after the representative formats and supported treatments are agreed.
 
+The owner's subsequent complete-calculation requirement needs additional stage/worksheet, coverage and final-result contracts after discovery. The initial interfaces below do not yet specify the full engine. Independent calculation must derive intermediate values from confirmed facts rather than consume draft totals as expected answers.
+
 ## Core records
 
 | Record | Required identity and state |
