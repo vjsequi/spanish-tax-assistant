@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "case_id": "C018",
+  "classification": "synthetic_development_input",
+  "tax_year": 2025,
+  "jurisdiction": "ES-IB",
+  "review_status": "not_independently_reviewed",
+  "fact_confirmation": "pending",
+  "documents": [
+    {
+      "id": "D001",
+      "file": "documents/D001.pdf",
+      "media_type": "application/pdf",
+      "sha256": "3b4a5046721dcba316f92b65755e5f2995a321ff47c90576cc796445928437be",
+      "pages": 4,
+      "declared_source_type": "bank_statement"
+    },
+    {
+      "id": "D002",
+      "file": "documents/D002.pdf",
+      "media_type": "application/pdf",
+      "sha256": "a81212e68c5c26362430afe7605c2419f3d322319ef0dbee950804eead582f34",
+      "pages": 4,
+      "declared_source_type": "bank_statement"
+    },
+    {
+      "id": "D003",
+      "file": "documents/D003.pdf",
+      "media_type": "application/pdf",
+      "sha256": "6880bc14ef07986613153afe76c413e5a369bdc2ec8e9c265ab385ec7c57c782",
+      "pages": 4,
+      "declared_source_type": "bank_statement"
+    },
+    {
+      "id": "D004",
+      "file": "documents/D004.pdf",
+      "media_type": "application/pdf",
+      "sha256": "1ef651b3b2e35590ff1ccfc52277ded0eac47ecb0d3b9f5d91e562578c3e4d18",
+      "pages": 4,
+      "declared_source_type": "bank_statement"
+    },
+    {
+      "id": "D005",
+      "file": "documents/D005.pdf",
+      "media_type": "application/pdf",
+      "sha256": "e48ef19973e558573544748051d2f22d125059cfb266a93b2137d217d642fe97",
+      "pages": 4,
+      "declared_source_type": "bank_statement"
+    },
+    {
+      "id": "D006",
+      "file": "documents/D006.pdf",
+      "media_type": "application/pdf",
+      "sha256": "fe6f79176ce8a5196d56842f431edb8827d52a3f261575cfc004fd6b12aa184d",
+      "pages": 4,
+      "declared_source_type": "bank_statement"
+    },
+    {
+      "id": "D007",
+      "file": "documents/D007.pdf",
+      "media_type": "application/pdf",
+      "sha256": "d2c426edfd276cab66795d53a55adddab6eed9173c8ec3851cbecd843b6ea675",
+      "pages": 4,
+      "declared_source_type": "bank_statement"
+    },
+    {
+      "id": "D008",
+      "file": "documents/D008.pdf",
+      "media_type": "application/pdf",
+      "sha256": "b9fc579efa5828dcc59cc50914d5c48cebd880c8ca81a3b986f412b459e970f8",
+      "pages": 4,
+      "declared_source_type": "bank_statement"
+    },
+    {
+      "id": "D009",
+      "file": "documents/D009.pdf",
+      "media_type": "application/pdf",
+      "sha256": "885c0196821df0a4c048d5c9a1b4c931a46285f5b8d6bcf3994aea21799a2b9d",
+      "pages": 4,
+      "declared_source_type": "bank_statement"
+    },
+    {
+      "id": "D010",
+      "file": "documents/D010.pdf",
+      "media_type": "application/pdf",
+      "sha256": "04b440903078170067b562e8ecfcf7c86083c5af482de26187f91a184d075f66",
+      "pages": 4,
+      "declared_source_type": "bank_statement"
+    },
+    {
+      "id": "D011",
+      "file": "documents/D011.pdf",
+      "media_type": "application/pdf",
+      "sha256": "12f49196547fa93b88da317a67ca2db7be980714bb1a1ef455b0256b0a8ab0fe",
+      "pages": 4,
+      "declared_source_type": "bank_statement"
+    },
+    {
+      "id": "D012",
+      "file": "documents/D012.pdf",
+      "media_type": "application/pdf",
+      "sha256": "6a78cf398476c593b3eb19d7bed8c4c174ceaf6387adcc82672814406b551a38",
+      "pages": 4,
+      "declared_source_type": "bank_statement"
+    },
+    {
+      "id": "D013",
+      "file": "documents/D013.pdf",
+      "media_type": "application/pdf",
+      "sha256": "6742186acc80f3a00eaabe4cfd0aaf5d95faacddbb2c2096eca4f34e62779693",
+      "pages": 3,
+      "declared_source_type": "education_invoice"
+    },
+    {
+      "id": "D014",
+      "file": "documents/D014.pdf",
+      "media_type": "application/pdf",
+      "sha256": "703168fda0b5ef2957788216ccc7788a6885b2fe0fc5ef604f8c1b8ed3842f67",
+      "pages": 3,
+      "declared_source_type": "education_invoice"
+    },
+    {
+      "id": "D015",
+      "file": "documents/D015.pdf",
+      "media_type": "application/pdf",
+      "sha256": "4228f7968f81bc7956fcdd50ac9639df73a99f90a4246f856c197b5de8213c1a",
+      "pages": 3,
+      "declared_source_type": "education_invoice"
+    },
+    {
+      "id": "D016",
+      "file": "documents/D016.pdf",
+      "media_type": "application/pdf",
+      "sha256": "f36bd3784cc29fcc2d34fc1a798b565433f44bd0f2ff07630bc50bff9fe9e582",
+      "pages": 3,
+      "declared_source_type": "education_invoice"
+    },
+    {
+      "id": "D017",
+      "file": "documents/D017.pdf",
+      "media_type": "application/pdf",
+      "sha256": "30bf5ea49f654336698664110d7bbe24b9550479668b67e59733201abeac342e",
+      "pages": 3,
+      "declared_source_type": "education_invoice"
+    },
+    {
+      "id": "D018",
+      "file": "documents/D018.pdf",
+      "media_type": "application/pdf",
+      "sha256": "a3d4fe97c4e2a9667ff104903ed2b7d1ddd95ef6e5d4a86bd97d45f6b9b6bb1a",
+      "pages": 3,
+      "declared_source_type": "education_invoice"
+    },
+    {
+      "id": "D019",
+      "file": "documents/D019.pdf",
+      "media_type": "application/pdf",
+      "sha256": "b4835ad71f06d0ac5cad48c312d0ead6c6375d7123e92423a929dce445f0c1fc",
+      "pages": 3,
+      "declared_source_type": "education_invoice"
+    },
+    {
+      "id": "D020",
+      "file": "documents/D020.pdf",
+      "media_type": "application/pdf",
+      "sha256": "0219aabeb95ae77f2a14704ddea746e409edae7b6c057ad0a936a39f5a9c29ea",
+      "pages": 3,
+      "declared_source_type": "education_invoice"
+    },
+    {
+      "id": "D021",
+      "file": "documents/D021.pdf",
+      "media_type": "application/pdf",
+      "sha256": "d5201c3eda46b540d32ffeaac67b3935fc5d27ee5ee89b6fd822980123faa90e",
+      "pages": 3,
+      "declared_source_type": "education_invoice"
+    },
+    {
+      "id": "D022",
+      "file": "documents/D022.pdf",
+      "media_type": "application/pdf",
+      "sha256": "1b9e2126179730bb488633bf8d3f70fb4e4180f64b0a82b6e7b78393f5ee63c7",
+      "pages": 3,
+      "declared_source_type": "education_invoice"
+    },
+    {
+      "id": "D023",
+      "file": "documents/D023.pdf",
+      "media_type": "application/pdf",
+      "sha256": "bc8c1d7eb02fcccad1192559d7a4292ffd0fd7a56f6ff058d29ffac77383c0c7",
+      "pages": 3,
+      "declared_source_type": "education_invoice"
+    },
+    {
+      "id": "D024",
+      "file": "documents/D024.pdf",
+      "media_type": "application/pdf",
+      "sha256": "68bb7597d083b241960f6219a7f8b8fce3b3a7e8b1ed97def5f63de727f509d8",
+      "pages": 3,
+      "declared_source_type": "education_invoice"
+    },
+    {
+      "id": "D025",
+      "file": "documents/D025.pdf",
+      "media_type": "application/pdf",
+      "sha256": "8a0590d681962391ea1ebcc51ccb0e37d149238cba0ab6587a2ba37eeabbc763",
+      "pages": 4,
+      "declared_source_type": "salary_certificate"
+    },
+    {
+      "id": "D026",
+      "file": "documents/D026.pdf",
+      "media_type": "application/pdf",
+      "sha256": "0b5938677ae87cd20ec56b77ed9cfc3b6296b698d3d3bc0c2dea892f5ae9f544",
+      "pages": 4,
+      "declared_source_type": "salary_certificate"
+    },
+    {
+      "id": "D027",
+      "file": "documents/D027.pdf",
+      "media_type": "application/pdf",
+      "sha256": "a82e7e412f2893463691c8343264c26f2d1fa04f32fb7de689704502c0d11ce7",
+      "pages": 2,
+      "declared_source_type": "donation_certificate"
+    },
+    {
+      "id": "D028",
+      "file": "documents/D028.pdf",
+      "media_type": "application/pdf",
+      "sha256": "cb44cce35744ab772b7abe44dea4dce1e3f2b8b8487476afb0f997e85770fb3a",
+      "pages": 2,
+      "declared_source_type": "donation_certificate"
+    },
+    {
+      "id": "D029",
+      "file": "documents/D029.pdf",
+      "media_type": "application/pdf",
+      "sha256": "f5a67474bdbba8d9fbab285b5207098c66530402dd2db7a7cece48f967b7f55d",
+      "pages": 2,
+      "declared_source_type": "pension_certificate"
+    },
+    {
+      "id": "D030",
+      "file": "documents/D030.pdf",
+      "media_type": "application/pdf",
+      "sha256": "1365c048d3384d0804f631a6b5c27aac7fd1ad53118094436bc77b332c38afb8",
+      "pages": 2,
+      "declared_source_type": "taxpayer_statement"
+    }
+  ]
+}

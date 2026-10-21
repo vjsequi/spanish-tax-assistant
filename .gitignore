@@ -27,4 +27,5 @@ node_modules/
 browser-profile/
 playwright/.auth/
 traces/
+output/review/*.zip
 .DS_Store

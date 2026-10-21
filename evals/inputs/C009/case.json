@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "case_id": "C009",
+  "classification": "synthetic_development_input",
+  "tax_year": 2025,
+  "jurisdiction": "ES-IB",
+  "review_status": "not_independently_reviewed",
+  "fact_confirmation": "pending",
+  "documents": [
+    {
+      "id": "D001",
+      "file": "documents/D001.pdf",
+      "media_type": "application/pdf",
+      "sha256": "d051b829d97efeeaa2a15a00e056a30af696c6ec5eb3b6b5eab16842e005ac52",
+      "pages": 1,
+      "declared_source_type": "taxpayer_statement"
+    },
+    {
+      "id": "D002",
+      "file": "documents/D002.pdf",
+      "media_type": "application/pdf",
+      "sha256": "9163ce41db124f1cafc2642f03f145a25425435a41a3916c5fa68274dcb08091",
+      "pages": 1,
+      "declared_source_type": "salary_certificate"
+    },
+    {
+      "id": "D003",
+      "file": "documents/D003.pdf",
+      "media_type": "application/pdf",
+      "sha256": "809eab21c3b77d7a773e15243864a4f9a4dd9133aff9201848a3199b0fae2d9e",
+      "pages": 1,
+      "declared_source_type": "bank_interest_certificate"
+    },
+    {
+      "id": "D004",
+      "file": "documents/D004.pdf",
+      "media_type": "application/pdf",
+      "sha256": "992eef5a6a267494dcc8711974e66f8445b51d34fb4bb9f9068b0f346ec672fa",
+      "pages": 1,
+      "declared_source_type": "rental_contract"
+    },
+    {
+      "id": "D005",
+      "file": "documents/D005.pdf",
+      "media_type": "application/pdf",
+      "sha256": "4f20c65ec187569a9f34fb09eae8582ea114dfce408e9ac82bf75c5c5d7f2cc0",
+      "pages": 1,
+      "declared_source_type": "rental_payment_ledger"
+    }
+  ]
+}

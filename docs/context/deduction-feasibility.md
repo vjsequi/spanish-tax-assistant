@@ -1,6 +1,6 @@
 # Candidate deduction feasibility research
 
-**Researched 21 October 2026; not a validated rule set.** Both deductions remain investigation candidates. This brief records official-source findings for product coverage and independent review. No personal eligibility judgement, numeric implementation, complete legal checklist or reviewed case labels exist. The links are mutable; a release corpus still needs retained source versions and professional review.
+**Researched 21 October 2026; not a validated rule set.** The owner subsequently required reviewed branches of both deductions for the first complete release. This brief records earlier source findings; the [pinned detailed specification](../requirements/tax-2025.md) now carries the source versions, rule contracts, field mapping and unresolved questions. No personal eligibility judgement, numeric implementation or reviewed case labels exist. Source retention is complete for this review set; professional applicability and calculation review remain pending.
 
 ## Evidence and dependency implications
 
@@ -19,10 +19,10 @@ These evidence proposals are inferred from the [AEAT 2025 rent manual](https://s
 
 The statutory references identified by AEAT are articles 3 bis and 6 bis of the [Balearics consolidated tax provisions, dated version](https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925&p=20250724&tn=1). The two articles and later 2025 amendments require treatment-specific verification before rule freezing; a single dated consolidation must not be assumed to cover every amendment. Relevant family definitions are in the [Balearics family-support law](https://www.boe.es/buscar/act.php?id=BOE-A-2018-13193). Statutory references were identified in the research; this brief does not assert that a complete legal cross-check is finished.
 
-## Coverage options to discuss, not selected scope
+## Initial branch candidates within the approved deduction scope
 
 - A rent example with clear tenancy, own payment attribution and uncomplicated household/property facts.
 - A childcare example with one child throughout the relevant year, clear educational-centre invoices/payments and employment periods.
 - Explicit unresolved/referral cases for ambiguous household attribution, multi-child proration, subsidised fees and other unvalidated branches.
 
-Investigating both candidates is authorised; implementing every branch is not a settled product commitment. Each selected branch needs independently reviewed facts, conditions, field mapping and exact calculation/rounding. Owner fact confirmation and independent tax validation serve different purposes.
+Reviewed branches of both deductions are committed first-release scope; implementing every legal branch is not. Each supported branch needs independently reviewed facts, conditions, field mapping and exact calculation/rounding. Owner fact confirmation and independent tax validation serve different purposes.

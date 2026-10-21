@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "case_id": "C014",
+  "classification": "synthetic_development_input",
+  "tax_year": 2025,
+  "jurisdiction": "ES-IB",
+  "review_status": "not_independently_reviewed",
+  "fact_confirmation": "pending",
+  "documents": [
+    {
+      "id": "D001",
+      "file": "documents/D001.pdf",
+      "media_type": "application/pdf",
+      "sha256": "772f378f6f44dbb2a2a3491020c923c123c6fde187f3521902732128c4bb9ca6",
+      "pages": 1,
+      "declared_source_type": "taxpayer_statement"
+    },
+    {
+      "id": "D002",
+      "file": "documents/D002.pdf",
+      "media_type": "application/pdf",
+      "sha256": "1c636039b0790f30cc0f0d8a285c044935d9e7f2cefc200a548482df146edb3c",
+      "pages": 1,
+      "declared_source_type": "salary_certificate"
+    },
+    {
+      "id": "D003",
+      "file": "documents/D003.pdf",
+      "media_type": "application/pdf",
+      "sha256": "4914603148de359b5fe16bb3790a19f0362585aa87d7a759b0154846d67d9402",
+      "pages": 1,
+      "declared_source_type": "bank_interest_certificate"
+    },
+    {
+      "id": "D004",
+      "file": "documents/D004.pdf",
+      "media_type": "application/pdf",
+      "sha256": "f98d9b756dded0688d5dd1ff6ac94489e2d4a757110de6f1448954a75bcc9c94",
+      "pages": 1,
+      "declared_source_type": "prior_year_record"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "tax_year": 2025,
+  "status": "unresolved_not_reviewed",
+  "questions": [
+    {
+      "id": "RQ-01",
+      "title": "Rent household/property test and payer attribution",
+      "question": "Resolve practical-manual family-unit wording versus completion-help individual-filing sentence; verify lease signatory and marital-funds attribution.",
+      "rule_ids": [
+        "IB-RENT"
+      ],
+      "source_ids": [
+        "AEAT-RENT",
+        "AEAT-RENT-HELP",
+        "BOE-BALEAR"
+      ],
+      "resolution": null,
+      "reviewer": null,
+      "status": "open_blocking_affected_branch"
+    },
+    {
+      "id": "RQ-02",
+      "title": "Childcare cap and multi-child/date proration",
+      "question": "Resolve per-child completion-help wording versus annual-cap/manual/statutory wording; verify two-claimant sharing and boundary-day method.",
+      "rule_ids": [
+        "IB-CHILDCARE"
+      ],
+      "source_ids": [
+        "AEAT-CHILDCARE",
+        "AEAT-CHILDCARE-HELP",
+        "BOE-BALEAR"
+      ],
+      "resolution": null,
+      "reviewer": null,
+      "status": "open_blocking_affected_branch"
+    },
+    {
+      "id": "RQ-03",
+      "title": "National/regional childcare and subsidy interactions",
+      "question": "Verify compatible bases, employer-paid/tax-exempt services, public subsidies, monthly authorization and double counting for national maternity/nursery versus regional conciliation.",
+      "rule_ids": [
+        "IB-CHILDCARE",
+        "FAM-MAT"
+      ],
+      "source_ids": [
+        "AEAT-MANUAL-1",
+        "AEAT-MANUAL-2",
+        "BOE-LIRPF",
+        "BOE-BALEAR"
+      ],
+      "resolution": null,
+      "reviewer": null,
+      "status": "open_blocking_affected_branch"
+    },
+    {
+      "id": "RQ-04",
+      "title": "Donation classes, pooling, ordering and overlap",
+      "question": "Verify aggregate first tier and mixed recurrence allocation, entity evidence, caps, state/regional split, all applicable Balearic donation categories and same-payment compatibility.",
+      "rule_ids": [
+        "DON-ES-01",
+        "DON-ES-02",
+        "IB-DON-THIRD",
+        "IB-DON-OTHER",
+        "LIQUID"
+      ],
+      "source_ids": [
+        "AEAT-MANUAL-1",
+        "AEAT-MANUAL-2",
+        "BOE-MECENAZGO",
+        "BOE-BALEAR"
+      ],
+      "resolution": null,
+      "reviewer": null,
+      "status": "open_blocking_affected_branch"
+    },
+    {
+      "id": "RQ-05",
+      "title": "Pension classification, matching, floors and new excess",
+      "question": "Verify contribution versus reduction limits, flexible-pay attribution, per-employer thresholds, cap sharing/order, current-year excess reporting and prior-year referral.",
+      "rule_ids": [
+        "PEN-01",
+        "BASE-02"
+      ],
+      "source_ids": [
+        "AEAT-MANUAL-1",
+        "BOE-LIRPF",
+        "BOE-MODELO-100"
+      ],
+      "resolution": null,
+      "reviewer": null,
+      "status": "open_blocking_affected_branch"
+    },
+    {
+      "id": "RQ-06",
+      "title": "Executable ordinary-family boundary and refundable credits",
+      "question": "Define supported cohabiting-parent/no-dependant branches; review all required minima, maternity, large-family and single-parent benefits so straightforward children never implies omission.",
+      "rule_ids": [
+        "MIN-ES-01",
+        "MIN-IB-01",
+        "FAM-MAT",
+        "FAM-OTHER",
+        "RESULT"
+      ],
+      "source_ids": [
+        "AEAT-MANUAL-1",
+        "BOE-LIRPF",
+        "BOE-FAMILIAS"
+      ],
+      "resolution": null,
+      "reviewer": null,
+      "status": "open_blocking_affected_branch"
+    },
+    {
+      "id": "RQ-07",
+      "title": "2025 employment credit proportional cap and ordering",
+      "question": "Specify DA61 qualifying income, other-income definition, proportional liability cap and ordering separately from Article-20 reduction.",
+      "rule_ids": [
+        "EMP-CREDIT-2025",
+        "LIQUID"
+      ],
+      "source_ids": [
+        "AEAT-MANUAL-1",
+        "BOE-LIRPF"
+      ],
+      "resolution": null,
+      "reviewer": null,
+      "status": "open_blocking_affected_branch"
+    },
+    {
+      "id": "RQ-08",
+      "title": "Field contexts, withholding and complete stage rounding",
+      "question": "Verify all mapped fields/contexts and round/truncate at legally prescribed stages, including in-kind payments on account and whether certificate totals already include them.",
+      "rule_ids": [
+        "EMP-01",
+        "PEN-01",
+        "PAY-01",
+        "RESULT"
+      ],
+      "source_ids": [
+        "BOE-MODELO-100",
+        "AEAT-MANUAL-1",
+        "AEAT-MANUAL-2"
+      ],
+      "resolution": null,
+      "reviewer": null,
+      "status": "open_blocking_affected_branch"
+    },
+    {
+      "id": "RQ-09",
+      "title": "Accrual/age boundaries and temporal applicability",
+      "question": "Check exact birthdays, leap/calendar/day-count conventions, child order and conditional Balearic minima; reconcile original 2025 amendments and later retroactive changes with the pinned end-year editions.",
+      "rule_ids": [
+        "MIN-ES-01",
+        "MIN-IB-01",
+        "IB-RENT",
+        "IB-CHILDCARE"
+      ],
+      "source_ids": [
+        "AEAT-MANUAL-1",
+        "AEAT-MANUAL-2",
+        "BOE-LIRPF",
+        "BOE-BALEAR"
+      ],
+      "resolution": null,
+      "reviewer": null,
+      "status": "open_blocking_affected_branch"
+    }
+  ]
+}

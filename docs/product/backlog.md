@@ -22,15 +22,26 @@
 - [x] Freeze product/acceptance baseline 1.0 and trace 27 draft detailed requirements, including complete calculation and selected pilot targets.
 - [ ] Complete tax-rule feasibility, exact conditions/field mapping and independent validation. Product approval does not close these gates.
 
+## Detailed specification and source pack prepared 21 October 2026
+
+- [x] Retain fifteen public official references with exact bytes, hashes, metadata and checked BOE selected editions.
+- [x] Prepare the source-derived draft: seventeen calculation stages, 108 contextual AEAT fields and 25 rule contracts, linked to the requirement register.
+- [x] Record nine unresolved tax-review questions; keep every rule unapproved for application use.
+- [x] Author twenty wholly synthetic development cases: 110 source files/180 pages, including the 30-file/100-page workload and visual/security variations.
+- [x] Prepare a Spanish review guide, hash-bound requests and a blank independent-answer template; provide a reproducible offline review ZIP.
+- [x] Align proposed HLD/LLD with complete calculation, coverage gates and optional draft comparison.
+- [ ] Obtain independent rule/applicability/rounding review and source-linked fact, field, stage and stopping-outcome labels. The pack contains no completed judgements.
+- [ ] Freeze a reviewed rule/case/rubric version before deterministic tax implementation or model comparisons.
+
 ## TAX-001 Detailed requirements and legal feasibility
 
 Requirements: SCOPE-001, FACT-001, RULE-001, CALC-001, REVIEW-001, EVAL-001.
 
-The consolidated [definition](definition.md) and [acceptance baseline](acceptance.md) are owner-approved at version 1.0; see [discovery](discovery.md) for the actual confirmation. Specify explicit calculation/deduction conditions, source versions, input/output field mapping and representative layouts with tested engineering limits. The [deduction research](../context/deduction-feasibility.md) and [complete-calculation chain](../context/calculation-feasibility.md) identify source/reviewer work. TAX-002 resolves source-derived label ambiguities before an experimental rubric/case freeze. Exit with a feasible rule/coverage specification and concrete independent review plan. Private validation context stays in ignored local notes, not public quality evidence.
+The consolidated [definition](definition.md) and [acceptance baseline](acceptance.md) are owner-approved at version 1.0. The [detailed requirements](../requirements/tax-2025.md) now map the pinned sources, stages, fields and candidate rule contracts. The [nine review questions](../../data/rules/2025/review-questions.json) remain open. Complete professional applicability/rounding review, explicit supported predicates and label review in TAX-002 before an experimental rubric/case freeze. Exit with an independently feasible rule/coverage specification and reviewed conditions, not merely retained sources. Private reference material remains local and outside this pack.
 
 ## TAX-002 Representative source pack and independent labels
 
-Depends on TAX-001. Author a small synthetic development pack covering the selected formats, complete-calculation branches and conditions. Proposed case types are in [evaluation planning](../evaluation/plan.md); source files and expected answers are not authored yet. Expected answers stay in evals/expected and outside application input. Obtain independent source-derived review and preserve all unresolved treatments. Separately plan local-only private-reference handling; never copy taxpayer details into public inputs/labels. Exit with actual reviewed labels and provenance.
+Depends on TAX-001. The [synthetic review pack](../../evals/review/reviewer-guide.md) is prepared: twenty cases, with eight proposed for the first professional review round. Source documents and version-bound pending requests exist; independent expected answers and judgements do not. Obtain source-derived labels in the separate scorer/reviewer boundary, record ambiguities/alternatives and review benchmark semantics. Expected answers stay in evals/expected and outside application input. Author a separate sealed final pack later. Exit with actual reviewed labels and provenance; never copy taxpayer details into public inputs/labels.
 
 ## TAX-003 Reuse assessment and architecture selection
 

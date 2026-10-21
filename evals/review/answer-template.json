@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "case_id": null,
+  "input_manifest_sha256": null,
+  "case_sha256": null,
+  "source_manifest_sha256": null,
+  "reviewer_identity_and_competence": null,
+  "reviewed_at": null,
+  "scope_judgement": null,
+  "fact_judgements": [],
+  "field_and_stage_judgements": [],
+  "question_and_alternative_outcomes": [],
+  "unresolved_rule_questions": [],
+  "review_decision": null
+}

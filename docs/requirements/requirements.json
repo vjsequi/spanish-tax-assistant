@@ -9,7 +9,17 @@
       "statement": "Establish year, region and supported ordinary annual individual-return profile before treatment; screen employment/family/relief branches and explain unsupported circumstances, including joint returns and formal filed-return corrections, while retaining required household facts.",
       "acceptance_evidence": "Supported profile and out-of-scope examples independently reviewed.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/requirements/tax-2025.md"
+      ],
+      "review_case_ids": [
+        "C001",
+        "C009",
+        "C014",
+        "C020"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "SALARY-001",
@@ -17,7 +27,20 @@
       "statement": "Retain ordinary salary and documented benefits-in-kind records for multiple employers separately, compare combined supported fields without double-counting duplicate/superseded records and refer unvalidated special employment treatments.",
       "acceptance_evidence": "Independently reviewed multiple-payer facts and field comparisons; duplicate/revised-certificate cases and exact-arithmetic tests.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/requirements/tax-2025.md",
+        "data/rules/2025/calculation-stages.json",
+        "data/rules/2025/aeat-fields.json"
+      ],
+      "review_case_ids": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C006"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "COVERAGE-001",
@@ -25,7 +48,17 @@
       "statement": "Permit a partial review and incomplete packet with prominent unsupported items; leave affected treatments unresolved when required facts are unknown and never imply whole-return validation.",
       "acceptance_evidence": "Mixed-scope and unknown-dependency cases, inspected coverage warnings and independently reviewed safe stopping outcomes.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/requirements/tax-2025.md"
+      ],
+      "review_case_ids": [
+        "C007",
+        "C009",
+        "C014",
+        "C017"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "INTAKE-001",
@@ -33,7 +66,16 @@
       "statement": "Admit supported digital/scanned PDFs and standalone images/screenshots; preserve originals, versioned page images and text/image evidence anchors without requiring an embedded text layer.",
       "acceptance_evidence": "Supported-format/render/decoder and resource-bound tests; original/derivative/page/region provenance inspection; same-document representation comparison.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/design/lld.md"
+      ],
+      "review_case_ids": [
+        "C016",
+        "C017",
+        "C018"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "FACT-001",
@@ -41,7 +83,33 @@
       "statement": "Present visually extracted transcriptions and normalised facts beside reviewable source images; require human confirmation of facts used in proposals, allow version-bound batch confirmation of clear facts and resolve conflicts individually.",
       "acceptance_evidence": "Independent field-level values and source/page/region labels; confirmation/version and conflict tests; model confidence never marks a fact confirmed.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/requirements/tax-2025.md"
+      ],
+      "review_case_ids": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C012",
+        "C013",
+        "C014",
+        "C015",
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "RULE-001",
@@ -49,7 +117,19 @@
       "statement": "Use only versioned supported rules applicable to year, region and treatment.",
       "acceptance_evidence": "Wrong-year/region negative tests and tax-professional review.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/requirements/tax-2025.md",
+        "data/rules/2025/rule-register.json",
+        "data/rules/2025/review-questions.json"
+      ],
+      "review_case_ids": [
+        "C001",
+        "C008",
+        "C010",
+        "C020"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "DEDUCTION-001",
@@ -57,7 +137,19 @@
       "statement": "Include independently validated branches of both Balearics habitual-home rent and childcare/conciliation in the first complete release, publishing exact supported conditions and referring unresolved or unvalidated branches.",
       "acceptance_evidence": "Retained official sources, reviewed condition/calculation/field mapping and positive, negative, incomplete and ambiguous-branch cases for each deduction.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/requirements/tax-2025.md",
+        "data/rules/2025/rule-register.json",
+        "data/rules/2025/review-questions.json"
+      ],
+      "review_case_ids": [
+        "C008",
+        "C009",
+        "C010",
+        "C011"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "CALC-001",
@@ -65,7 +157,27 @@
       "statement": "Independently calculate complete tax liability and payable/refundable balance for fully covered 2025 Balearics individual employment/bank-interest cases using confirmed facts and versioned deterministic rules; expose intermediate values and withhold a whole-return result for incomplete coverage.",
       "acceptance_evidence": "Independently reviewed end-to-end and intermediate-field calculations, boundary/rounding cases and missing/out-of-scope gates; supplied AEAT totals cannot stand in for an independent result.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/requirements/tax-2025.md",
+        "data/rules/2025/calculation-stages.json",
+        "data/rules/2025/aeat-fields.json"
+      ],
+      "review_case_ids": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005",
+        "C008",
+        "C010",
+        "C011",
+        "C012",
+        "C013",
+        "C018",
+        "C019"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "MONEY-001",
@@ -73,7 +185,20 @@
       "statement": "Use exact decimal input and treatment-specific deterministic calculation/rounding.",
       "acceptance_evidence": "Reviewed arithmetic/rounding cases and invariant tests.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/requirements/tax-2025.md",
+        "data/rules/2025/rule-register.json",
+        "data/rules/2025/review-questions.json"
+      ],
+      "review_case_ids": [
+        "C001",
+        "C003",
+        "C004",
+        "C012",
+        "C013"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "CHANGE-001",
@@ -81,7 +206,20 @@
       "statement": "Allow evidence preparation without an AEAT draft; publish a proposed draft-field change only with supplied prior draft values, confirmed facts, original/page/region or text evidence, applicable rule and deterministic calculation.",
       "acceptance_evidence": "No-draft preparation and proposal-gate tests; source/confirmation/version validation and semantic review.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/requirements/tax-2025.md",
+        "data/rules/2025/calculation-stages.json",
+        "data/rules/2025/aeat-fields.json"
+      ],
+      "review_case_ids": [
+        "C001",
+        "C005",
+        "C006",
+        "C008",
+        "C010"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "REVIEW-001",
@@ -89,7 +227,15 @@
       "statement": "Permit the authenticated case owner to accept, correct or defer exact fresh proposed changes; initially manage professional review through owner-controlled packet export rather than shared accounts.",
       "acceptance_evidence": "Authority, freshness, idempotency and audit integration tests.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/design/lld.md"
+      ],
+      "review_case_ids": [
+        "C006",
+        "C009"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "EXPORT-001",
@@ -97,7 +243,16 @@
       "statement": "Export a readable Spanish PDF review packet and optional structured JSON, distinguishing coverage limits, confirmed facts, proposals, evidence, calculations, unresolved issues and accepted decisions.",
       "acceptance_evidence": "Owner walkthrough, PDF rendering/JSON inspection and independent completeness review.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/design/lld.md"
+      ],
+      "review_case_ids": [
+        "C001",
+        "C007",
+        "C014"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "FLOW-001",
@@ -105,7 +260,16 @@
       "statement": "Guide the case through evidence organisation, fact confirmation, draft checking, supported deduction investigation, proposal review and export, with contextual case questions.",
       "acceptance_evidence": "Owner walkthrough of the complete supported journey, including missing evidence and partial coverage; step-level effort and outcome measurements.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/design/lld.md"
+      ],
+      "review_case_ids": [
+        "C001",
+        "C007",
+        "C009"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "LANG-001",
@@ -113,7 +277,14 @@
       "statement": "Provide the initial interface and review packet in Spanish, with technical documentation in English.",
       "acceptance_evidence": "Owner walkthrough of Spanish screens and packet; technical-documentation inspection.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/design/lld.md"
+      ],
+      "review_case_ids": [
+        "C001"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "SEC-001",
@@ -121,7 +292,15 @@
       "statement": "Keep case access private and bound tools against untrusted document instructions.",
       "acceptance_evidence": "Cross-case/injection tests and deployed identity/access checks.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/design/lld.md"
+      ],
+      "review_case_ids": [
+        "C015",
+        "C020"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "PRIV-001",
@@ -129,7 +308,12 @@
       "statement": "Keep sensitive originals, model text, sessions and identifiers outside Git and routine telemetry; keep private reference material, private discovery context and derived taxpayer details local, outside cloud/public examples/external application providers.",
       "acceptance_evidence": "Intake/storage/telemetry redaction, local-reference access/egress controls and public-inventory review; reported review remains distinct from inspected labels.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/design/lld.md"
+      ],
+      "review_case_ids": [],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "RETENTION-001",
@@ -137,7 +321,12 @@
       "statement": "Persist private cases between sessions until explicit owner deletion; delete source and derived records under a defined and tested active-storage/backup-retention policy before hosted private use.",
       "acceptance_evidence": "Save/resume and deletion tests, derivative inventory, backup expiry/restore-deletion drill and owner inspection of retention notices.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/design/lld.md"
+      ],
+      "review_case_ids": [],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "RECOVERY-001",
@@ -145,7 +334,12 @@
       "statement": "Recover bounded durable work without duplicate effects or automatic uncertain provider retry.",
       "acceptance_evidence": "Crash/duplicate/stale-worker tests and hosted recovery drill.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/design/lld.md"
+      ],
+      "review_case_ids": [],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "EVAL-001",
@@ -153,7 +347,35 @@
       "statement": "Compare baseline and AI on isolated independently reviewed cases with complete outcomes.",
       "acceptance_evidence": "Frozen cases/rubric/config and actual hash-bound judgements.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/design/lld.md",
+        "docs/product/acceptance.md",
+        "evals/review/reviewer-guide.md"
+      ],
+      "review_case_ids": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C012",
+        "C013",
+        "C014",
+        "C015",
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "OBS-001",
@@ -161,7 +383,12 @@
       "statement": "Explain admission, rendering/decoding, extraction, retrieval, model/tool, validation and recovery outcomes through safe correlated diagnostics.",
       "acceptance_evidence": "Inspected traces, finite metrics, alerts and redaction tests.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/design/lld.md"
+      ],
+      "review_case_ids": [],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "BUDGET-001",
@@ -169,7 +396,12 @@
       "statement": "Fail closed on absent inference authority and keep calls/time/money bounded.",
       "acceptance_evidence": "No-call default tests and actual bounded execution accounting.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/design/lld.md"
+      ],
+      "review_case_ids": [],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "DELIVERY-001",
@@ -177,7 +409,12 @@
       "statement": "Reproduce builds and promote verified artifacts through isolated environments.",
       "acceptance_evidence": "CI evidence, artifact identity, environment checks and rollback.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/design/lld.md"
+      ],
+      "review_case_ids": [],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "FAMILY-001",
@@ -185,7 +422,18 @@
       "statement": "Support confirmed personal/family minima and applicable family credits for people without dependants and straightforward cases with children; refer unvalidated shared-custody, disability and dependent-ascendant branches.",
       "acceptance_evidence": "Reviewed entitlement, age/period, attribution and benefit/advance-payment cases; unsupported or unknown family conditions prevent an independent complete result.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/requirements/tax-2025.md",
+        "data/rules/2025/rule-register.json",
+        "data/rules/2025/review-questions.json"
+      ],
+      "review_case_ids": [
+        "C010",
+        "C011",
+        "C018"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "RELIEF-001",
@@ -193,7 +441,22 @@
       "statement": "Support standard employment expenses, evidenced union/mandatory professional fees, individual and employer pension contributions and donations under independently reviewed 2025 conditions; screen other reliefs/history rather than assume zero.",
       "acceptance_evidence": "Source-derived condition, cap, ordering, attribution and interaction cases; field-level independent review and unsupported-relief gates.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/requirements/tax-2025.md",
+        "data/rules/2025/rule-register.json",
+        "data/rules/2025/review-questions.json",
+        "data/rules/2025/calculation-stages.json",
+        "data/rules/2025/aeat-fields.json"
+      ],
+      "review_case_ids": [
+        "C002",
+        "C003",
+        "C012",
+        "C013",
+        "C019"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "EXTRACT-001",
@@ -201,7 +464,35 @@
       "statement": "Target at least 95% of required readable facts correctly normalised and linked to the right evidence before human confirmation, counting missed readable facts as failures.",
       "acceptance_evidence": "Independent value-plus-evidence labels, complete denominators, separate illegibility/abstention rubric and actual measured extraction results.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/design/lld.md",
+        "docs/product/acceptance.md",
+        "evals/review/reviewer-guide.md"
+      ],
+      "review_case_ids": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C012",
+        "C013",
+        "C014",
+        "C015",
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "PERF-001",
@@ -209,7 +500,16 @@
       "statement": "For the representative 30-file/100-page workload, target required reviewable outputs within five minutes of cumulative automated processing in at least 95% of attempts, with progress and resume; exclude human pauses and measure cold activation separately.",
       "acceptance_evidence": "Actual end-to-end stage/queue/provider/validation timings, all-attempt outcomes with failed/timed-out attempts as misses, declared workload/config and separate cold-start/human-time measurements.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/design/lld.md",
+        "docs/product/acceptance.md",
+        "evals/review/reviewer-guide.md"
+      ],
+      "review_case_ids": [
+        "C018"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     },
     {
       "id": "VALUE-001",
@@ -217,7 +517,23 @@
       "statement": "Target at least 20% less hands-on review time than a comparable manual workflow, measuring evidence organisation, draft checking and supported deduction discovery while retaining all blocking safety/calculation gates.",
       "acceptance_evidence": "Reviewed matched tasks with normal baseline tools, step-level/total human time, corrections and missed/incorrect findings; order/familiarity limits and complete outcome accounting.",
       "status": "draft",
-      "evidence": []
+      "evidence": [],
+      "detail_refs": [
+        "docs/design/lld.md",
+        "docs/product/acceptance.md",
+        "evals/review/reviewer-guide.md"
+      ],
+      "review_case_ids": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C008",
+        "C010",
+        "C011",
+        "C012"
+      ],
+      "trace_status": "draft_design_and_unreviewed_inputs_only"
     }
   ],
   "owner_baseline": {
@@ -226,6 +542,6 @@
     "approved_on": "2026-10-21",
     "answer": "Yes, freeze this product baseline",
     "decision_record": "docs/product/discovery.md",
-    "detail_status": "Tax conditions, exact field mapping and verification design remain pending; no implementation or validation is claimed."
+    "detail_status": "Source-pinned rule/stage/field drafts and synthetic review inputs prepared; independent tax review, rounding resolution, labels, implementation and quality evidence remain pending."
   }
 }

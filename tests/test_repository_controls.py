@@ -14,12 +14,23 @@ from scripts.check_repository import (
     check,
     inside,
     verify_disabled_defaults,
+    verify_docs,
     verify_manifest,
     verify_skills,
 )
 
 
 class RepositoryControls(unittest.TestCase):
+    def test_document_check_does_not_open_expected_answer_markdown(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "README.md").write_text("Public documentation\n")
+            hidden = root / "evals/expected"
+            hidden.mkdir(parents=True)
+            # A canary that cannot be decoded; this is not a tax label or an answer key.
+            (hidden / "canary.md").write_bytes(b"\xff\xfe")
+            self.assertEqual(verify_docs(root), 1)
+
     def test_actual_foundation_is_consistent(self) -> None:
         result = check()
         self.assertGreaterEqual(result["imported_sources"], 2)

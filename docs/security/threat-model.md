@@ -18,6 +18,10 @@ Authentication is required before any real-data hosted access. Public examples a
 
 Independent tax review is a domain gate. Schema-valid XML, citation identity and a plausible total do not establish a correct return.
 
+## Implemented development controls
+
+The public-reference collector allowlists HTTPS AEAT/BOE hosts, checks redirect destinations and exact selected BOE editions, bounds acquisition and verifies retained hashes offline. Tests cover silent fallback to a newer consolidation, hostile URLs, source drift and mapped-field page drift. The review exporter selects manifest-listed public/synthetic files rather than recursively publishing a directory; private, expected-answer and authoring paths are prohibited. Case metadata is narrowly checked for answer-key contamination and path escape, and document checks skip the expected-answer area entirely. These development controls do not establish runtime intake isolation, application permissions, semantic tax correctness or resistance to a live model attack.
+
 ## Visual evidence
 
 Prompt injection can appear in a screenshot or page image as well as text. Preserve the document-as-data boundary across visual adapters and tool calls. An official-looking logo or screenshot does not authenticate a source. Keep legibility, source authority, extracted facts and tax interpretation as distinct review concerns.

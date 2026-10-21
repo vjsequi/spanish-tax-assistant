@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "case_id": "C011",
+  "classification": "synthetic_development_input",
+  "tax_year": 2025,
+  "jurisdiction": "ES-IB",
+  "review_status": "not_independently_reviewed",
+  "fact_confirmation": "pending",
+  "documents": [
+    {
+      "id": "D001",
+      "file": "documents/D001.pdf",
+      "media_type": "application/pdf",
+      "sha256": "54eb1d4a1da02bc8c0878506f330a51f1c829d7738ddcf3d349932a374c2a228",
+      "pages": 1,
+      "declared_source_type": "taxpayer_statement"
+    },
+    {
+      "id": "D002",
+      "file": "documents/D002.pdf",
+      "media_type": "application/pdf",
+      "sha256": "1862621b60152617a4d78e86028d64392e8edb1e6b30a2a1de388dc9af0dba3a",
+      "pages": 1,
+      "declared_source_type": "salary_certificate"
+    },
+    {
+      "id": "D003",
+      "file": "documents/D003.pdf",
+      "media_type": "application/pdf",
+      "sha256": "864005a8be22e57aa00c4cef467a20990d64dce4a040a49b01d68111bb78d6d8",
+      "pages": 1,
+      "declared_source_type": "bank_interest_certificate"
+    },
+    {
+      "id": "D004",
+      "file": "documents/D004.pdf",
+      "media_type": "application/pdf",
+      "sha256": "e7cbee2c96a2039cf90e10ccc36ed5e22a39e2b937509d7b6f94e88bf6bd0ad0",
+      "pages": 1,
+      "declared_source_type": "education_invoice_ledger"
+    },
+    {
+      "id": "D005",
+      "file": "documents/D005.pdf",
+      "media_type": "application/pdf",
+      "sha256": "e0c05981a5d21ecac3d4b075183944e148aedb14614ecd36e7b10645a2b5c253",
+      "pages": 1,
+      "declared_source_type": "family_employment_record"
+    }
+  ]
+}

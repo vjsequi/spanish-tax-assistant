@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "tax_year": 2025,
+  "note": "Reference freeze only; tax applicability, retroactive amendments and conflicts still require independent review. No authenticated portal access.",
+  "entries": [
+    {
+      "id": "AEAT-MANUAL-1",
+      "publisher": "AEAT",
+      "title": "Manual práctico de Renta 2025, parte 1",
+      "kind": "pdf",
+      "tax_year": 2025,
+      "url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Biblioteca/Manual/Practicos/IRPF/IRPF-2025/ManualRenta2025Parte1_es_es.pdf",
+      "destination": "data/rules/2025/originals/aeat-manual-1.pdf",
+      "applicability_status": "pending_independent_review",
+      "reuse_notice": "AEAT-REUSE"
+    },
+    {
+      "id": "AEAT-MANUAL-2",
+      "publisher": "AEAT",
+      "title": "Manual práctico de Renta 2025, deducciones autonómicas",
+      "kind": "pdf",
+      "tax_year": 2025,
+      "url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Biblioteca/Manual/Practicos/IRPF/IRPF-2025-Deducciones-autonomicas/ManualRenta2025Parte2_es_es.pdf",
+      "destination": "data/rules/2025/originals/aeat-manual-2.pdf",
+      "applicability_status": "pending_independent_review",
+      "reuse_notice": "AEAT-REUSE"
+    },
+    {
+      "id": "BOE-MODELO-100",
+      "publisher": "BOE",
+      "title": "Orden HAC/277/2026; Modelo 100 ejercicio 2025, original",
+      "kind": "pdf",
+      "tax_year": 2025,
+      "url": "https://www.boe.es/boe/dias/2026/03/27/pdfs/BOE-A-2026-7041.pdf",
+      "destination": "data/rules/2025/originals/boe-modelo-100-2025.pdf",
+      "applicability_status": "pending_independent_review",
+      "reuse_notice": "BOE-REUSE"
+    },
+    {
+      "id": "BOE-LIRPF",
+      "publisher": "BOE",
+      "title": "Ley 35/2006, selected consolidation 20251224",
+      "kind": "html",
+      "tax_year": 2025,
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20251224&tn=1",
+      "destination": "data/rules/2025/originals/boe-lirpf.html",
+      "applicability_status": "pending_independent_review",
+      "reuse_notice": "BOE-REUSE",
+      "requested_consolidation_as_of": "2025-12-31",
+      "required_tokens": [
+        "BOE-A-2006-20764"
+      ],
+      "selected_version": "20251224",
+      "selection_method": "Latest listed BOE edition no later than 2025-12-31; selected marker must match. Retroactive applicability still requires review."
+    },
+    {
+      "id": "BOE-RIRPF",
+      "publisher": "BOE",
+      "title": "Real Decreto 439/2007, selected consolidation 20251224",
+      "kind": "html",
+      "tax_year": 2025,
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820&p=20251224&tn=1",
+      "destination": "data/rules/2025/originals/boe-rirpf.html",
+      "applicability_status": "pending_independent_review",
+      "reuse_notice": "BOE-REUSE",
+      "requested_consolidation_as_of": "2025-12-31",
+      "required_tokens": [
+        "BOE-A-2007-6820"
+      ],
+      "selected_version": "20251224",
+      "selection_method": "Latest listed BOE edition no later than 2025-12-31; selected marker must match. Retroactive applicability still requires review."
+    },
+    {
+      "id": "BOE-BALEAR",
+      "publisher": "BOE",
+      "title": "Decreto Legislativo 1/2014, selected consolidation 20250724",
+      "kind": "html",
+      "tax_year": 2025,
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925&p=20250724&tn=1",
+      "destination": "data/rules/2025/originals/boe-balear.html",
+      "applicability_status": "pending_independent_review",
+      "reuse_notice": "BOE-REUSE",
+      "requested_consolidation_as_of": "2025-12-31",
+      "required_tokens": [
+        "BOE-A-2014-6925"
+      ],
+      "selected_version": "20250724",
+      "selection_method": "Latest listed BOE edition no later than 2025-12-31; selected marker must match. Retroactive applicability still requires review."
+    },
+    {
+      "id": "BOE-MECENAZGO",
+      "publisher": "BOE",
+      "title": "Ley 49/2002, selected consolidation 20231220",
+      "kind": "html",
+      "tax_year": 2025,
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-25039&p=20231220&tn=1",
+      "destination": "data/rules/2025/originals/boe-mecenazgo.html",
+      "applicability_status": "pending_independent_review",
+      "reuse_notice": "BOE-REUSE",
+      "requested_consolidation_as_of": "2025-12-31",
+      "required_tokens": [
+        "BOE-A-2002-25039"
+      ],
+      "selected_version": "20231220",
+      "selection_method": "Latest listed BOE edition no later than 2025-12-31; selected marker must match. Retroactive applicability still requires review."
+    },
+    {
+      "id": "BOE-FAMILIAS",
+      "publisher": "BOE",
+      "title": "Ley 8/2018 de apoyo a las familias, selected consolidation 20231230",
+      "kind": "html",
+      "tax_year": 2025,
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-13193&p=20231230&tn=1",
+      "destination": "data/rules/2025/originals/boe-familias.html",
+      "applicability_status": "pending_independent_review",
+      "reuse_notice": "BOE-REUSE",
+      "requested_consolidation_as_of": "2025-12-31",
+      "required_tokens": [
+        "BOE-A-2018-13193"
+      ],
+      "selected_version": "20231230",
+      "selection_method": "Latest listed BOE edition no later than 2025-12-31; selected marker must match. Retroactive applicability still requires review."
+    },
+    {
+      "id": "AEAT-RENT",
+      "publisher": "AEAT",
+      "title": "2025 Balearics rent practical manual",
+      "kind": "html",
+      "tax_year": 2025,
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/arrendamiento-vivienda-habitual.html",
+      "destination": "data/rules/2025/originals/aeat-rent.html",
+      "applicability_status": "pending_independent_review",
+      "reuse_notice": "AEAT-REUSE"
+    },
+    {
+      "id": "AEAT-RENT-HELP",
+      "publisher": "AEAT",
+      "title": "2025 rent completion help 10.4.12",
+      "kind": "html",
+      "tax_year": 2025,
+      "url": "https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_4-illes-balears/10_4_12-arrendamiento-vivienda-habitual.html",
+      "destination": "data/rules/2025/originals/aeat-rent-help.html",
+      "applicability_status": "pending_independent_review",
+      "reuse_notice": "AEAT-REUSE"
+    },
+    {
+      "id": "AEAT-CHILDCARE",
+      "publisher": "AEAT",
+      "title": "2025 Balearics childcare practical manual",
+      "kind": "html",
+      "tax_year": 2025,
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/gastos-descendientes-acogidos-menores-seis-conciliacion.html",
+      "destination": "data/rules/2025/originals/aeat-childcare.html",
+      "applicability_status": "pending_independent_review",
+      "reuse_notice": "AEAT-REUSE"
+    },
+    {
+      "id": "AEAT-CHILDCARE-HELP",
+      "publisher": "AEAT",
+      "title": "2025 childcare completion help 10.4.18",
+      "kind": "html",
+      "tax_year": 2025,
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_4-illes-balears/10_4_18-gastos-relativos-descendientes-acogidos-anos.html",
+      "destination": "data/rules/2025/originals/aeat-childcare-help.html",
+      "applicability_status": "pending_independent_review",
+      "reuse_notice": "AEAT-REUSE"
+    },
+    {
+      "id": "AEAT-REUSE",
+      "publisher": "AEAT",
+      "title": "Public document reuse conditions",
+      "kind": "html",
+      "tax_year": 2025,
+      "url": "https://sede.agenciatributaria.gob.es/Sede/gobierno-abierto/reutilizacion-informacion/condiciones-reutilizacion.html",
+      "destination": "data/rules/2025/originals/aeat-reuse.html",
+      "applicability_status": "pending_independent_review",
+      "reuse_notice": "AEAT-REUSE"
+    },
+    {
+      "id": "AEAT-LEGAL",
+      "publisher": "AEAT",
+      "title": "Web information reuse notice",
+      "kind": "html",
+      "tax_year": 2025,
+      "url": "https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/aviso-legal/utilizacion-informacion-contenida-web-aeat.html",
+      "destination": "data/rules/2025/originals/aeat-legal.html",
+      "applicability_status": "pending_independent_review",
+      "reuse_notice": "AEAT-REUSE"
+    },
+    {
+      "id": "BOE-REUSE",
+      "publisher": "BOE",
+      "title": "BOE general reuse and legal notice",
+      "kind": "html",
+      "tax_year": 2025,
+      "url": "https://www.boe.es/informacion/aviso_legal/",
+      "destination": "data/rules/2025/originals/boe-reuse.html",
+      "applicability_status": "pending_independent_review",
+      "reuse_notice": "BOE-REUSE"
+    }
+  ]
+}

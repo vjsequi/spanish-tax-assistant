@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "case_id": "C007",
+  "classification": "synthetic_development_input",
+  "tax_year": 2025,
+  "jurisdiction": "ES-IB",
+  "review_status": "not_independently_reviewed",
+  "fact_confirmation": "pending",
+  "documents": [
+    {
+      "id": "D001",
+      "file": "documents/D001.pdf",
+      "media_type": "application/pdf",
+      "sha256": "05981d7b34539c209c08bf2782dc9ee871efa3ffdb6327c1e39507edb61276e9",
+      "pages": 1,
+      "declared_source_type": "taxpayer_statement"
+    },
+    {
+      "id": "D002",
+      "file": "documents/D002.pdf",
+      "media_type": "application/pdf",
+      "sha256": "f53bb64a3522d9f72d59b42120e8c36c8ac55e8da5da434be14f38cf669d2280",
+      "pages": 1,
+      "declared_source_type": "salary_certificate"
+    }
+  ]
+}

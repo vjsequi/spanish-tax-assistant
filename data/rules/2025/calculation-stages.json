@@ -1,0 +1,550 @@
+{
+  "schema_version": 1,
+  "tax_year": 2025,
+  "jurisdiction": "ES-IB",
+  "source_manifest_sha256": "82000b7dba4eebb71d58e9a19f8cef382dfe4255680b30c8834d3c992afebdc3",
+  "status": "draft_source_derived_not_implemented",
+  "note": "Dependencies govern full calculation. Partial export may bypass incomplete stages only with blocked result and explicit coverage. No copied draft total or expected answer is a calculation input.",
+  "stages": [
+    {
+      "id": "S00",
+      "title": "Admit and version visual evidence",
+      "depends_on": [],
+      "required_inputs": [
+        "case authority",
+        "original bytes/media",
+        "resource limits",
+        "document periods/versions"
+      ],
+      "aeat_outputs": [],
+      "requirement_ids": [
+        "INTAKE-001",
+        "PRIV-001",
+        "SEC-001",
+        "OBS-001"
+      ],
+      "stop_conditions": [
+        "unsafe media",
+        "untrusted instructions are data, never authority"
+      ],
+      "status": "specified_pending_tax_review_and_implementation"
+    },
+    {
+      "id": "S10",
+      "title": "Establish scope, completeness and confirmed facts",
+      "depends_on": [
+        "S00"
+      ],
+      "required_inputs": [
+        "tax residence/region/period",
+        "individual ordinary annual filing",
+        "all material income/assets/reliefs/history screens",
+        "fact confirmation/source versions"
+      ],
+      "aeat_outputs": [],
+      "requirement_ids": [
+        "SCOPE-001",
+        "COVERAGE-001",
+        "FACT-001"
+      ],
+      "stop_conditions": [
+        "unknown material branch",
+        "unsupported treatment",
+        "unconfirmed/conflicting required fact"
+      ],
+      "status": "specified_pending_tax_review_and_implementation"
+    },
+    {
+      "id": "S20",
+      "title": "Employment: each payer then taxpayer aggregate",
+      "depends_on": [
+        "S10"
+      ],
+      "required_inputs": [
+        "cash gross",
+        "taxable in-kind valuation",
+        "payments on account and amounts passed to worker",
+        "employer pension vs worker-elected contributions",
+        "Social Security and evidenced employment expenses"
+      ],
+      "aeat_outputs": [
+        "0003",
+        "0004",
+        "0005",
+        "0006",
+        "0007",
+        "0008",
+        "0024",
+        "0012",
+        "0013",
+        "0014",
+        "0015",
+        "0017",
+        "0018",
+        "0019",
+        "0022",
+        "0023",
+        "0025"
+      ],
+      "requirement_ids": [
+        "SALARY-001",
+        "MONEY-001",
+        "RELIEF-001"
+      ],
+      "stop_conditions": [
+        "unresolved duplicate/replacement certificate",
+        "unsupported special earnings",
+        "uncertain employer contribution classification"
+      ],
+      "status": "specified_pending_tax_review_and_implementation"
+    },
+    {
+      "id": "S30",
+      "title": "Bank interest: gross income, ownership and withholding",
+      "depends_on": [
+        "S10"
+      ],
+      "required_inputs": [
+        "gross interest",
+        "beneficial ownership/attribution",
+        "withholding",
+        "period and revised/duplicate records"
+      ],
+      "aeat_outputs": [
+        "0027",
+        "0036",
+        "0038",
+        "0040",
+        "0041"
+      ],
+      "requirement_ids": [
+        "MONEY-001",
+        "FACT-001"
+      ],
+      "stop_conditions": [
+        "net credit used as gross",
+        "unresolved joint ownership",
+        "other capital category or missing certificate"
+      ],
+      "status": "specified_pending_tax_review_and_implementation"
+    },
+    {
+      "id": "S40",
+      "title": "Integrate general/savings income",
+      "depends_on": [
+        "S20",
+        "S30"
+      ],
+      "required_inputs": [
+        "all current income and property screens",
+        "prior-year carryforward/offset screen"
+      ],
+      "aeat_outputs": [
+        "0432",
+        "0435",
+        "0429",
+        "0460"
+      ],
+      "requirement_ids": [
+        "CALC-001",
+        "COVERAGE-001",
+        "RULE-001"
+      ],
+      "stop_conditions": [
+        "unsupported income/imputation or prior loss",
+        "unknown rather than confirmed inapplicability"
+      ],
+      "status": "specified_pending_tax_review_and_implementation"
+    },
+    {
+      "id": "S50",
+      "title": "Classify and limit pension reductions",
+      "depends_on": [
+        "S20",
+        "S40"
+      ],
+      "required_inputs": [
+        "individual/employee-plan/employer amounts separately",
+        "same employer income and plan relationships",
+        "prior excess and contribution limit facts"
+      ],
+      "aeat_outputs": [
+        "0465",
+        "0438",
+        "0426",
+        "0427",
+        "0467",
+        "0468"
+      ],
+      "requirement_ids": [
+        "RELIEF-001",
+        "MONEY-001",
+        "CALC-001"
+      ],
+      "stop_conditions": [
+        "unresolved plan/flexible-pay classification",
+        "prior-year excess outside reviewed branch",
+        "ordering/cap/rounding rule not reviewed"
+      ],
+      "status": "specified_pending_tax_review_and_implementation"
+    },
+    {
+      "id": "S60",
+      "title": "Derive bases liquidables",
+      "depends_on": [
+        "S40",
+        "S50"
+      ],
+      "required_inputs": [
+        "allowed reductions in statutory order",
+        "explicit other-reduction/history screens"
+      ],
+      "aeat_outputs": [
+        "0492",
+        "0500",
+        "0505",
+        "0510"
+      ],
+      "requirement_ids": [
+        "CALC-001",
+        "MONEY-001"
+      ],
+      "stop_conditions": [
+        "unknown/unsupported reduction or negative-base compensation"
+      ],
+      "status": "specified_pending_tax_review_and_implementation"
+    },
+    {
+      "id": "S70",
+      "title": "Calculate distinct state and Balearic minima",
+      "depends_on": [
+        "S10",
+        "S60"
+      ],
+      "required_inputs": [
+        "age at accrual",
+        "each child age/income/filing/cohabitation/entitlement/order",
+        "other claimant and sharing",
+        "family/disability/ascendant screens"
+      ],
+      "aeat_outputs": [
+        "0511",
+        "0512",
+        "0513",
+        "0514",
+        "0519",
+        "0520",
+        "0521",
+        "0522",
+        "0523",
+        "0524"
+      ],
+      "requirement_ids": [
+        "FAMILY-001",
+        "CALC-001"
+      ],
+      "stop_conditions": [
+        "unknown dependent income/filing/entitlement",
+        "unvalidated family branch",
+        "unresolved age/rounding boundary"
+      ],
+      "status": "specified_pending_tax_review_and_implementation"
+    },
+    {
+      "id": "S80",
+      "title": "State/regional general and savings liabilities",
+      "depends_on": [
+        "S60",
+        "S70"
+      ],
+      "required_inputs": [
+        "separate reviewed scales",
+        "minima allocation",
+        "applicable rounding/truncation"
+      ],
+      "aeat_outputs": [
+        "0528",
+        "0529",
+        "0530",
+        "0531",
+        "0532",
+        "0533",
+        "0534",
+        "0535",
+        "0536",
+        "0537",
+        "0538",
+        "0539",
+        "0540",
+        "0541",
+        "0542",
+        "0543",
+        "0545",
+        "0546"
+      ],
+      "requirement_ids": [
+        "CALC-001",
+        "MONEY-001",
+        "RULE-001"
+      ],
+      "stop_conditions": [
+        "wrong year/region",
+        "unreviewed scale or stage rounding"
+      ],
+      "status": "specified_pending_tax_review_and_implementation"
+    },
+    {
+      "id": "S90",
+      "title": "Donation deductions and state/regional allocation",
+      "depends_on": [
+        "S60",
+        "S80"
+      ],
+      "required_inputs": [
+        "each entity regime/certificate",
+        "cash/in-kind and priority classification",
+        "2023/2024 history for recurrence",
+        "regional qualification/compatibility"
+      ],
+      "aeat_outputs": [
+        "0722",
+        "0723",
+        "0724",
+        "0725",
+        "0552",
+        "0553",
+        "0900",
+        "0901",
+        "0902",
+        "0904",
+        "0905",
+        "0913"
+      ],
+      "requirement_ids": [
+        "RELIEF-001",
+        "CALC-001"
+      ],
+      "stop_conditions": [
+        "entity regime or recurrence unknown",
+        "regional donation entitlement unresolved",
+        "unvalidated allocation/overlap"
+      ],
+      "status": "specified_pending_tax_review_and_implementation"
+    },
+    {
+      "id": "S100",
+      "title": "Rent and childcare deductions",
+      "depends_on": [
+        "S10",
+        "S40",
+        "S70"
+      ],
+      "required_inputs": [
+        "taxable bases, not salary",
+        "lease/payer/household property/housing-rights facts",
+        "child/service/payment/work dates and other claimants",
+        "national/regional benefit and incompatible-expense screens"
+      ],
+      "aeat_outputs": [
+        "1122",
+        "1123",
+        "1124",
+        "1125",
+        "1126",
+        "1127",
+        "1128",
+        "1129",
+        "1130",
+        "0907",
+        "0914",
+        "0564"
+      ],
+      "requirement_ids": [
+        "DEDUCTION-001",
+        "MONEY-001",
+        "CALC-001"
+      ],
+      "stop_conditions": [
+        "open rent household interpretation",
+        "open child-cap/proration/benefit interaction",
+        "missing payment/qualifying condition"
+      ],
+      "status": "specified_pending_tax_review_and_implementation"
+    },
+    {
+      "id": "S110",
+      "title": "Net liability and 2025 employment deduction",
+      "depends_on": [
+        "S20",
+        "S40",
+        "S80",
+        "S90",
+        "S100"
+      ],
+      "required_inputs": [
+        "reviewed credit caps/order",
+        "prior deduction reversal/foreign-tax screens",
+        "eligible employment and other-income test"
+      ],
+      "aeat_outputs": [
+        "0570",
+        "0571",
+        "0585",
+        "0586",
+        "0587",
+        "0414",
+        "0595"
+      ],
+      "requirement_ids": [
+        "CALC-001",
+        "MONEY-001"
+      ],
+      "stop_conditions": [
+        "unsupported credit/reversal",
+        "unreviewed employment-credit proportional cap"
+      ],
+      "status": "specified_pending_tax_review_and_implementation"
+    },
+    {
+      "id": "S120",
+      "title": "Withholding and differential liability",
+      "depends_on": [
+        "S20",
+        "S30",
+        "S110"
+      ],
+      "required_inputs": [
+        "cash withholding and in-kind payments on account",
+        "bank withholding",
+        "other prepayment screens"
+      ],
+      "aeat_outputs": [
+        "0596",
+        "0597",
+        "0609",
+        "0610"
+      ],
+      "requirement_ids": [
+        "CALC-001",
+        "MONEY-001"
+      ],
+      "stop_conditions": [
+        "uncertain payment-on-account inclusion",
+        "duplicate withholding",
+        "unsupported prepayment"
+      ],
+      "status": "specified_pending_tax_review_and_implementation"
+    },
+    {
+      "id": "S130",
+      "title": "Refundable family credits and advances",
+      "depends_on": [
+        "S10",
+        "S70",
+        "S100"
+      ],
+      "required_inputs": [
+        "monthly maternity/child conditions",
+        "nursery authorization/paid full months/subsidies",
+        "advance payments",
+        "large-family/single-parent entitlement and dates"
+      ],
+      "aeat_outputs": [
+        "0611",
+        "0612",
+        "0613",
+        "0660",
+        "0661",
+        "0662",
+        "0663"
+      ],
+      "requirement_ids": [
+        "FAMILY-001",
+        "CALC-001"
+      ],
+      "stop_conditions": [
+        "unknown advance/other entitlement",
+        "unreviewed benefit/subsidy interaction",
+        "unvalidated family branch"
+      ],
+      "status": "specified_pending_tax_review_and_implementation"
+    },
+    {
+      "id": "S140",
+      "title": "Independent ordinary annual result",
+      "depends_on": [
+        "S110",
+        "S120",
+        "S130"
+      ],
+      "required_inputs": [
+        "all completeness gates clear",
+        "all required rules/rounding independently reviewed",
+        "confirmed fresh input/source/rule versions"
+      ],
+      "aeat_outputs": [
+        "0670"
+      ],
+      "requirement_ids": [
+        "CALC-001",
+        "COVERAGE-001"
+      ],
+      "stop_conditions": [
+        "any material unsupported/unknown branch",
+        "stale version or incomplete calculation"
+      ],
+      "status": "specified_pending_tax_review_and_implementation"
+    },
+    {
+      "id": "S150",
+      "title": "Compare supplied draft fields",
+      "depends_on": [
+        "S140"
+      ],
+      "required_inputs": [
+        "supplied draft field/amount/page provenance",
+        "independent worksheet, never expected labels"
+      ],
+      "aeat_outputs": [],
+      "requirement_ids": [
+        "CHANGE-001",
+        "REVIEW-001"
+      ],
+      "stop_conditions": [
+        "no supplied draft: show independent result/readiness only",
+        "ambiguous repeated field context"
+      ],
+      "status": "specified_pending_tax_review_and_implementation"
+    },
+    {
+      "id": "S160",
+      "title": "Owner review and packet export",
+      "depends_on": [
+        "S10",
+        "S150"
+      ],
+      "required_inputs": [
+        "current exact proposal digest",
+        "owner decision/authority",
+        "coverage and pending issues",
+        "Spanish PDF/optional JSON"
+      ],
+      "aeat_outputs": [
+        "0700"
+      ],
+      "requirement_ids": [
+        "EXPORT-001",
+        "LANG-001",
+        "FLOW-001",
+        "REVIEW-001",
+        "RETENTION-001"
+      ],
+      "stop_conditions": [
+        "partial review must not expose a complete result",
+        "no filing/import/payment action"
+      ],
+      "status": "specified_pending_tax_review_and_implementation",
+      "field_mapping_note": "0700 is the informational Annex II payment/refund mapping of the ordinary return result; this stage does not initiate a payment, import or filing."
+    }
+  ]
+}

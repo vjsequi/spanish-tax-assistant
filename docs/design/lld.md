@@ -1,8 +1,8 @@
 # Low level design
 
-**Proposed interfaces, not implemented schemas.** Refine these after the representative formats and supported treatments are agreed.
+**Proposed interfaces, not implemented schemas.** Aligned with the approved product baseline and [2025 source-derived requirements](../requirements/tax-2025.md); exact tax conditions, rounding and independent expectations are still under review.
 
-The owner's subsequent complete-calculation requirement needs additional stage/worksheet, coverage and final-result contracts after discovery. The initial interfaces below do not yet specify the full engine. Independent calculation must derive intermediate values from confirmed facts rather than consume draft totals as expected answers.
+Independent calculation derives intermediate values from confirmed facts, never from supplied draft totals. The [stage map](../../data/rules/2025/calculation-stages.json), [field map](../../data/rules/2025/aeat-fields.json) and [rule register](../../data/rules/2025/rule-register.json) are draft contracts, not executable rules.
 
 ## Core records
 
@@ -14,6 +14,10 @@ The owner's subsequent complete-calculation requirement needs additional stage/w
 | Evidence anchor | Source/page-image identity and valid region or whole-page reference; text spans when available, with coordinate convention and transform mapping |
 | Fact | Visible transcription and normalised typed value, unit/period, text/image anchors, legibility and confirmation state, and conflicting alternatives |
 | Rule | Supported treatment, year/region, official source and version, prerequisites and exact calculation/rounding |
+| Coverage assessment | Versioned material-branch inventory; supported and established, established inapplicable, unresolved or unsupported; evidence and blocking consequences |
+| Calculation run | Confirmed fact-set digest, source/case/rule/engine versions, stage outcomes, incomplete reasons and immutable worksheet digest |
+| Stage result | Stage ID, exact typed inputs/outputs, applied rule IDs, decimal operation/rounding record, contextual field IDs and upstream digests |
+| Draft observation | Supplied source/page, tax year, person/payer/annual/annex context, field ID and confirmed transcribed value; never a trusted calculation input |
 | Investigation | Input snapshot, workflow/model/prompt/schema versions, bounded attempts and outcome |
 | Proposed change | Draft field, prior/new value, fact/rule references, calculation, source digest and pending status |
 | Review event | Reviewer authority, exact proposal digest, decision, idempotency key, timestamp and new case version |
@@ -29,6 +33,34 @@ The owner's subsequent complete-calculation requirement needs additional stage/w
 7. A separate review command validates current membership, versions and exact digest inside a transaction, then appends a review event. Model output cannot approve or submit a return.
 
 Parse money from exact decimal text; use integer minor units and explicit Decimal arithmetic where rule rounding requires it. Select rounding stages per reviewed treatment, not a global rounding shortcut. No rule rates or tax thresholds are implemented in the bootstrap.
+
+## Calculation and comparison contract
+
+```mermaid
+flowchart TD
+    F[Version-bound confirmed facts] --> G[Completeness and rule-approval gate]
+    R[Approved rule-set digest] --> G
+    G --> I[Income and integration stages S20-S40]
+    I --> B[Pensions and bases S50-S60]
+    B --> Q[Minima and scales S70-S80]
+    Q --> L[Deductions and net liability S90-S110]
+    L --> W[Withholding and family credits S120-S130]
+    W --> T[Independent ordinary result S140]
+    T --> C[Contextual comparison S150]
+    D[Confirmed supplied draft observations] --> C
+    C --> V[Recheck current digests and permissions]
+    V --> P[Pending proposal and export S160]
+    G -. material unknown or unsupported .-> X[Partial worksheet and unresolved questions]
+    X --> V
+```
+
+- Every executable treatment requires an independently reviewed applicability/rounding contract. The current register sets `approved_for_application: false`; source pins cannot activate a rule.
+- Stage state distinguishes not attempted, blocked, failed and completed. A completed intermediate stage does not imply a complete return. Preserve upstream reasons and exact input/output provenance through partial export.
+- Shared annual expenses, pension limits, donation tiers and payer withholding cannot be applied once per duplicate source. Key facts by taxpayer, payer/entity, period and source version, not by document count.
+- Contextual fields retain four digits, value type and repeated person/payer/annex identity. The ordinary result is 0670; 0700 is the separate payment/refund-document mapping and triggers no payment or filing.
+- Recheck case/fact/rule versions before publishing a worksheet or proposed change. Correcting a fact invalidates dependent stages; recompute a new immutable run rather than edit an accepted historical result.
+- The optional draft enters comparison only. Missing draft fields remain absent; they are not zero, independent labels or reconstructed AEAT values. A proposed change requires a supplied prior value, confirmed input facts and a supported deterministic result.
+- Reviewer-labelled expectations reside in a separate scorer boundary. The fixture authoring specification is development construction data; neither it nor answer templates are runtime tax facts.
 
 Diagnostic attributes are bounded operation/outcome/version categories. Protected traces may carry opaque correlation; routine telemetry never carries evidence, prompt/response text, taxpayer IDs or raw exception payloads. Durable audit and source provenance survive telemetry failure independently.
 

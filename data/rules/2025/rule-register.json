@@ -1,0 +1,1245 @@
+{
+  "schema_version": 1,
+  "tax_year": 2025,
+  "source_manifest_sha256": "82000b7dba4eebb71d58e9a19f8cef382dfe4255680b30c8834d3c992afebdc3",
+  "status": "source_derived_draft_pending_independent_tax_review",
+  "approved_for_application": false,
+  "note": "These are requirements and candidate source transcriptions, not runtime rules or independently reviewed expected answers. Decimal constants are strings. All caps/order/rounding and temporal applicability need review.",
+  "rules": [
+    {
+      "id": "EMP-01",
+      "title": "Employment cash, in-kind and pension classification",
+      "tax_year": 2025,
+      "jurisdiction": "ES",
+      "stage_id": "S20",
+      "requirement_ids": [
+        "SALARY-001",
+        "MONEY-001"
+      ],
+      "conditions": [
+        "Each payer and period is identified; originals/replacements/duplicates reconciled",
+        "Taxable valuation, payment on account and recovered amount are distinct facts",
+        "Employer pension and worker-elected payments classified, not included twice"
+      ],
+      "operation_contract": "0007 = 0004 + 0005 - 0006; 0012 derives from all applicable gross components and reviewed exclusions, not withholding.",
+      "source_refs": [
+        {
+          "source_id": "BOE-MODELO-100",
+          "physical_pages": [
+            24
+          ]
+        },
+        {
+          "source_id": "AEAT-MANUAL-1",
+          "physical_pages": [
+            232,
+            233,
+            234
+          ]
+        },
+        {
+          "source_id": "BOE-LIRPF",
+          "section": "Articles 17, 42, 43"
+        }
+      ],
+      "parameters": {},
+      "review_questions": [
+        "RQ-08"
+      ],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "EMP-02",
+      "title": "Employment expenses and annual general allowance",
+      "tax_year": 2025,
+      "jurisdiction": "ES",
+      "stage_id": "S20",
+      "requirement_ids": [
+        "RELIEF-001",
+        "MONEY-001"
+      ],
+      "conditions": [
+        "Social Security/union/professional expenses evidenced",
+        "Professional membership must be compulsory and qualify",
+        "Special mobility/disability/legal-expense branch screened"
+      ],
+      "operation_contract": "Deduct qualifying payer expenses, aggregate, then apply the annual general allowance once with its legal income floor; do not multiply by payer count.",
+      "source_refs": [
+        {
+          "source_id": "AEAT-MANUAL-1",
+          "physical_pages": [
+            254,
+            255,
+            258
+          ]
+        },
+        {
+          "source_id": "BOE-LIRPF",
+          "section": "Article 19"
+        },
+        {
+          "source_id": "BOE-RIRPF",
+          "section": "Article 10"
+        }
+      ],
+      "parameters": {
+        "other_expenses_eur": "2000.00",
+        "mandatory_professional_fee_cap_eur": "500.00"
+      },
+      "review_questions": [],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "EMP-03",
+      "title": "Net-employment-income reduction",
+      "tax_year": 2025,
+      "jurisdiction": "ES",
+      "stage_id": "S20",
+      "requirement_ids": [
+        "CALC-001",
+        "MONEY-001"
+      ],
+      "conditions": [
+        "Other non-exempt income test is known",
+        "RNT for the test excludes the general other-expense allowance"
+      ],
+      "operation_contract": "Apply the source bands to the legally defined RNT; resulting net income cannot become negative.",
+      "source_refs": [
+        {
+          "source_id": "AEAT-MANUAL-1",
+          "physical_pages": [
+            259,
+            260
+          ]
+        },
+        {
+          "source_id": "BOE-LIRPF",
+          "section": "Article 20"
+        }
+      ],
+      "parameters": {
+        "other_income_ceiling_eur": "6500.00",
+        "rnt_bands_eur": [
+          "14852.00",
+          "17673.52",
+          "19747.50"
+        ],
+        "amount_low_eur": "7302.00",
+        "middle_multiplier": "1.75",
+        "upper_base_eur": "2364.34",
+        "upper_multiplier": "1.14"
+      },
+      "review_questions": [],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "INT-01",
+      "title": "Gross bank interest and attribution",
+      "tax_year": 2025,
+      "jurisdiction": "ES",
+      "stage_id": "S30",
+      "requirement_ids": [
+        "FACT-001",
+        "MONEY-001"
+      ],
+      "conditions": [
+        "Actual beneficial ownership and taxable period known",
+        "Gross interest, withheld tax and net credit are separate"
+      ],
+      "operation_contract": "Allocate gross taxable interest to the person; do not treat a net bank credit as gross income or ordinary account fees as securities expenses.",
+      "source_refs": [
+        {
+          "source_id": "BOE-MODELO-100",
+          "physical_pages": [
+            25
+          ]
+        },
+        {
+          "source_id": "BOE-LIRPF",
+          "section": "Articles 25, 26"
+        }
+      ],
+      "parameters": {},
+      "review_questions": [],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "BASE-01",
+      "title": "Integration and prior-history completeness",
+      "tax_year": 2025,
+      "jurisdiction": "ES",
+      "stage_id": "S40",
+      "requirement_ids": [
+        "CALC-001",
+        "COVERAGE-001"
+      ],
+      "conditions": [
+        "All material income/imputation/carryforward screens answered",
+        "Only reviewed current-year salary/interest branches applicable"
+      ],
+      "operation_contract": "Derive 0432/0435 and 0429/0460 from income classification and reviewed offsets. Unsupported history blocks a full result.",
+      "source_refs": [
+        {
+          "source_id": "BOE-MODELO-100",
+          "physical_pages": [
+            39
+          ]
+        },
+        {
+          "source_id": "BOE-LIRPF",
+          "section": "Articles 45-49"
+        }
+      ],
+      "parameters": {},
+      "review_questions": [],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "PEN-01",
+      "title": "Contribution/reduction limits and employer relationships",
+      "tax_year": 2025,
+      "jurisdiction": "ES",
+      "stage_id": "S50",
+      "requirement_ids": [
+        "RELIEF-001",
+        "CALC-001"
+      ],
+      "conditions": [
+        "Individual, employee-plan, employer, flexible-pay amounts separately evidenced",
+        "Employer contribution and same-employer gross remuneration known",
+        "Prior excess and special plans screened"
+      ],
+      "operation_contract": "Distinguish financial contribution limits from tax reduction limits. Apply the reviewed minimum of percentage, classified contribution limit and available base. Report unused/excess amounts separately.",
+      "source_refs": [
+        {
+          "source_id": "AEAT-MANUAL-1",
+          "physical_pages": [
+            1024,
+            1025,
+            1027,
+            1028,
+            1029,
+            1030,
+            1031,
+            1032
+          ]
+        },
+        {
+          "source_id": "BOE-LIRPF",
+          "section": "Articles 51, 52 and additional provision 16"
+        }
+      ],
+      "parameters": {
+        "general_limit_eur": "1500.00",
+        "employment_increment_cap_eur": "8500.00",
+        "net_work_business_income_percent": "30.00",
+        "same_employer_gross_threshold_eur": "60000.00",
+        "employee_match_table": [
+          {
+            "employer_to_eur": "500.00",
+            "factor": "2.5"
+          },
+          {
+            "employer_from_eur": "500.01",
+            "employer_to_eur": "1500.00",
+            "base_eur": "1250.00",
+            "excess_over_eur": "500.00",
+            "factor": "0.25"
+          },
+          {
+            "employer_over_eur": "1500.00",
+            "factor": "1.0"
+          }
+        ],
+        "above_salary_threshold_factor": "1.0"
+      },
+      "review_questions": [
+        "RQ-05",
+        "RQ-08"
+      ],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "BASE-02",
+      "title": "Reduction ordering and nonnegative taxable bases",
+      "tax_year": 2025,
+      "jurisdiction": "ES",
+      "stage_id": "S60",
+      "requirement_ids": [
+        "CALC-001",
+        "MONEY-001"
+      ],
+      "conditions": [
+        "Applicable reductions reviewed and other branches inapplicable or supported"
+      ],
+      "operation_contract": "Apply legally ordered reductions with caps/floors; derive 0500, 0505, 0510 and keep carried amounts distinct.",
+      "source_refs": [
+        {
+          "source_id": "BOE-MODELO-100",
+          "physical_pages": [
+            40,
+            41
+          ]
+        },
+        {
+          "source_id": "BOE-LIRPF",
+          "section": "Articles 50-55"
+        }
+      ],
+      "parameters": {},
+      "review_questions": [
+        "RQ-05"
+      ],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "MIN-ES-01",
+      "title": "State taxpayer and descendant minima",
+      "tax_year": 2025,
+      "jurisdiction": "ES",
+      "stage_id": "S70",
+      "requirement_ids": [
+        "FAMILY-001",
+        "CALC-001"
+      ],
+      "conditions": [
+        "Age/accrual and every dependent age, income, filing, cohabitation/entitlement known",
+        "Other entitled claimant, order and sharing established"
+      ],
+      "operation_contract": "Calculate taxpayer and child minima with legal eligibility/order/proration. Apply through liability calculation, not subtraction from gross salary.",
+      "source_refs": [
+        {
+          "source_id": "AEAT-MANUAL-1",
+          "physical_pages": [
+            1068,
+            1069,
+            1070,
+            1071,
+            1072,
+            1073,
+            1074,
+            1075
+          ]
+        },
+        {
+          "source_id": "BOE-LIRPF",
+          "section": "Articles 57,58,61"
+        }
+      ],
+      "parameters": {
+        "taxpayer_base_eur": "5550.00",
+        "age_increment_over_65_eur": "1150.00",
+        "additional_over_75_eur": "1400.00",
+        "child_order_amounts_eur": [
+          "2400.00",
+          "2700.00",
+          "4000.00",
+          "4500.00"
+        ],
+        "child_under_3_increment_eur": "2800.00",
+        "child_income_ceiling_eur": "8000.00",
+        "child_own_return_income_ceiling_eur": "1800.00"
+      },
+      "review_questions": [
+        "RQ-06",
+        "RQ-09"
+      ],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "MIN-IB-01",
+      "title": "Balearic minima are conditional changes to state minima",
+      "tax_year": 2025,
+      "jurisdiction": "ES-IB",
+      "stage_id": "S70",
+      "requirement_ids": [
+        "FAMILY-001",
+        "CALC-001"
+      ],
+      "conditions": [
+        "Balearic jurisdiction and claimant/child age/order known"
+      ],
+      "operation_contract": "Apply only the increases listed in regional Article 2. Do not increase every minimum or import a preceding region on the same manual page.",
+      "source_refs": [
+        {
+          "source_id": "AEAT-MANUAL-1",
+          "physical_pages": [
+            1086,
+            1087
+          ]
+        },
+        {
+          "source_id": "BOE-BALEAR",
+          "section": "Article 2"
+        }
+      ],
+      "parameters": {
+        "increase_percent": "10.00",
+        "increased_groups": [
+          "taxpayer over 65/75",
+          "second and subsequent descendant order",
+          "ascendants",
+          "disability"
+        ],
+        "unchanged_under_65_taxpayer_base_eur": "5550.00",
+        "unchanged_first_child_eur": "2400.00",
+        "child_order_from_second_eur": [
+          "2970.00",
+          "4400.00",
+          "4950.00"
+        ],
+        "over_65_taxpayer_base_eur": "6105.00",
+        "over_65_increment_eur": "1265.00",
+        "additional_over_75_eur": "1540.00"
+      },
+      "review_questions": [
+        "RQ-06",
+        "RQ-09"
+      ],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "SCALE-ES-G",
+      "title": "State general scale",
+      "tax_year": 2025,
+      "jurisdiction": "ES",
+      "stage_id": "S80",
+      "requirement_ids": [
+        "CALC-001",
+        "MONEY-001"
+      ],
+      "conditions": [
+        "Ordinary 2025 state general calculation applies"
+      ],
+      "operation_contract": "Apply each bracket to its base range; subtract tax on the corresponding general minimum with the same scale.",
+      "source_refs": [
+        {
+          "source_id": "AEAT-MANUAL-1",
+          "physical_pages": [
+            1120
+          ]
+        },
+        {
+          "source_id": "BOE-LIRPF",
+          "section": "Article 63"
+        }
+      ],
+      "parameters": {
+        "bands": [
+          {
+            "lower_eur": "0.00",
+            "base_quota_eur": "0.00",
+            "marginal_percent": "9.50"
+          },
+          {
+            "lower_eur": "12450.00",
+            "base_quota_eur": "1182.75",
+            "marginal_percent": "12.00"
+          },
+          {
+            "lower_eur": "20200.00",
+            "base_quota_eur": "2112.75",
+            "marginal_percent": "15.00"
+          },
+          {
+            "lower_eur": "35200.00",
+            "base_quota_eur": "4362.75",
+            "marginal_percent": "18.50"
+          },
+          {
+            "lower_eur": "60000.00",
+            "base_quota_eur": "8950.75",
+            "marginal_percent": "22.50"
+          },
+          {
+            "lower_eur": "300000.00",
+            "base_quota_eur": "62950.75",
+            "marginal_percent": "24.50"
+          }
+        ]
+      },
+      "review_questions": [],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "IB-SCALE-G",
+      "title": "Balearic general scale",
+      "tax_year": 2025,
+      "jurisdiction": "ES-IB",
+      "stage_id": "S80",
+      "requirement_ids": [
+        "CALC-001",
+        "MONEY-001"
+      ],
+      "conditions": [
+        "2025 Balearic jurisdiction applies"
+      ],
+      "operation_contract": "Apply the distinct regional scale and regional minimum; never use the state scale as a regional substitute.",
+      "source_refs": [
+        {
+          "source_id": "AEAT-MANUAL-1",
+          "physical_pages": [
+            1123
+          ]
+        },
+        {
+          "source_id": "BOE-BALEAR",
+          "section": "Article 1"
+        }
+      ],
+      "parameters": {
+        "bands": [
+          {
+            "lower_eur": "0.00",
+            "base_quota_eur": "0.00",
+            "marginal_percent": "9.00"
+          },
+          {
+            "lower_eur": "10000.00",
+            "base_quota_eur": "900.00",
+            "marginal_percent": "11.25"
+          },
+          {
+            "lower_eur": "18000.00",
+            "base_quota_eur": "1800.00",
+            "marginal_percent": "14.25"
+          },
+          {
+            "lower_eur": "30000.00",
+            "base_quota_eur": "3510.00",
+            "marginal_percent": "17.50"
+          },
+          {
+            "lower_eur": "48000.00",
+            "base_quota_eur": "6660.00",
+            "marginal_percent": "19.00"
+          },
+          {
+            "lower_eur": "70000.00",
+            "base_quota_eur": "10840.00",
+            "marginal_percent": "21.75"
+          },
+          {
+            "lower_eur": "90000.00",
+            "base_quota_eur": "15190.00",
+            "marginal_percent": "22.75"
+          },
+          {
+            "lower_eur": "120000.00",
+            "base_quota_eur": "22015.00",
+            "marginal_percent": "23.75"
+          },
+          {
+            "lower_eur": "175000.00",
+            "base_quota_eur": "35077.50",
+            "marginal_percent": "24.75"
+          }
+        ]
+      },
+      "review_questions": [],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "SCALE-SAVINGS",
+      "title": "Separate state/regional savings components",
+      "tax_year": 2025,
+      "jurisdiction": "ES",
+      "stage_id": "S80",
+      "requirement_ids": [
+        "CALC-001",
+        "MONEY-001"
+      ],
+      "conditions": [
+        "Reviewed 2025 ordinary savings scale applies"
+      ],
+      "operation_contract": "Compute state and regional savings liabilities/minimum relief separately. The listed scale applies to each component, not a combined tax rate.",
+      "source_refs": [
+        {
+          "source_id": "AEAT-MANUAL-1",
+          "physical_pages": [
+            1131,
+            1132
+          ]
+        },
+        {
+          "source_id": "BOE-LIRPF",
+          "section": "Articles 66,76"
+        }
+      ],
+      "parameters": {
+        "each_component_bands": [
+          {
+            "lower_eur": "0.00",
+            "base_quota_eur": "0.00",
+            "marginal_percent": "9.50"
+          },
+          {
+            "lower_eur": "6000.00",
+            "base_quota_eur": "570.00",
+            "marginal_percent": "10.50"
+          },
+          {
+            "lower_eur": "50000.00",
+            "base_quota_eur": "5190.00",
+            "marginal_percent": "11.50"
+          },
+          {
+            "lower_eur": "200000.00",
+            "base_quota_eur": "22440.00",
+            "marginal_percent": "13.50"
+          },
+          {
+            "lower_eur": "300000.00",
+            "base_quota_eur": "35940.00",
+            "marginal_percent": "15.00"
+          }
+        ]
+      },
+      "review_questions": [],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "MIN-ALLOC",
+      "title": "Allocate minima between general and savings bases",
+      "tax_year": 2025,
+      "jurisdiction": "ES",
+      "stage_id": "S70",
+      "requirement_ids": [
+        "CALC-001",
+        "MONEY-001"
+      ],
+      "conditions": [
+        "Confirmed state/regional minima and both bases available"
+      ],
+      "operation_contract": "Derive 0521-0524 with the published minima/base limits; unused minimum may affect savings tax. Review all floors and rounding.",
+      "source_refs": [
+        {
+          "source_id": "BOE-MODELO-100",
+          "physical_pages": [
+            41
+          ]
+        },
+        {
+          "source_id": "AEAT-MANUAL-1",
+          "physical_pages": [
+            1118,
+            1119
+          ]
+        }
+      ],
+      "parameters": {},
+      "review_questions": [],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "DON-ES-01",
+      "title": "General Law 49/2002 cash donations",
+      "tax_year": 2025,
+      "jurisdiction": "ES",
+      "stage_id": "S90",
+      "requirement_ids": [
+        "RELIEF-001",
+        "CALC-001"
+      ],
+      "conditions": [
+        "Entity regime, paid qualifying amounts and irrevocability evidenced",
+        "Same-entity 2023/2024/2025 history established when recurrence claimed"
+      ],
+      "operation_contract": "Apply the first-base tier once to the aggregate, classify recurrence per entity, cap the base, then split the national credit between state/regional shares.",
+      "source_refs": [
+        {
+          "source_id": "AEAT-MANUAL-1",
+          "physical_pages": [
+            1281,
+            1282,
+            1288,
+            1289,
+            1290
+          ]
+        },
+        {
+          "source_id": "BOE-MECENAZGO",
+          "section": "Articles 17-20,24"
+        },
+        {
+          "source_id": "BOE-MODELO-100",
+          "physical_pages": [
+            46
+          ]
+        }
+      ],
+      "parameters": {
+        "aggregate_first_tier_eur": "250.00",
+        "first_tier_percent": "80.00",
+        "remainder_percent": "40.00",
+        "recurring_remainder_percent": "45.00",
+        "ordinary_base_cap_percent": "10.00",
+        "state_share_percent": "50.00",
+        "regional_share_percent": "50.00"
+      },
+      "review_questions": [
+        "RQ-04"
+      ],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "DON-ES-02",
+      "title": "Other donation/priority/political categories must be classified",
+      "tax_year": 2025,
+      "jurisdiction": "ES",
+      "stage_id": "S90",
+      "requirement_ids": [
+        "RELIEF-001",
+        "COVERAGE-001"
+      ],
+      "conditions": [
+        "Exact entity/activity/payment class established"
+      ],
+      "operation_contract": "Map 0722/0724/0725 separately; never assume all donations qualify for Law 49 or silently omit a material applicable branch.",
+      "source_refs": [
+        {
+          "source_id": "AEAT-MANUAL-1",
+          "physical_pages": [
+            1282,
+            1283,
+            1288,
+            1289,
+            1290
+          ]
+        },
+        {
+          "source_id": "BOE-MODELO-100",
+          "physical_pages": [
+            46
+          ]
+        },
+        {
+          "source_id": "BOE-LIRPF",
+          "section": "Articles 68.3,69"
+        }
+      ],
+      "parameters": {
+        "non_law49_qualifying_foundation_percent": "10.00",
+        "priority_base_cap_percent": "15.00"
+      },
+      "review_questions": [
+        "RQ-04"
+      ],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "IB-DON-THIRD",
+      "title": "Balearic third-sector cash donations",
+      "tax_year": 2025,
+      "jurisdiction": "ES-IB",
+      "stage_id": "S90",
+      "requirement_ids": [
+        "RELIEF-001",
+        "CALC-001"
+      ],
+      "conditions": [
+        "Qualifying regional registration and entity regime evidenced",
+        "Certificate and paid cash donation established"
+      ],
+      "operation_contract": "Apply the rate to the limited base, not a limit on credit; review coexistence with national relief for the same payment.",
+      "source_refs": [
+        {
+          "source_id": "AEAT-MANUAL-2",
+          "physical_pages": [
+            152
+          ]
+        },
+        {
+          "source_id": "BOE-BALEAR",
+          "section": "Article 5 quinquies"
+        }
+      ],
+      "parameters": {
+        "rate_percent": "25.00",
+        "annual_base_cap_eur": "165.00"
+      },
+      "review_questions": [
+        "RQ-04"
+      ],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "IB-DON-OTHER",
+      "title": "Other Balearic donation categories remain explicit",
+      "tax_year": 2025,
+      "jurisdiction": "ES-IB",
+      "stage_id": "S90",
+      "requirement_ids": [
+        "RELIEF-001",
+        "COVERAGE-001"
+      ],
+      "conditions": [
+        "Purpose/entity/registry requirements reviewed"
+      ],
+      "operation_contract": "Evaluate or refer environmental/research/cultural/sports/language branches individually; map the exact fields and incompatibilities.",
+      "source_refs": [
+        {
+          "source_id": "AEAT-MANUAL-2",
+          "physical_pages": [
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152
+          ]
+        },
+        {
+          "source_id": "BOE-MODELO-100",
+          "physical_pages": [
+            53
+          ]
+        },
+        {
+          "source_id": "BOE-BALEAR",
+          "section": "Articles 3,3 ter,4,5,5 bis"
+        }
+      ],
+      "parameters": {},
+      "review_questions": [
+        "RQ-04"
+      ],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "IB-RENT",
+      "title": "Habitual-home rent conditions and amount",
+      "tax_year": 2025,
+      "jurisdiction": "ES-IB",
+      "stage_id": "S100",
+      "requirement_ids": [
+        "DEDUCTION-001",
+        "CALC-001"
+      ],
+      "conditions": [
+        "Lease and actual occupation/payment attribution established",
+        "Qualifying age/family status and taxable bases known",
+        "Other-home rights for the required family/period and housing-investment entitlement established"
+      ],
+      "operation_contract": "Use paid eligible rent, category rate/cap and base-income ceiling; publish 1130 and 0907 only after every material condition is satisfied.",
+      "source_refs": [
+        {
+          "source_id": "AEAT-MANUAL-2",
+          "physical_pages": [
+            133,
+            134,
+            135,
+            136
+          ]
+        },
+        {
+          "source_id": "AEAT-RENT"
+        },
+        {
+          "source_id": "AEAT-RENT-HELP"
+        },
+        {
+          "source_id": "BOE-BALEAR",
+          "section": "Article 3 bis"
+        }
+      ],
+      "parameters": {
+        "ordinary_rate_percent": "15.00",
+        "ordinary_credit_cap_eur": "530.00",
+        "enhanced_rate_percent": "20.00",
+        "enhanced_credit_cap_eur": "650.00",
+        "ordinary_age_under": "36",
+        "enhanced_age_under": "30",
+        "ordinary_individual_taxable_base_ceiling_eur": "33000.00",
+        "family_general_ceiling_eur": "39600.00",
+        "family_special_ceiling_eur": "42900.00",
+        "minimum_lease_years": "1",
+        "other_home_distance_km": "70"
+      },
+      "review_questions": [
+        "RQ-01",
+        "RQ-03",
+        "RQ-09"
+      ],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "IB-CHILDCARE",
+      "title": "Conciliation services, payments, limits and attribution",
+      "tax_year": 2025,
+      "jurisdiction": "ES-IB",
+      "stage_id": "S100",
+      "requirement_ids": [
+        "DEDUCTION-001",
+        "FAMILY-001",
+        "CALC-001"
+      ],
+      "conditions": [
+        "Child age/service/work periods and qualifying payment method established",
+        "Other entitled taxpayer, taxable bases and family category known",
+        "Subsidies/employer payments/other credits screened"
+      ],
+      "operation_contract": "Apply reviewed service/time/base and cap/proration rules. Do not infer a multi-child per-child algorithm from the completion help.",
+      "source_refs": [
+        {
+          "source_id": "AEAT-MANUAL-2",
+          "physical_pages": [
+            153,
+            154,
+            155
+          ]
+        },
+        {
+          "source_id": "AEAT-CHILDCARE"
+        },
+        {
+          "source_id": "AEAT-CHILDCARE-HELP"
+        },
+        {
+          "source_id": "BOE-BALEAR",
+          "section": "Article 6 bis"
+        }
+      ],
+      "parameters": {
+        "ordinary_rate_percent": "40.00",
+        "ordinary_annual_cap_eur": "660.00",
+        "enhanced_rate_percent": "50.00",
+        "enhanced_annual_cap_eur": "900.00",
+        "enhanced_age_under": "36",
+        "child_age_under": "6",
+        "ordinary_individual_taxable_base_ceiling_eur": "33000.00",
+        "family_general_ceiling_eur": "39600.00",
+        "family_special_ceiling_eur": "42900.00"
+      },
+      "review_questions": [
+        "RQ-02",
+        "RQ-03",
+        "RQ-09"
+      ],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "LIQUID",
+      "title": "Apply liability deductions with component caps/order",
+      "tax_year": 2025,
+      "jurisdiction": "ES",
+      "stage_id": "S110",
+      "requirement_ids": [
+        "CALC-001",
+        "MONEY-001"
+      ],
+      "conditions": [
+        "Each national/regional deduction and applicable limit independently reviewed",
+        "Other credits and prior reversals screened"
+      ],
+      "operation_contract": "Derive 0570/0571, then reviewed increases and 0585/0586/0587. No negative component, omitted credit or reversal is silently assumed.",
+      "source_refs": [
+        {
+          "source_id": "BOE-MODELO-100",
+          "physical_pages": [
+            42,
+            43
+          ]
+        },
+        {
+          "source_id": "BOE-LIRPF",
+          "section": "Articles 67,77,79,80"
+        }
+      ],
+      "parameters": {},
+      "review_questions": [
+        "RQ-04",
+        "RQ-07"
+      ],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "EMP-CREDIT-2025",
+      "title": "Distinct 2025 employment-liability deduction",
+      "tax_year": 2025,
+      "jurisdiction": "ES",
+      "stage_id": "S110",
+      "requirement_ids": [
+        "CALC-001",
+        "MONEY-001"
+      ],
+      "conditions": [
+        "Qualifying employment relationship and gross income classified",
+        "Other non-exempt income within reviewed ceiling",
+        "Proportional liability cap established"
+      ],
+      "operation_contract": "Apply DA61 amount and proportional cap to field 0414. This is distinct from field 0023 net-income reduction.",
+      "source_refs": [
+        {
+          "source_id": "AEAT-MANUAL-1",
+          "physical_pages": [
+            1371,
+            1372
+          ]
+        },
+        {
+          "source_id": "BOE-LIRPF",
+          "section": "Additional provision 61"
+        },
+        {
+          "source_id": "BOE-MODELO-100",
+          "physical_pages": [
+            43
+          ]
+        }
+      ],
+      "parameters": {
+        "gross_threshold_eur": "18276.00",
+        "full_amount_below_eur": "16576.00",
+        "full_amount_eur": "340.00",
+        "taper_factor": "0.20",
+        "other_income_ceiling_eur": "6500.00"
+      },
+      "review_questions": [
+        "RQ-07"
+      ],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "PAY-01",
+      "title": "Withholding and in-kind payments on account",
+      "tax_year": 2025,
+      "jurisdiction": "ES",
+      "stage_id": "S120",
+      "requirement_ids": [
+        "CALC-001",
+        "MONEY-001"
+      ],
+      "conditions": [
+        "Certificates separate cash withholding, payments on account and worker recovery",
+        "Bank withholding and source ownership established"
+      ],
+      "operation_contract": "Derive employment/capital prepayments once, independently of gross-income classification; derive 0609 and 0610.",
+      "source_refs": [
+        {
+          "source_id": "BOE-MODELO-100",
+          "physical_pages": [
+            24,
+            43
+          ]
+        },
+        {
+          "source_id": "BOE-LIRPF",
+          "section": "Articles 79,99"
+        }
+      ],
+      "parameters": {},
+      "review_questions": [
+        "RQ-08"
+      ],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "FAM-MAT",
+      "title": "Maternity credit, advances and nursery increment",
+      "tax_year": 2025,
+      "jurisdiction": "ES",
+      "stage_id": "S130",
+      "requirement_ids": [
+        "FAMILY-001",
+        "CALC-001"
+      ],
+      "conditions": [
+        "Beneficiary/child and monthly entitlement known",
+        "Birth/adoption/registration/benefit history, complete-month nursery payments, authorization and subsidies evidenced",
+        "Advance payments recorded separately"
+      ],
+      "operation_contract": "Apply current post-2023 eligibility and period rules; do not reuse obsolete blanket employment/SS-contribution caps. Regional childcare is a distinct test.",
+      "source_refs": [
+        {
+          "source_id": "AEAT-MANUAL-1",
+          "physical_pages": [
+            1381,
+            1382,
+            1383,
+            1384,
+            1385,
+            1386,
+            1387,
+            1388,
+            1389
+          ]
+        },
+        {
+          "source_id": "BOE-LIRPF",
+          "section": "Article 81; transitional provision 37"
+        },
+        {
+          "source_id": "BOE-RIRPF",
+          "section": "Article 60"
+        }
+      ],
+      "parameters": {
+        "annual_maternity_max_eur": "1200.00",
+        "monthly_maternity_eur": "100.00",
+        "annual_nursery_increment_max_eur": "1000.00"
+      },
+      "review_questions": [
+        "RQ-03",
+        "RQ-06"
+      ],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "FAM-OTHER",
+      "title": "Other ordinary-family refundable credits",
+      "tax_year": 2025,
+      "jurisdiction": "ES",
+      "stage_id": "S130",
+      "requirement_ids": [
+        "FAMILY-001",
+        "COVERAGE-001"
+      ],
+      "conditions": [
+        "Large-family/single-parent entitlement, dates and other claimant/advances known"
+      ],
+      "operation_contract": "Calculate a reviewed applicable branch or withhold a full result. Do not zero a large-family/single-parent benefit simply because disability/shared custody are outside scope.",
+      "source_refs": [
+        {
+          "source_id": "AEAT-MANUAL-1",
+          "physical_pages": [
+            1397,
+            1398,
+            1399,
+            1400,
+            1401,
+            1402,
+            1403,
+            1404,
+            1405,
+            1406,
+            1407,
+            1408,
+            1409,
+            1410,
+            1411,
+            1412
+          ]
+        },
+        {
+          "source_id": "BOE-LIRPF",
+          "section": "Article 81 bis"
+        },
+        {
+          "source_id": "BOE-MODELO-100",
+          "physical_pages": [
+            44
+          ]
+        }
+      ],
+      "parameters": {},
+      "review_questions": [
+        "RQ-06"
+      ],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    },
+    {
+      "id": "RESULT",
+      "title": "Ordinary result and distinct payment document",
+      "tax_year": 2025,
+      "jurisdiction": "ES",
+      "stage_id": "S140",
+      "requirement_ids": [
+        "CALC-001",
+        "CHANGE-001"
+      ],
+      "conditions": [
+        "All material branches supported or explicitly inapplicable",
+        "Every required rule reviewed; inputs fresh/confirmed"
+      ],
+      "operation_contract": "Derive 0670 from differential liability and applicable family credits/advances. Treat 0700 as Annex-II payment/refund representation; no rectification/spouse-offset/filing action.",
+      "source_refs": [
+        {
+          "source_id": "BOE-MODELO-100",
+          "physical_pages": [
+            43,
+            44,
+            45,
+            73
+          ]
+        }
+      ],
+      "parameters": {},
+      "review_questions": [
+        "RQ-06",
+        "RQ-08"
+      ],
+      "review_status": "pending_independent_tax_review",
+      "rounding_status": "stage_specific_policy_pending_review",
+      "approved_for_application": false
+    }
+  ]
+}

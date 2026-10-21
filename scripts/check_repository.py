@@ -11,7 +11,7 @@ from typing import Any
 from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
-SKIP = {".git", ".venv", ".runtime", ".private", "node_modules", "__pycache__"}
+SKIP = {".git", ".venv", ".runtime", ".private", "expected", "node_modules", "__pycache__"}
 SHA256 = re.compile(r"[0-9a-f]{64}\Z")
 LINK = re.compile(r"\[[^\]]+\]\(([^)\n]+)\)")
 

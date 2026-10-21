@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "dataset_version": "2025-dev-0.1",
+  "classification": "authored_synthetic_development_sources_not_held_out",
+  "review_status": "not_independently_reviewed",
+  "authoring_sha256": "04975f9041d5453c512d23b00fef770c3df3d25fa7a0a8dbb333866e25d9e9c8",
+  "source_manifest_sha256": "82000b7dba4eebb71d58e9a19f8cef382dfe4255680b30c8834d3c992afebdc3",
+  "generator": "scripts/build_review_cases.py",
+  "generator_sha256": "f5f0157f0e7e77922fdfa8bf3064743f93f3b8ea548625e0ba6aea6d59e59c6c",
+  "tool_versions": {
+    "reportlab": "4.4.9",
+    "pypdf": "6.10.0",
+    "pillow": "12.3.0",
+    "python": "3.14.8",
+    "pdftoppm": "pdftoppm version 23.05.0"
+  },
+  "cases": [
+    {
+      "case_id": "C001",
+      "case_file": "evals/inputs/C001/case.json",
+      "sha256": "9f8758579293bbe789758255f859176fa278d2f15b3ca980e760f365a8ca6b46",
+      "source_files": 4,
+      "pages": 4
+    },
+    {
+      "case_id": "C002",
+      "case_file": "evals/inputs/C002/case.json",
+      "sha256": "9400643535115beff8fe043c8dfadf6bb6e8f549ec4c914e47b61fa2f2295230",
+      "source_files": 5,
+      "pages": 5
+    },
+    {
+      "case_id": "C003",
+      "case_file": "evals/inputs/C003/case.json",
+      "sha256": "acfa378536100d310455ea370a973380cb488e7688bb0a25fd926785b0af7183",
+      "source_files": 4,
+      "pages": 4
+    },
+    {
+      "case_id": "C004",
+      "case_file": "evals/inputs/C004/case.json",
+      "sha256": "7673926aa8534fe9b8c7184dc29d148db598e894623f032e7d780435d198f6b5",
+      "source_files": 3,
+      "pages": 3
+    },
+    {
+      "case_id": "C005",
+      "case_file": "evals/inputs/C005/case.json",
+      "sha256": "5d521425afe007833c86ccc67da3948245e9c96ef88257f3f849d0fafb39b478",
+      "source_files": 4,
+      "pages": 4
+    },
+    {
+      "case_id": "C006",
+      "case_file": "evals/inputs/C006/case.json",
+      "sha256": "2afff29f91945db682d1436ba2e397d45fc7a21a3f92aa6eed8e4d0ec341bab6",
+      "source_files": 5,
+      "pages": 5
+    },
+    {
+      "case_id": "C007",
+      "case_file": "evals/inputs/C007/case.json",
+      "sha256": "63e0cff0b27f8301fc852154069aad0e1bad0cb95d36e902371a18ef57da28f4",
+      "source_files": 2,
+      "pages": 2
+    },
+    {
+      "case_id": "C008",
+      "case_file": "evals/inputs/C008/case.json",
+      "sha256": "9cd12f27b58673c88f1832af68e578bb92d627b793d7220353521f95172e8e2a",
+      "source_files": 6,
+      "pages": 6
+    },
+    {
+      "case_id": "C009",
+      "case_file": "evals/inputs/C009/case.json",
+      "sha256": "4bf2363aa864c1ba0025d5d4573e4abc9f907b86a0ad16ae436726e47d932b9a",
+      "source_files": 5,
+      "pages": 5
+    },
+    {
+      "case_id": "C010",
+      "case_file": "evals/inputs/C010/case.json",
+      "sha256": "742fa17754251417b3384923624bb5fb24e9da4adc937048bf2ef9054ef16bee",
+      "source_files": 6,
+      "pages": 6
+    },
+    {
+      "case_id": "C011",
+      "case_file": "evals/inputs/C011/case.json",
+      "sha256": "d1cfebffc0dcb9f3a36e0b25e3e524f6e29518b83f7aa496e05c71e568795745",
+      "source_files": 5,
+      "pages": 5
+    },
+    {
+      "case_id": "C012",
+      "case_file": "evals/inputs/C012/case.json",
+      "sha256": "6ee03619265c7717e16daa73d13cac9419327dee09042261473fac24d78ab6e6",
+      "source_files": 5,
+      "pages": 5
+    },
+    {
+      "case_id": "C013",
+      "case_file": "evals/inputs/C013/case.json",
+      "sha256": "a0739197713d98b85a72dd1159e8198e8be117df65fe536fb72a76beb2e2fcb9",
+      "source_files": 5,
+      "pages": 5
+    },
+    {
+      "case_id": "C014",
+      "case_file": "evals/inputs/C014/case.json",
+      "sha256": "6df20f49350c9f38c5413d016db5238c1067d79539b93040e02c61043200d929",
+      "source_files": 4,
+      "pages": 4
+    },
+    {
+      "case_id": "C015",
+      "case_file": "evals/inputs/C015/case.json",
+      "sha256": "111426d8e281e4432f7db1a40ad59af3d9f77847430a008a5286d1d399e54ac9",
+      "source_files": 3,
+      "pages": 3
+    },
+    {
+      "case_id": "C016",
+      "case_file": "evals/inputs/C016/case.json",
+      "sha256": "f5b6b03d5dccace40963339a648cca646a66132691ac9225557526caa837b590",
+      "source_files": 3,
+      "pages": 3
+    },
+    {
+      "case_id": "C017",
+      "case_file": "evals/inputs/C017/case.json",
+      "sha256": "0c81dd3b7797ac5f01964e10855021eb9a4f433c0103ecbd39bab8221e4a487c",
+      "source_files": 3,
+      "pages": 3
+    },
+    {
+      "case_id": "C018",
+      "case_file": "evals/inputs/C018/case.json",
+      "sha256": "3e03530a4fdfd726268272567db72535327a16a001d151a73b65854374cda18b",
+      "source_files": 30,
+      "pages": 100
+    },
+    {
+      "case_id": "C019",
+      "case_file": "evals/inputs/C019/case.json",
+      "sha256": "ea9fcea331d0346630202fb42d313dab3365dc430ad9c0f984e22e18d2d0ae45",
+      "source_files": 4,
+      "pages": 4
+    },
+    {
+      "case_id": "C020",
+      "case_file": "evals/inputs/C020/case.json",
+      "sha256": "6a927ac72f3dadd90182d144b04d95f74c30b9ce8cdc69e30e73b4a9b83de43e",
+      "source_files": 4,
+      "pages": 4
+    }
+  ]
+}

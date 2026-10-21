@@ -2,6 +2,8 @@
 
 **21 October 2026; research, not an implemented or independently validated engine.** The owner requires a complete independent payable/refundable result for the supported 2025 profile. Salary and bank interest alone do not establish that all material facts are present. A completeness screen must expose other income, reliefs, prior-year balances and personal/family circumstances before a whole-return result can be issued.
 
+**Subsequent specification:** the [detailed requirements](../requirements/tax-2025.md) now map 17 stages, 108 form fields and 25 draft rule contracts to fifteen retained references. This earlier brief remains research context; the pinned specification takes precedence for the next review. Exact tax treatment and labels remain unvalidated.
+
 ## Deterministic chain to specify and review
 
 | Stage | Facts and rules to establish | Official starting point |
