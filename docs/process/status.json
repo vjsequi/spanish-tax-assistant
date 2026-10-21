@@ -10,5 +10,6 @@
   "model_evaluation": "not_run",
   "hosted_ci": "not_run",
   "deployment": "unprovisioned",
-  "operation": "not_started"
+  "operation": "not_started",
+  "document_intake_direction": "visual_pdf_and_images_confirmed_implementation_pending"
 }

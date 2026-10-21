@@ -12,6 +12,6 @@ AWS is preferred if equivalent controls fit the budget; GCP is fallback. Reasses
 
 ## Observability and maintenance
 
-Instrument intake, fact conflicts, retrieval, tool/model attempts, validation, pending review, queue age, timeout and recovery using OpenTelemetry. Separate actual costs from reservations and unknown usage. Bounded labels and redaction protect sensitive text; audit records remain authoritative.
+Instrument admission, PDF rendering/image decoding, visual-extraction attempts, auxiliary text/OCR, illegible facts, conflicts, retrieval, validation, pending review, queue age, timeout and recovery using OpenTelemetry. Measure bounded page/image/pixel volume and processing time alongside known provider usage/cost; keep source-specific identities out of metric labels. Separate actual costs from reservations and unknown usage. Bounded labels and redaction protect sensitive text; audit records remain authoritative.
 
 Exercise useful alerts and recovery drills before claiming operation. Define backup/restore, deletion/retention, dependency updates, annual tax-rule updates and rollback. Record actual deployment IDs, artifact hashes, bills, drills and incidents here or linked evidence. Synthetic drills are different from naturally occurring incidents or external adoption.

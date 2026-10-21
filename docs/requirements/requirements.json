@@ -14,16 +14,16 @@
     {
       "id": "INTAKE-001",
       "kind": "functional",
-      "statement": "Retain supported originals, hashes and extraction spans; expose parsing limitations.",
-      "acceptance_evidence": "Supported-format tests and provenance inspection.",
+      "statement": "Admit supported digital/scanned PDFs and standalone images/screenshots; preserve originals, versioned page images and text/image evidence anchors without requiring an embedded text layer.",
+      "acceptance_evidence": "Supported-format/render/decoder and resource-bound tests; original/derivative/page/region provenance inspection; same-document representation comparison.",
       "status": "draft",
       "evidence": []
     },
     {
       "id": "FACT-001",
       "kind": "functional",
-      "statement": "Present extracted facts, missing values, conflicts and explicit confirmation.",
-      "acceptance_evidence": "Independent field-level labels and conflict/question review.",
+      "statement": "Present visually extracted transcriptions and normalised facts, missing/illegible values, conflicts and explicit confirmation with reviewable text or image anchors.",
+      "acceptance_evidence": "Independent field-level values and source/page/region labels; legibility, conflict and useful-question review.",
       "status": "draft",
       "evidence": []
     },
@@ -46,7 +46,7 @@
     {
       "id": "CHANGE-001",
       "kind": "functional",
-      "statement": "Link each proposed draft-field change to facts, sources, rule and calculation.",
+      "statement": "Link each proposed draft-field change to facts, original/page/region or text evidence, applicable rule and deterministic calculation.",
       "acceptance_evidence": "Source-membership validation and semantic review.",
       "status": "draft",
       "evidence": []
@@ -102,7 +102,7 @@
     {
       "id": "OBS-001",
       "kind": "quality",
-      "statement": "Explain retrieval, tool/model, validation and recovery outcomes through safe correlated diagnostics.",
+      "statement": "Explain admission, rendering/decoding, extraction, retrieval, model/tool, validation and recovery outcomes through safe correlated diagnostics.",
       "acceptance_evidence": "Inspected traces, finite metrics, alerts and redaction tests.",
       "status": "draft",
       "evidence": []

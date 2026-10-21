@@ -6,6 +6,8 @@ On 21 October 2026 the owner authorised a separate Spanish personal-tax reposito
 
 Confirmed: 2025; Balearics resident employee; employment income, bank interest and selected deductions; evidence-backed review packet with proposed field changes; manual official submission. Investigate childcare/conciliation and habitual-home rent first. The owner has a potential tax reviewer, not a confirmed independent review engagement.
 
+On the subsequent input-format answer, the owner explicitly included screenshots and broader source documents and preferred PDF images, citing Oposiciones experience. Visual digital/scanned PDF and image evidence are initial requirements, with text/OCR as supporting paths; do not revert to a text-PDF-only start. See [ADR 0003](../decisions/0003-visual-document-evidence.md) and [the inspected pipeline lessons](document-ingestion-lessons.md).
+
 The repository foundation and initial product/design/evaluation/security/delivery documents are prepared. Application implementation, labels, inference and hosted operation remain unstarted. The [discovery record](../product/discovery.md) contains actual answers; the [backlog](../product/backlog.md) names the next slice. Continue TAX-001 before dependent product implementation.
 
 ## Self-contained context

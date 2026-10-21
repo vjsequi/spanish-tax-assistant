@@ -10,6 +10,8 @@ This repository is self-contained. Imported notes are historical context, not ne
 
 The owner authorised this separate repository and staged SDLC on 21 October 2026. Confirmed product scope: 2025, Balearics resident employees, salary, bank interest, selected deductions, evidence-backed review packet and proposed field changes with manual submission. Investigate childcare/conciliation and habitual-home rent as candidate deductions. A potential tax reviewer exists; independent participation and labels are not confirmed.
 
+The owner rejected a text-PDF-only start and confirmed certificates, receipts, screenshots and broader information sources, with images preferred for PDF understanding. Design first-class digital/scanned PDF and image intake, preserve page/region provenance and confirm facts. Embedded text/OCR may assist but must not be the only supported evidence representation. See docs/decisions/0003-visual-document-evidence.md. No new inference was authorised by this scope correction.
+
 Product requirements and designs are drafts except for the recorded owner decisions. Implement the next agreed vertical slice, preserving the distinction between proposed, implemented, tested, independently reviewed and deployed. Do not silently replace unknown tax facts with defaults.
 
 Current application inference allowance is zero. No model, gateway, cloud provisioning, AEAT login/download/import/filing, external messaging or publication is authorised by the architecture. A prior invoice-project experiment does not transfer authority or quality evidence here. Obtain concrete provider/model/call/time/cost bounds before live evaluation. Use local files for the initial backlog; creating issues or contacting a potential reviewer needs actual user authorisation.

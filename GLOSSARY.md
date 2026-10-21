@@ -14,3 +14,10 @@
 | Scope referral | A specific explanation that a case or treatment needs support beyond the declared product scope. |
 | Independent review | Judgement by a qualified tax professional who checks the source-derived expected treatment. |
 | Recorded demo | Reviewed synthetic application results presented without live inference. |
+
+## Visual evidence terms
+
+- **Page image:** a versioned render of a physical PDF page, or an admitted standalone image, linked to its original bytes and render/decode settings.
+- **Visual anchor:** the image/page identity and whole-page or valid region reference used to inspect a proposed fact. A location is not proof that a transcription is correct.
+- **Transcription:** the proposed visible text or amount before type/decimal normalisation and human confirmation.
+- **Legibility:** whether a value and its necessary context can actually be read; an unreadable value remains unknown.

@@ -4,6 +4,8 @@ An evidence workbench for reviewing a Spanish personal income-tax draft: establi
 
 **Current stage: product discovery and repository foundation, 21 October 2026.** The owner selected a first scope: tax year **2025**, a **Balearics resident employee**, employment income, bank interest and selected deductions. Childcare/conciliation and habitual-home rent are the first deduction research candidates. The first deliverable is a review packet with evidence and proposed field changes. Independent tax review is still to arrange; a potential reviewer exists. Tax extraction, calculations, AI investigation and deployment are not implemented.
 
+**Initial intake direction, confirmed 21 October:** PDFs, including scanned/image-only PDFs, and standalone images/screenshots are first-class evidence. Preserve original files and page images, use visual interpretation as the primary PDF/image path, and confirm extracted facts. Embedded text and OCR are supporting/comparison paths. The [visual-evidence decision](docs/decisions/0003-visual-document-evidence.md) records the requirement and the Oposiciones lessons; this intake is not implemented yet.
+
 ## Start here
 
 1. [Product definition](docs/product/definition.md) — user, outcome, scope and initial acceptance criteria.
