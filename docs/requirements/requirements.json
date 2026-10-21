@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "status": "draft",
+  "date": "2026-10-21",
+  "requirements": [
+    {
+      "id": "SCOPE-001",
+      "kind": "functional",
+      "statement": "Establish year, region and supported profile before treatment; explain unsupported circumstances.",
+      "acceptance_evidence": "Supported profile and out-of-scope examples independently reviewed.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "INTAKE-001",
+      "kind": "functional",
+      "statement": "Retain supported originals, hashes and extraction spans; expose parsing limitations.",
+      "acceptance_evidence": "Supported-format tests and provenance inspection.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "FACT-001",
+      "kind": "functional",
+      "statement": "Present extracted facts, missing values, conflicts and explicit confirmation.",
+      "acceptance_evidence": "Independent field-level labels and conflict/question review.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "RULE-001",
+      "kind": "functional",
+      "statement": "Use only versioned supported rules applicable to year, region and treatment.",
+      "acceptance_evidence": "Wrong-year/region negative tests and tax-professional review.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "MONEY-001",
+      "kind": "functional",
+      "statement": "Use exact decimal input and treatment-specific deterministic calculation/rounding.",
+      "acceptance_evidence": "Reviewed arithmetic/rounding cases and invariant tests.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "CHANGE-001",
+      "kind": "functional",
+      "statement": "Link each proposed draft-field change to facts, sources, rule and calculation.",
+      "acceptance_evidence": "Source-membership validation and semantic review.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "REVIEW-001",
+      "kind": "functional",
+      "statement": "Permit authorised humans to accept, correct or defer exact fresh proposed changes.",
+      "acceptance_evidence": "Authority, freshness, idempotency and audit integration tests.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "EXPORT-001",
+      "kind": "functional",
+      "statement": "Export a review packet distinguishing facts, proposals, unresolved issues and accepted decisions.",
+      "acceptance_evidence": "Owner walkthrough and independent completeness review.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "SEC-001",
+      "kind": "quality",
+      "statement": "Keep case access private and bound tools against untrusted document instructions.",
+      "acceptance_evidence": "Cross-case/injection tests and deployed identity/access checks.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "PRIV-001",
+      "kind": "quality",
+      "statement": "Keep sensitive originals, model text, sessions and identifiers outside Git and routine telemetry.",
+      "acceptance_evidence": "Intake/storage/telemetry redaction and public-inventory review.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "RECOVERY-001",
+      "kind": "quality",
+      "statement": "Recover bounded durable work without duplicate effects or automatic uncertain provider retry.",
+      "acceptance_evidence": "Crash/duplicate/stale-worker tests and hosted recovery drill.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "EVAL-001",
+      "kind": "quality",
+      "statement": "Compare baseline and AI on isolated independently reviewed cases with complete outcomes.",
+      "acceptance_evidence": "Frozen cases/rubric/config and actual hash-bound judgements.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "OBS-001",
+      "kind": "quality",
+      "statement": "Explain retrieval, tool/model, validation and recovery outcomes through safe correlated diagnostics.",
+      "acceptance_evidence": "Inspected traces, finite metrics, alerts and redaction tests.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "BUDGET-001",
+      "kind": "quality",
+      "statement": "Fail closed on absent inference authority and keep calls/time/money bounded.",
+      "acceptance_evidence": "No-call default tests and actual bounded execution accounting.",
+      "status": "draft",
+      "evidence": []
+    },
+    {
+      "id": "DELIVERY-001",
+      "kind": "quality",
+      "statement": "Reproduce builds and promote verified artifacts through isolated environments.",
+      "acceptance_evidence": "CI evidence, artifact identity, environment checks and rollback.",
+      "status": "draft",
+      "evidence": []
+    }
+  ]
+}

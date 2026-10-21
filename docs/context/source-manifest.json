@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-21",
+  "entries": [
+    {
+      "origin": "Obsidian Work Vault/Use Cases/00 AI Production Use Cases.md",
+      "destination": "docs/context/imports/use-cases/00-ai-production-use-cases.md",
+      "original_sha256": "1ef5f40b20fbccf41de3109ea4f8949051df7070d8fabe16c1e89fe6a153e386",
+      "sha256": "e697451dd4fa7c6a56f6f9b06ab6bf646c0c8ed81eeed2b1ed5b592df9e14c9a",
+      "transformation": "Convert Obsidian links; retain unavailable references as text."
+    },
+    {
+      "origin": "Obsidian Work Vault/Use Cases/01 Niche Support Caseworker.md",
+      "destination": "docs/context/imports/use-cases/01-niche-support-caseworker.md",
+      "original_sha256": "95bf67d4074f1e47b25ce3917a7b950e78ca0ab4bf4dc09282e3159852390e35",
+      "sha256": "44ef70e4b209069a88cc794ce4381248b0e6c9495c73ef2552f674634a024f05",
+      "transformation": "Convert Obsidian links; retain unavailable references as text."
+    },
+    {
+      "origin": "Obsidian Work Vault/Use Cases/02 Software Incident Investigator.md",
+      "destination": "docs/context/imports/use-cases/02-software-incident-investigator.md",
+      "original_sha256": "c635fa8c1dd31d07f57065f913f56813c5f31e852241e6cf89921d38c6b6262c",
+      "sha256": "aeb4fcc5d90dcc4e4c583f1cc423fbf82773c8b6823bb24e3c299a060d6e1bc7",
+      "transformation": "Convert Obsidian links; retain unavailable references as text."
+    },
+    {
+      "origin": "Obsidian Work Vault/Use Cases/03 Invoice Exception Investigator.md",
+      "destination": "docs/context/imports/use-cases/03-invoice-exception-investigator.md",
+      "original_sha256": "f5a5d4e76b1035327c2a622fc7efab27ee3fa685ddc4a7287b98c12835a8d6f8",
+      "sha256": "c970b0f7d28344bd5fb433328a369e4f8249ae44620a3e7a0a4a976b63490c47",
+      "transformation": "Convert Obsidian links; retain unavailable references as text."
+    },
+    {
+      "origin": "Obsidian Work Vault/Use Cases/04 Security Evidence Assistant.md",
+      "destination": "docs/context/imports/use-cases/04-security-evidence-assistant.md",
+      "original_sha256": "b3dea501d492edd9636e1db95b28b77b1ab3d4611f1821a3e876dce32620a31a",
+      "sha256": "d17371589a0e919db969a09117d72b8ad1b8624a0e1df5307c2f0b359b397491",
+      "transformation": "Convert Obsidian links; retain unavailable references as text."
+    },
+    {
+      "origin": "Obsidian Work Vault/Use Cases/05 Property Maintenance Coordinator.md",
+      "destination": "docs/context/imports/use-cases/05-property-maintenance-coordinator.md",
+      "original_sha256": "fc07d29f2299a78ad16eb1c226a5c2c115335f1c2ed9b77eec7334b8631ae17e",
+      "sha256": "68fa879e25755b13c2dd332edc4e3f3a373e6cf264117e346e9a28ae257bc83a",
+      "transformation": "Convert Obsidian links; retain unavailable references as text."
+    },
+    {
+      "origin": "Obsidian Work Vault/Use Cases/06 Supplier Contract Reviewer.md",
+      "destination": "docs/context/imports/use-cases/06-supplier-contract-reviewer.md",
+      "original_sha256": "867ef3fce5cf217c619a74e8cfa6f8b98473e687addc3ad1a2914bceed7337d4",
+      "sha256": "a0e2abfb69db04a1372074babf1dcffbc418618e412eb6255c3b61beca77f4c2",
+      "transformation": "Convert Obsidian links; retain unavailable references as text."
+    },
+    {
+      "origin": "Obsidian Work Vault/Use Cases/07 Spanish Tax Preparation Assistant.md",
+      "destination": "docs/context/imports/use-cases/07-spanish-tax-preparation-assistant.md",
+      "original_sha256": "92446f809f72576c533cb21cb29a8612313f5ca6e2edc98a0264d4bb6280742a",
+      "sha256": "d3505c7b001f159ce4c23070a104bcaa36e0194521f357c20962fedb97c8fc62",
+      "transformation": "Convert Obsidian links; retain unavailable references as text."
+    },
+    {
+      "origin": "invoice-reconciliation/docs/context/spanish-tax-exploration.md",
+      "destination": "docs/context/imports/predecessor/spanish-tax-exploration.md",
+      "original_sha256": "f911e5334080cc142f971d9d795828c7f08bd01a50fc2d2b17e448d8046c9ddd",
+      "sha256": "4e93f3ef1a0825f735ae0706e657e9345b5019161857cd24d4e26977cf0b7482",
+      "transformation": "Render previous-repository relative links as labelled source references."
+    },
+    {
+      "origin": "invoice-reconciliation/docs/evidence-plan.md",
+      "destination": "docs/context/imports/predecessor/evidence-plan.md",
+      "original_sha256": "7ceee6edc6d567aa58fef9b9331f8bde4cb2f8ad141ce4ee80327a23505c5ca6",
+      "sha256": "4d1f04a67b5d557b3817216cd43248b144027273acb576dd446eeecca3916d09",
+      "transformation": "Render previous-repository relative links as labelled source references."
+    },
+    {
+      "origin": "invoice-reconciliation/docs/comparison-implementation.md",
+      "destination": "docs/context/imports/predecessor/comparison-implementation.md",
+      "original_sha256": "b11fe1974fc0f907071e44ac5def9d998b2b3e0880fd8e4c7517ae73e5b81f11",
+      "sha256": "308bb8325aedf9634843e91e25b330806ddc7642e96bc7476e02ae6deeb7182d",
+      "transformation": "Render previous-repository relative links as labelled source references."
+    },
+    {
+      "origin": "invoice-reconciliation/docs/design/security-control-matrix.md",
+      "destination": "docs/context/imports/predecessor/security-control-matrix.md",
+      "original_sha256": "ad6034d871ffde95fc5fc952cc679f04dca46c06f00391b35d395f519a52d678",
+      "sha256": "5d420f89b77eaa0f32826ae4999b5007ed6b10238ee8d3a861d35f9d00a85be9",
+      "transformation": "Render previous-repository relative links as labelled source references."
+    }
+  ]
+}

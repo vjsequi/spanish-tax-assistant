@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "inference_enabled": false,
+  "authorised_calls": 0,
+  "monetary_budget_eur": null,
+  "cloud_provisioning_authorised": false,
+  "aeat_operations_authorised": false
+}

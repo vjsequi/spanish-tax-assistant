@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-21",
+  "foundation": "locally_verified",
+  "discovery": "in_progress",
+  "requirements": "draft",
+  "design": "proposed",
+  "application_implementation": "not_started",
+  "independent_tax_review": "potential_reviewer",
+  "model_evaluation": "not_run",
+  "hosted_ci": "not_run",
+  "deployment": "unprovisioned",
+  "operation": "not_started"
+}

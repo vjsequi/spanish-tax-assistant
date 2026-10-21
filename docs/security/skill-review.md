@@ -1,0 +1,11 @@
+# Grill Me source review
+
+**Reviewed 21 October 2026.** The owner confirmed Matt Pocock's `grill-me` as the intended skill. The upstream is [mattpocock/skills](https://github.com/mattpocock/skills), not a similarly named fork. Its repository API reported 299,135 stars when checked; repository popularity is not a security guarantee or a per-skill installation count.
+
+Pinned revision: `5beb35b040e3de97e54fa9e386d7e42d15c295c2`, dated 19 October 2026. Inspected the repository tree, MIT licence, and all four files in the selected `skills/productivity/grill-me` and `skills/productivity/grilling` directories before installation. Installed only those directories with the built-in skill-installer helper and compared installed Git blob hashes to the pinned source tree. The [manifest](skill-manifest.json) retains SHA-256 hashes for continuing drift checks; the [licence](../../third_party/licenses/matt-pocock-skills.txt) is retained separately.
+
+The selected files are two Markdown instructions and two YAML metadata files. They contain no executable script, hook, secret collection or package-install command. The Grill Me entry is explicitly user-invoked and routes to Grilling. The dependency asks questions in rounds, delegates factual research, and waits for user decisions/shared understanding. Those behavioural instructions were reviewed as well as executable risk. User instructions and repository authority still govern deployment, messaging, spending and implementation.
+
+The whole upstream plugin was not installed, and no automatic update channel is configured. The installer first encountered a local Python certificate-store error; retry used an existing CA bundle while keeping TLS verification enabled. No upstream executable or package hook was run. Any future file/revision or dependent skill requires a new review and manifest update.
+
+In this session the reviewed dependency instructions are applied directly; the generic upstream `Skill` tool is not exposed. Project-local skill discovery is available on the next turn opened in this repository. Do not install the same skills globally or add other upstream engineering skills merely because they are mentioned in its README.
