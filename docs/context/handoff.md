@@ -24,7 +24,7 @@ The [review pack](../../evals/review/reviewer-guide.md) contains twenty wholly a
 
 ReportLab, pypdf with its crypto extra and Pillow are locked development tools; package licences/notices are retained. Proposed HLD/LLD now include deterministic full calculation and partial-coverage gates, optional draft comparison and isolated independent scoring. Provider/framework, persistence and cloud decisions remain proposals. No application inference, private-case access, independent labels or application deployment occurred.
 
-The committed foundation and visual-evidence work are pushed to public [vjsequi/spanish-tax-assistant](https://github.com/vjsequi/spanish-tax-assistant), branch `main`. Hosted foundation CI passed for `bafff1ed7884659125628e923fb5477211633cf4`; see [verification](../process/verification.md). This is not application, tax-quality or deployment evidence.
+The detailed specification and synthetic review pack are committed as `d8d42e3143f6a9011ea134ea5e722d629f4dfb87` and pushed to public [vjsequi/spanish-tax-assistant](https://github.com/vjsequi/spanish-tax-assistant), branch `main`. [Hosted run 39627799064](https://github.com/vjsequi/spanish-tax-assistant/actions/runs/39627799064) passed repository/source/fixture integrity, lint/format, strict types and eighteen control tests. See [verification](../process/verification.md). This is not application, tax-quality or deployment evidence.
 
 ## Self-contained context
 
