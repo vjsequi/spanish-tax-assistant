@@ -12,9 +12,9 @@
   "application_implementation": "c001_provisional_local_working",
   "independent_tax_review": "deferred_to_final_qa_no_judgements_obtained",
   "model_evaluation": "not_run",
-  "hosted_ci": "tax_pack_integrity_passed",
-  "hosted_ci_verified_commit": "d8d42e3143f6a9011ea134ea5e722d629f4dfb87",
-  "hosted_ci_evidence": "https://github.com/vjsequi/spanish-tax-assistant/actions/runs/39627799064",
+  "hosted_ci": "c001_provisional_application_checks_passed",
+  "hosted_ci_verified_commit": "1e57ebabd2d111516c7e58431ff5a4a43cf7a4b9",
+  "hosted_ci_evidence": "https://github.com/vjsequi/spanish-tax-assistant/actions/runs/39750638547",
   "source_remote": "https://github.com/vjsequi/spanish-tax-assistant",
   "deployment": "unprovisioned",
   "operation": "not_started",
@@ -29,5 +29,8 @@
   "open_tax_question_count": 9,
   "professional_review_stage": "final_qa_after_working_product",
   "supplementary_development_reference_count": 4,
-  "application_inference_calls": 0
+  "application_inference_calls": 0,
+  "local_engineering_test_count": 35,
+  "ui_verification": "c001_actual_browser_flow_verified",
+  "pdf_verification": "six_page_provisional_packet_rendered_and_inspected"
 }

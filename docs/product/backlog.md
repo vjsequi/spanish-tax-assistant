@@ -10,7 +10,7 @@ The owner moved the professional reviewer to final QA of the working product; se
 - [x] Save/resume local state, reject stale/conflicting writes and compare only confirmed supplied draft fields.
 - [x] Export Spanish provisional/partial PDF and JSON packets; retain source/rule versions and audit history.
 - [x] Verify partial-save/resume, confirmed calculation, stage expansion and PDF download in the real local UI; render/inspect the six-page packet.
-- [ ] Verify hosted CI for this slice and record its commit/run identity.
+- [x] Verify [hosted CI](https://github.com/vjsequi/spanish-tax-assistant/actions/runs/39750638547) for `1e57ebabd2d111516c7e58431ff5a4a43cf7a4b9`: source/fixture/guidance integrity, lint/format, strict types and 35 engineering tests.
 
 Next: multiple employers and low-income employment branches, then family/relief and required regional deduction branches. Implement the AI/visual adapter and separate engineering evaluator while keeping live inference disabled until bounded authorisation. Arrange the tax professional once the product is working across the agreed scope; their feedback drives final QA fixes.
 
