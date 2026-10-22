@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "tax_year": 2025,
+  "entries": [
+    {
+      "id": "DEV-EMPLOYMENT-SCHEME",
+      "publisher": "AEAT",
+      "title": "Esquema general del rendimiento de trabajo",
+      "kind": "html",
+      "tax_year": 2025,
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c03-rendimientos-trabajo/rendimiento-neto-trabajo-integrar-base-imponible/esquema-general.html",
+      "destination": "data/development/2025/c001/sources/dev-employment-scheme.html",
+      "applicability_status": "provisional_source_derived_professional_qa_pending",
+      "reuse_notice": "AEAT-REUSE in data/rules/2025"
+    },
+    {
+      "id": "DEV-LIABILITY-METHOD",
+      "publisher": "AEAT",
+      "title": "Cálculo estatal/autonómico y mínimo personal",
+      "kind": "html",
+      "tax_year": 2025,
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/introduccion/general.html",
+      "destination": "data/development/2025/c001/sources/dev-liability-method.html",
+      "applicability_status": "provisional_source_derived_professional_qa_pending",
+      "reuse_notice": "AEAT-REUSE in data/rules/2025"
+    },
+    {
+      "id": "DEV-BALEARIC-MINIMA",
+      "publisher": "AEAT",
+      "title": "Mínimos autonómicos de Illes Balears",
+      "kind": "html",
+      "tax_year": 2025,
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c14-adecuacion-impuesto-circunstancias-personales/minimo-autonomico-personal-familiar/comunidad-autonoma-illes-balears.html",
+      "destination": "data/development/2025/c001/sources/dev-balearic-minima.html",
+      "applicability_status": "provisional_source_derived_professional_qa_pending",
+      "reuse_notice": "AEAT-REUSE in data/rules/2025"
+    },
+    {
+      "id": "DEV-WORK-CREDIT",
+      "publisher": "AEAT",
+      "title": "Deducción por obtención de rendimientos del trabajo",
+      "kind": "html",
+      "tax_year": 2025,
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/deducciones-cuota-liquida-total/deduccion-obtencion-rendimientos-trabajo.html",
+      "destination": "data/development/2025/c001/sources/dev-work-credit.html",
+      "applicability_status": "provisional_source_derived_professional_qa_pending",
+      "reuse_notice": "AEAT-REUSE in data/rules/2025"
+    }
+  ]
+}

@@ -342,24 +342,28 @@ wheels = [
 name = "spanish-tax-assistant"
 version = "0.1.0"
 source = { virtual = "." }
+dependencies = [
+    { name = "pillow" },
+    { name = "pypdf", extra = ["crypto"] },
+    { name = "reportlab" },
+]
 
 [package.dev-dependencies]
 dev = [
     { name = "mypy" },
-    { name = "pillow" },
-    { name = "pypdf", extra = ["crypto"] },
-    { name = "reportlab" },
     { name = "ruff" },
 ]
 
 [package.metadata]
+requires-dist = [
+    { name = "pillow", specifier = "==12.3.0" },
+    { name = "pypdf", extras = ["crypto"], specifier = "==6.10.0" },
+    { name = "reportlab", specifier = "==4.4.9" },
+]
 
 [package.metadata.requires-dev]
 dev = [
     { name = "mypy", specifier = "==1.20.2" },
-    { name = "pillow", specifier = "==12.3.0" },
-    { name = "pypdf", extras = ["crypto"], specifier = "==6.10.0" },
-    { name = "reportlab", specifier = "==4.4.9" },
     { name = "ruff", specifier = "==0.16.10" },
 ]
 

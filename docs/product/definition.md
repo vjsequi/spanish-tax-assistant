@@ -2,6 +2,8 @@
 
 **Version 1.0, owner approved 21 October 2026.** The owner confirmed “Yes, freeze this product baseline.” The [acceptance baseline](acceptance.md) records the selected targets and blocking gates. This approves the product direction for detailed requirements and design; legal conditions, rule/field specification and independent validation remain outstanding.
 
+**Delivery sequencing, owner clarified 22 October:** develop a working product using official guidance and provisional engineering tests; engage the professional for QA at the end. [ADR 0004](../decisions/0004-development-before-tax-review.md) records this change. The agreed first-complete-release scope and eventual tax-validation checks remain intact; reviewer availability does not block development.
+
 ## User and useful outcome
 
 An individual preparing their Spanish personal income-tax return needs to organise evidence, establish that a draft agrees with their records and find applicable supported deductions. The owner wants all three in one journey, including an independent complete tax/refund calculation for the covered profile. The application helps them find missing or conflicting facts, understand calculated results and proposed corrections, and review an evidence packet before manual submission in Renta WEB. Measure evidence organisation, draft checking and deduction discovery separately as well as overall review effort and safety against the selected pilot targets below.

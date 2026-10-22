@@ -4,6 +4,8 @@
 
 Independent calculation derives intermediate values from confirmed facts, never from supplied draft totals. The [stage map](../../data/rules/2025/calculation-stages.json), [field map](../../data/rules/2025/aeat-fields.json) and [rule register](../../data/rules/2025/rule-register.json) are draft contracts, not executable rules.
 
+The [implemented C001 slice](c001-working-slice.md) now realises a bounded subset through domain/application/infrastructure modules. Its source-derived development rules execute provisionally under [ADR 0004](../decisions/0004-development-before-tax-review.md); professional QA occurs at the end. The contracts below describe the wider target, not completed PostgreSQL/hosted recovery or full tax coverage.
+
 ## Core records
 
 | Record | Required identity and state |
@@ -54,7 +56,7 @@ flowchart TD
     X --> V
 ```
 
-- Every executable treatment requires an independently reviewed applicability/rounding contract. The current register sets `approved_for_application: false`; source pins cannot activate a rule.
+- Validated-release treatments require independently reviewed applicability/rounding contracts. The current register keeps `approved_for_application: false`. Explicitly authorised synthetic local development may execute the implemented provisional subset; the result must retain pending-QA status and disclosed assumptions. Source pins alone never imply professional approval.
 - Stage state distinguishes not attempted, blocked, failed and completed. A completed intermediate stage does not imply a complete return. Preserve upstream reasons and exact input/output provenance through partial export.
 - Shared annual expenses, pension limits, donation tiers and payer withholding cannot be applied once per duplicate source. Key facts by taxpayer, payer/entity, period and source version, not by document count.
 - Contextual fields retain four digits, value type and repeated person/payer/annex identity. The ordinary result is 0670; 0700 is the separate payment/refund-document mapping and triggers no payment or filing.

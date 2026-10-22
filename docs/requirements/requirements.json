@@ -19,7 +19,15 @@
         "C014",
         "C020"
       ],
-      "trace_status": "draft_design_and_unreviewed_inputs_only"
+      "trace_status": "partial_provisional_implementation",
+      "implementation_refs": [
+        "docs/design/c001-working-slice.md",
+        "src/renta_assistant/domain/calculation.py",
+        "src/renta_assistant/application/workbench.py",
+        "src/renta_assistant/infrastructure/web.py",
+        "tests/test_workbench.py"
+      ],
+      "implementation_limit": "C001 synthetic local branch only; source-derived engineering tests, not full scope or independent tax validation."
     },
     {
       "id": "SALARY-001",
@@ -58,7 +66,15 @@
         "C014",
         "C017"
       ],
-      "trace_status": "draft_design_and_unreviewed_inputs_only"
+      "trace_status": "partial_provisional_implementation",
+      "implementation_refs": [
+        "docs/design/c001-working-slice.md",
+        "src/renta_assistant/domain/calculation.py",
+        "src/renta_assistant/application/workbench.py",
+        "src/renta_assistant/infrastructure/web.py",
+        "tests/test_workbench.py"
+      ],
+      "implementation_limit": "C001 synthetic local branch only; source-derived engineering tests, not full scope or independent tax validation."
     },
     {
       "id": "INTAKE-001",
@@ -109,7 +125,15 @@
         "C019",
         "C020"
       ],
-      "trace_status": "draft_design_and_unreviewed_inputs_only"
+      "trace_status": "partial_provisional_implementation",
+      "implementation_refs": [
+        "docs/design/c001-working-slice.md",
+        "src/renta_assistant/domain/calculation.py",
+        "src/renta_assistant/application/workbench.py",
+        "src/renta_assistant/infrastructure/web.py",
+        "tests/test_workbench.py"
+      ],
+      "implementation_limit": "C001 synthetic local branch only; source-derived engineering tests, not full scope or independent tax validation."
     },
     {
       "id": "RULE-001",
@@ -177,7 +201,15 @@
         "C018",
         "C019"
       ],
-      "trace_status": "draft_design_and_unreviewed_inputs_only"
+      "trace_status": "partial_provisional_implementation",
+      "implementation_refs": [
+        "docs/design/c001-working-slice.md",
+        "src/renta_assistant/domain/calculation.py",
+        "src/renta_assistant/application/workbench.py",
+        "src/renta_assistant/infrastructure/web.py",
+        "tests/test_workbench.py"
+      ],
+      "implementation_limit": "C001 synthetic local branch only; source-derived engineering tests, not full scope or independent tax validation."
     },
     {
       "id": "MONEY-001",
@@ -198,7 +230,15 @@
         "C012",
         "C013"
       ],
-      "trace_status": "draft_design_and_unreviewed_inputs_only"
+      "trace_status": "partial_provisional_implementation",
+      "implementation_refs": [
+        "docs/design/c001-working-slice.md",
+        "src/renta_assistant/domain/calculation.py",
+        "src/renta_assistant/application/workbench.py",
+        "src/renta_assistant/infrastructure/web.py",
+        "tests/test_workbench.py"
+      ],
+      "implementation_limit": "C001 synthetic local branch only; source-derived engineering tests, not full scope or independent tax validation."
     },
     {
       "id": "CHANGE-001",
@@ -219,7 +259,15 @@
         "C008",
         "C010"
       ],
-      "trace_status": "draft_design_and_unreviewed_inputs_only"
+      "trace_status": "partial_provisional_implementation",
+      "implementation_refs": [
+        "docs/design/c001-working-slice.md",
+        "src/renta_assistant/domain/calculation.py",
+        "src/renta_assistant/application/workbench.py",
+        "src/renta_assistant/infrastructure/web.py",
+        "tests/test_workbench.py"
+      ],
+      "implementation_limit": "C001 synthetic local branch only; source-derived engineering tests, not full scope or independent tax validation."
     },
     {
       "id": "REVIEW-001",
@@ -252,7 +300,15 @@
         "C007",
         "C014"
       ],
-      "trace_status": "draft_design_and_unreviewed_inputs_only"
+      "trace_status": "partial_provisional_implementation",
+      "implementation_refs": [
+        "docs/design/c001-working-slice.md",
+        "src/renta_assistant/domain/calculation.py",
+        "src/renta_assistant/application/workbench.py",
+        "src/renta_assistant/infrastructure/web.py",
+        "tests/test_workbench.py"
+      ],
+      "implementation_limit": "C001 synthetic local branch only; source-derived engineering tests, not full scope or independent tax validation."
     },
     {
       "id": "FLOW-001",
@@ -269,7 +325,15 @@
         "C007",
         "C009"
       ],
-      "trace_status": "draft_design_and_unreviewed_inputs_only"
+      "trace_status": "partial_provisional_implementation",
+      "implementation_refs": [
+        "docs/design/c001-working-slice.md",
+        "src/renta_assistant/domain/calculation.py",
+        "src/renta_assistant/application/workbench.py",
+        "src/renta_assistant/infrastructure/web.py",
+        "tests/test_workbench.py"
+      ],
+      "implementation_limit": "C001 synthetic local branch only; source-derived engineering tests, not full scope or independent tax validation."
     },
     {
       "id": "LANG-001",
@@ -284,7 +348,15 @@
       "review_case_ids": [
         "C001"
       ],
-      "trace_status": "draft_design_and_unreviewed_inputs_only"
+      "trace_status": "partial_provisional_implementation",
+      "implementation_refs": [
+        "docs/design/c001-working-slice.md",
+        "src/renta_assistant/domain/calculation.py",
+        "src/renta_assistant/application/workbench.py",
+        "src/renta_assistant/infrastructure/web.py",
+        "tests/test_workbench.py"
+      ],
+      "implementation_limit": "C001 synthetic local branch only; source-derived engineering tests, not full scope or independent tax validation."
     },
     {
       "id": "SEC-001",
@@ -300,7 +372,15 @@
         "C015",
         "C020"
       ],
-      "trace_status": "draft_design_and_unreviewed_inputs_only"
+      "trace_status": "partial_provisional_implementation",
+      "implementation_refs": [
+        "docs/design/c001-working-slice.md",
+        "src/renta_assistant/domain/calculation.py",
+        "src/renta_assistant/application/workbench.py",
+        "src/renta_assistant/infrastructure/web.py",
+        "tests/test_workbench.py"
+      ],
+      "implementation_limit": "C001 synthetic local branch only; source-derived engineering tests, not full scope or independent tax validation."
     },
     {
       "id": "PRIV-001",
@@ -388,7 +468,15 @@
         "docs/design/lld.md"
       ],
       "review_case_ids": [],
-      "trace_status": "draft_design_and_unreviewed_inputs_only"
+      "trace_status": "partial_provisional_implementation",
+      "implementation_refs": [
+        "docs/design/c001-working-slice.md",
+        "src/renta_assistant/domain/calculation.py",
+        "src/renta_assistant/application/workbench.py",
+        "src/renta_assistant/infrastructure/web.py",
+        "tests/test_workbench.py"
+      ],
+      "implementation_limit": "C001 synthetic local branch only; source-derived engineering tests, not full scope or independent tax validation."
     },
     {
       "id": "BUDGET-001",
@@ -456,7 +544,15 @@
         "C013",
         "C019"
       ],
-      "trace_status": "draft_design_and_unreviewed_inputs_only"
+      "trace_status": "partial_provisional_implementation",
+      "implementation_refs": [
+        "docs/design/c001-working-slice.md",
+        "src/renta_assistant/domain/calculation.py",
+        "src/renta_assistant/application/workbench.py",
+        "src/renta_assistant/infrastructure/web.py",
+        "tests/test_workbench.py"
+      ],
+      "implementation_limit": "C001 synthetic local branch only; source-derived engineering tests, not full scope or independent tax validation."
     },
     {
       "id": "EXTRACT-001",
@@ -543,5 +639,12 @@
     "answer": "Yes, freeze this product baseline",
     "decision_record": "docs/product/discovery.md",
     "detail_status": "Source-pinned rule/stage/field drafts and synthetic review inputs prepared; independent tax review, rounding resolution, labels, implementation and quality evidence remain pending."
+  },
+  "development_process": {
+    "date": "2026-10-22",
+    "professional_review_stage": "final_qa_after_working_product",
+    "decision": "docs/decisions/0004-development-before-tax-review.md",
+    "independent_tax_validation": "pending",
+    "source_derived_provisional_implementation_authorised": true
   }
 }

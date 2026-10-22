@@ -1,5 +1,6 @@
 # Retained originals and upstream notices must keep their exact hashed bytes on every checkout.
 data/rules/*/originals/** -text -diff
+data/development/**/sources/** -text -diff
 third_party/licenses/** -text -diff
 *.pdf binary
 *.png binary

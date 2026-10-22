@@ -12,6 +12,8 @@ Unmodified AEAT/BOE documents in `data/rules/2025/originals` are attributed to t
 
 ## Development document tools
 
+On 22 October the existing pinned pypdf, Pillow and ReportLab packages were selected as runtime dependencies for the synthetic local adapter's document inspection/render checking and packet export. Their retained notices/hashes remain unchanged. This does not constitute production vulnerability assurance or a cloud dependency selection. Four additional public AEAT guidance pages are retained under `data/development/2025/c001`, under the same AEAT reuse conditions and attribution requirements.
+
 ReportLab 4.4.9 (BSD), pypdf 6.10.0 (BSD-3-Clause) and Pillow 12.3.0 (MIT-CMU) generate and inspect synthetic documents. The pypdf crypto extra supports reading the public AEAT manuals' AES encryption: cryptography 50.0.2 (Apache-2.0 OR BSD-3-Clause), cffi 2.1.1 (MIT-0) and pycparser 3.11 (BSD-3-Clause). ReportLab also uses charset-normalizer 3.5.2 (MIT). Versions and wheel hashes are locked; distributed package notices, including bundled-component notices where supplied, are retained in the [licence manifest](third_party/development-licences.json). This is an upstream metadata/licence review, not a vulnerability or production dependency audit.
 
 Local Poppler `pdftoppm`/`pdftotext`/`pdfinfo` executables render/inspect PDFs during authoring and visual QA. They are external development tools, not vendored or linked into the application or review bundle. CI verifies the retained fixtures without running Poppler. No new application runtime dependency or model/provider is installed by these development tools.

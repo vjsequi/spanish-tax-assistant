@@ -240,10 +240,13 @@ def cases(root: Path) -> dict[str, int]:
             "Requirement references an unknown review case",
         )
         require(
-            requirement["trace_status"] == "draft_design_and_unreviewed_inputs_only",
-            "No requirement behaviour or tax-validation evidence exists yet",
+            requirement["trace_status"]
+            in {"draft_design_and_unreviewed_inputs_only", "partial_provisional_implementation"},
+            "Only draft or partial provisional development evidence exists",
         )
         for reference in requirement["detail_refs"]:
+            inside(root, reference)
+        for reference in requirement.get("implementation_refs", []):
             inside(root, reference)
     request = read_object(inside(root, "evals/review/review-request.json"))
     require(

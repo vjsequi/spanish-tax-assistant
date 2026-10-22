@@ -1,5 +1,19 @@
 # Delivery backlog
 
+## Active slice: TAX-004.1 C001 working product, 22 October 2026
+
+The owner moved the professional reviewer to final QA of the working product; see [ADR 0004](../decisions/0004-development-before-tax-review.md). Earlier review-before-implementation prerequisites below are superseded. Official-source provisional development, engineering tests and synthetic demonstrations proceed now. Independent validation remains unclaimed.
+
+- [x] Retain four additional AEAT guidance pages without replacing the original review source set.
+- [x] Implement exact provisional C001 calculation, stage/field worksheet and explicit unsupported/unknown gates.
+- [x] Implement visual source inspection, editable/confirmed facts and manual coverage declarations.
+- [x] Save/resume local state, reject stale/conflicting writes and compare only confirmed supplied draft fields.
+- [x] Export Spanish provisional/partial PDF and JSON packets; retain source/rule versions and audit history.
+- [x] Verify partial-save/resume, confirmed calculation, stage expansion and PDF download in the real local UI; render/inspect the six-page packet.
+- [ ] Verify hosted CI for this slice and record its commit/run identity.
+
+Next: multiple employers and low-income employment branches, then family/relief and required regional deduction branches. Implement the AI/visual adapter and separate engineering evaluator while keeping live inference disabled until bounded authorisation. Arrange the tax professional once the product is working across the agreed scope; their feedback drives final QA fixes.
+
 ## Foundation completed 21 October 2026
 
 - [x] Select a separate tax-project repository and carry the relevant source context with hashes.
@@ -31,13 +45,13 @@
 - [x] Prepare a Spanish review guide, hash-bound requests and a blank independent-answer template; provide a reproducible offline review ZIP.
 - [x] Align proposed HLD/LLD with complete calculation, coverage gates and optional draft comparison.
 - [ ] Obtain independent rule/applicability/rounding review and source-linked fact, field, stage and stopping-outcome labels. The pack contains no completed judgements.
-- [ ] Freeze a reviewed rule/case/rubric version before deterministic tax implementation or model comparisons.
+- [ ] Freeze independently reviewed rules/cases/rubric for final tax validation. Provisional deterministic implementation and engineering comparisons proceed before professional QA under ADR 0004.
 
 ## TAX-001 Detailed requirements and legal feasibility
 
 Requirements: SCOPE-001, FACT-001, RULE-001, CALC-001, REVIEW-001, EVAL-001.
 
-The consolidated [definition](definition.md) and [acceptance baseline](acceptance.md) are owner-approved at version 1.0. The [detailed requirements](../requirements/tax-2025.md) now map the pinned sources, stages, fields and candidate rule contracts. The [nine review questions](../../data/rules/2025/review-questions.json) remain open. Complete professional applicability/rounding review, explicit supported predicates and label review in TAX-002 before an experimental rubric/case freeze. Exit with an independently feasible rule/coverage specification and reviewed conditions, not merely retained sources. Private reference material remains local and outside this pack.
+The consolidated [definition](definition.md) and [acceptance baseline](acceptance.md) are owner-approved at version 1.0. The [detailed requirements](../requirements/tax-2025.md) map pinned sources, stages, fields and candidate rule contracts. Continue source-derived predicates/rounding specifications alongside implementation. The [nine review questions](../../data/rules/2025/review-questions.json) remain open for final professional QA; unresolved material branches are explicit rather than assumed. Full independent applicability/label review happens under TAX-002 at the end, without blocking provisional engineering. Private reference material remains local and outside this pack.
 
 ## TAX-002 Representative source pack and independent labels
 
@@ -49,13 +63,13 @@ Depends on sufficient TAX-001 findings; can research alongside TAX-002. Assess a
 
 ## TAX-004 First deterministic vertical slice
 
-Depends on TAX-001/002/003. Import supported synthetic PDFs/images, retain originals and versioned page/region evidence, support explicit manual fact confirmation and identify a simple discrepancy without inference. Do not substitute a text-only intake for the agreed visual path. A real vision-model extraction step belongs to separately authorised bounded inference. Add actual domain/security tests and observable failure paths. Demonstrate the output and inspect corrections with the owner.
+Proceed with source-derived feasibility/design under ADR 0004; independent TAX-002 labels are a final QA dependency. C001 now supplies the first provisional local slice; see [its implementation boundary](../design/c001-working-slice.md). Continue general PDF/image admission and visual/AI extraction without substituting a text-only product. A real vision-model step needs separately authorised bounded inference. Add domain/security/recovery tests and observable failure paths for each new branch, then demonstrate and iterate.
 
 This first slice is an intermediate milestone. Further deterministic slices must implement the independently complete tax/refund calculation, intermediate-field checks and safe incomplete-coverage gates required by CALC-001 before the agreed first complete release. A discrepancy demonstration alone does not fulfil that release requirement.
 
 ## TAX-005 AI investigation and controlled comparison
 
-Depends on the baseline and independently reviewed data. Add one bounded interpretation path, exact output validation and a separate scorer. Implement offline doubles first; fresh live authorisation must specify model/provider, calls, duration and money. Compare against the baseline and select complexity from observed failures. Harbor is a candidate adapter, not a substitute for tax labels.
+Depends on a working deterministic baseline and source-derived development cases. Implement offline interpretation contracts, exact output validation and an isolated provisional scorer now; independent tax labels arrive during final QA. Fresh live authorisation must specify model/provider, calls, duration and money. Compare options using appropriately labelled engineering evidence, then repeat relevant evaluation against reviewed labels. Harbor remains a candidate adapter, not a substitute for tax labels.
 
 ## TAX-006 Shared review UI and recorded employer experience
 

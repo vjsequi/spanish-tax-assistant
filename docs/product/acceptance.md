@@ -1,6 +1,8 @@
 # Product acceptance baseline
 
-**Product baseline 1.0, owner approved 21 October 2026.** These are future verification requirements, not results. There is no tax application, rendered intake, reviewed synthetic dataset, inference result or deployment yet. Existing passing tests and hosted CI cover repository controls only.
+**Product baseline 1.0, owner approved 21 October 2026.** These are first-complete-release verification requirements, not achieved results. The C001 synthetic local slice now implements visual review, explicit confirmation, provisional calculation/comparison and export, with engineering tests. Full scope, independent tax QA, AI evaluation and deployment remain pending.
+
+On 22 October the owner moved professional review to final QA of the working product. [ADR 0004](../decisions/0004-development-before-tax-review.md) permits source-derived provisional development and engineering tests before that review. The release checks below do not block implementation of clearly labelled development slices.
 
 ## Required first complete outcome
 
@@ -37,7 +39,7 @@ Measure all three value activities: evidence organisation, draft checking and su
 
 1. Establish a manual/checklist baseline on representative supported tasks using normal available tools and the same supplied draft when present. Use the same agreed outcome and documents for comparisons; control order/familiarity effects where possible.
 2. Validate the deterministic calculator separately. Compare document representations on the same semantic sources; hold confirmed facts fixed when comparing investigation workflows.
-3. Compare rules/checklist, prepared context plus one call and bounded retrieval only after independently reviewed expectations and fresh inference authorisation. Framework/model choice follows observed quality, effort, latency, failure and known-cost trade-offs.
+3. During development, compare rules/checklist, prepared context plus one call and bounded retrieval using explicitly provisional source-derived engineering expectations and fresh inference authorisation. Repeat relevant comparisons with independent labels during final QA before making validated tax-quality claims. Framework/model choice follows observed quality, effort, latency, failure and known-cost trade-offs.
 4. Keep inputs separate from scorer/reviewer expectations. Select on development cases, freeze the candidate, then use structurally separate reviewed final cases. Public demonstrations and reused inspected examples are regression evidence.
 5. Retain planned/attempted/completed/failed/skipped and pending-review counts, versions, resource limits and unknown cost. Publish synthetic aggregate evidence only. Local private-reference material and private discovery context remain outside Git, cloud and external application providers.
 
@@ -45,6 +47,6 @@ Measure all three value activities: evidence organisation, draft checking and su
 
 - Pin applicable official source/rule versions and turn broad branches into explicit supported conditions.
 - Resolve the rent/childcare questions in [feasibility research](../context/deduction-feasibility.md) and specify the [complete calculation chain](../context/calculation-feasibility.md).
-- Arrange the independent synthetic review, author the pack and obtain actual field/stage expectations without leaking them into application/model context.
+- The synthetic pack is authored. Arrange independent review of the working product at final QA and obtain actual field/stage expectations in the separate scorer boundary. Provisional engineering assertions are not independent labels.
 - Establish tested decoder limits, provider compatibility, implementation and actual baseline measurements. Current application inference allowance remains zero.
 - Preserve local and recorded-demo delivery, with actual AWS development/staging/production as a later required experience milestone subject to cost/security design and specific provisioning authority. GCP remains fallback; budget figures are planning targets, not spend permission or measured costs.

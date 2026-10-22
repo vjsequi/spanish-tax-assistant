@@ -1,5 +1,7 @@
 # Independent review request: synthetic 2025 development pack
 
+**Scheduling update, 22 October:** the owner will engage the professional at final QA, after the product is built and working. This request prepares that later review and does not block source-derived implementation or provisional engineering tests. See [ADR 0004](../../docs/decisions/0004-development-before-tax-review.md). No independent judgement has been obtained by changing this sequence.
+
 **Pending review.** The [input manifest](../inputs/manifest.json) contains twenty wholly authored synthetic cases, 110 source files and 180 source pages. C018 alone has thirty documents/one hundred pages. PDFs, PNG/JPEG images, an image-only PDF and a deliberately degraded image exercise the visual direction; none establishes measured extraction quality. No private reference material was used.
 
 The [PDF guide](../../output/pdf/tax-2025-review-guide.pdf) inventories every case without supplying its calculated answer. The first review wave is **C001, C002, C003, C004, C008, C010, C011, C012**. Review the remaining variations afterwards; the benchmark needs semantic review before it can count as quality evidence. These are exposed development/regression cases, not held-out final tests.

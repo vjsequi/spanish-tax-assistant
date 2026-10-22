@@ -1,6 +1,8 @@
 # High level design
 
-**Proposed, 21 October 2026.** Aligned with product baseline 1.0 and the [draft detailed tax specification](../requirements/tax-2025.md). The application, tax engine and cloud components are not implemented. Rule transcriptions and applicability remain pending independent review.
+**Proposed target architecture, 21 October 2026; updated 22 October.** Aligned with product baseline 1.0 and the [draft detailed tax specification](../requirements/tax-2025.md). The implemented C001 subset is described below; the wider application/cloud components and independent tax validation remain pending.
+
+**22 October update:** the [C001 local development slice](c001-working-slice.md) is now implemented. The graph below remains the target reviewed/hosted architecture. [ADR 0004](../decisions/0004-development-before-tax-review.md) permits provisional source-derived execution in the explicit synthetic local profile while professional QA is deferred to the end. It does not activate a validated rule set or implement cloud components.
 
 The deterministic engine derives the full supported return from confirmed source facts, independently of supplied AEAT totals. AI assists interpretation, questions and explanation; it cannot supply authoritative rates, arithmetic, coverage or approval.
 

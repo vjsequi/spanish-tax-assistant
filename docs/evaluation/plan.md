@@ -1,5 +1,7 @@
 # Evaluation plan
 
+**22 October owner-directed sequence:** develop first, professional QA at the end; see [ADR 0004](../decisions/0004-development-before-tax-review.md). Use official-source-derived engineering expectations, invariants, boundary cases and source/permission/recovery tests during development. Label them provisional and keep them separate from independent final labels. C001's numeric assertions in `tests/test_workbench.py` are authored regressions; they are not independently validated tax accuracy. The professional-review work below is a final QA plan, not an implementation prerequisite. Live inference remains disabled.
+
 Begin with the [prepared synthetic development pack](../../evals/review/reviewer-guide.md) and independently reviewed, source-derived expectations. Twenty cases now contain 110 source files/180 pages, including the 30-file/100-page benchmark. Eight initial cases are proposed for the first review round; the remaining twelve cover further conditions, ambiguity, visual variants, security and workload. No independent synthetic labels or review judgements have been obtained. Private reference material has not been inspected or copied. The following categories motivated the exposed development pack; they are not held-out reservations or proof of complete coverage.
 
 | Proposed case | What the evaluation should distinguish |

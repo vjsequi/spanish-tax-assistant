@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IRPF · Laboratorio de revisión</title><link rel="stylesheet" href="/assets/app.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <header><a class="brand" href="/">IRPF<span>2025</span></a><span>Cuaderno de revisión · Illes Balears</span><strong class="badge">ENTORNO SINTÉTICO LOCAL</strong></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">EXPEDIENTE C001 · PRIMERA RAMA FUNCIONAL</p><h1>De la evidencia al cálculo.</h1><p>Revise los documentos, confirme los hechos y siga cada paso del resultado provisional.</p></div><div class="case-tag">01<span>Salario e intereses</span></div></section>
+    <div class="notice"><strong>Desarrollo · pendiente de QA fiscal profesional</strong><span>Datos ficticios. Extracción por plantilla digital y revisión visual/manual. Sin llamadas a IA ni presentación en AEAT.</span></div>
+    <nav class="steps" aria-label="Pasos"><a href="#evidence">1. Evidencia</a><a href="#facts">2. Hechos</a><a href="#coverage">3. Cobertura</a><a href="#result">4. Cálculo</a><a href="#export">5. Exportar</a></nav>
+    <div id="error" class="error" role="alert" hidden></div>
+    <div class="workspace">
+      <section class="panel evidence" id="evidence"><div class="panel-head"><div><p class="eyebrow">ORIGINALES SINTÉTICOS</p><h2>La fuente, a la vista</h2></div><select id="document" aria-label="Documento"></select></div><p id="source-description" class="muted"></p><p><a id="source-open" href="/source/D001" target="_blank" rel="noopener noreferrer">Abrir imagen a tamaño completo ↗</a></p><div class="source-frame"><img id="page-image" alt="Página del documento seleccionado"></div><p class="muted small">Imagen renderizada del original. Cada dato conserva documento y página; las lecturas no se confirman automáticamente.</p></section>
+      <section class="panel" id="facts"><div class="panel-head"><div><p class="eyebrow">COMPROBACIÓN HUMANA</p><h2>Hechos que usaremos</h2></div><button class="quiet" id="confirm-facts">Confirmar todos los hechos visibles</button></div><p class="muted">Transcripción inicial por plantilla: edite cualquier error y marque los valores comprobados. Los importes a cero también requieren confirmación.</p><div id="fact-list"></div></section>
+    </div>
+    <section class="panel" id="coverage"><p class="eyebrow">ALCANCE EXPLÍCITO</p><h2>¿Qué circunstancias estamos confirmando?</h2><p class="muted">Esta primera rama cubre un adulto menor de 65 años, salario ordinario de un pagador, intereses y vivienda habitual en propiedad. Son declaraciones manuales adicionales; no se deducen del silencio de un PDF.</p><div id="coverage-list" class="coverage-grid"></div><div class="actions"><button id="confirm-coverage" class="quiet">Confirmar estas declaraciones para el caso ficticio</button><span class="muted">Deje pendiente cualquier condición que no pueda afirmar.</span></div></section>
+    <section class="panel draft"><p class="eyebrow">FUENTE DE COMPARACIÓN OPCIONAL</p><h2>Extracto del borrador</h2><div id="draft-fields" class="chips"></div><label class="check"><input id="draft-confirmed" type="checkbox"> He cotejado estas casillas con el extracto sintético D004.</label><p class="muted">El extracto no aporta el resultado final. Sin esta confirmación se puede calcular, pero no se proponen cambios sobre valores anteriores.</p></section>
+    <div class="run-bar"><div><strong>Guardar y volver a calcular</strong><p class="muted">Los hechos sin confirmar o las ramas pendientes producen una revisión parcial.</p></div><button class="primary" id="calculate">Guardar y calcular provisionalmente <span>→</span></button></div>
+    <section class="panel" id="result"><p class="eyebrow">CÁLCULO DETERMINISTA</p><div id="result-content"><h2>El resultado aparecerá aquí</h2><p class="muted">Primero compruebe los hechos y la cobertura. Podrá inspeccionar bases, mínimos, escalas, retenciones y cada casilla derivada.</p></div></section>
+    <section class="panel" id="export"><div class="panel-head"><div><p class="eyebrow">PAQUETE PARA QA</p><h2>Compartir un resultado explicable</h2></div><div class="actions"><a class="button" href="/export.pdf">Descargar PDF</a><a class="button quiet" href="/export.json">JSON con trazabilidad</a></div></div><p class="muted">Incluye hechos, referencias, pasos, límites, versión y estado de QA. También puede exportar una revisión parcial guardada.</p><p id="audit" class="small muted"></p></section>
+    <section class="panel"><p class="eyebrow">FUENTES NORMATIVAS RETENIDAS</p><h2>Reglas con procedencia</h2><p class="muted">La versión original de cada referencia se conserva con su hash. El pinning verifica identidad; la revisión fiscal independiente se realizará al final del desarrollo.</p><div id="references"></div></section>
+    <footer><span>Una aplicación en desarrollo, con evidencia de lo implementado.</span><span>Próximas ramas: múltiples pagadores, familia, pensiones, donativos, alquiler y conciliación.</span></footer>
+  </main>
+</body></html>

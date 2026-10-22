@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "foundation": "locally_verified",
   "discovery": "owner_baseline_confirmed",
   "product_baseline": "1.0_owner_approved",
@@ -8,9 +8,9 @@
   "official_references": "pinned_pending_independent_tax_review",
   "detailed_specification": "prepared_pending_independent_tax_review",
   "synthetic_source_pack": "20_authored_cases_pending_independent_review",
-  "design": "proposed_aligned_with_detailed_calculation_draft",
-  "application_implementation": "not_started",
-  "independent_tax_review": "synthetic_review_pending",
+  "design": "c001_local_slice_implemented_wider_design_proposed",
+  "application_implementation": "c001_provisional_local_working",
+  "independent_tax_review": "deferred_to_final_qa_no_judgements_obtained",
   "model_evaluation": "not_run",
   "hosted_ci": "tax_pack_integrity_passed",
   "hosted_ci_verified_commit": "d8d42e3143f6a9011ea134ea5e722d629f4dfb87",
@@ -18,7 +18,7 @@
   "source_remote": "https://github.com/vjsequi/spanish-tax-assistant",
   "deployment": "unprovisioned",
   "operation": "not_started",
-  "document_intake_direction": "visual_pdf_and_images_confirmed_implementation_pending",
+  "document_intake_direction": "fixed_c001_visual_review_and_template_prefill_implemented_general_intake_pending",
   "synthetic_case_count": 20,
   "synthetic_source_file_count": 110,
   "synthetic_source_page_count": 180,
@@ -26,5 +26,8 @@
   "calculation_stage_count": 17,
   "aeat_field_count": 108,
   "draft_rule_count": 25,
-  "open_tax_question_count": 9
+  "open_tax_question_count": 9,
+  "professional_review_stage": "final_qa_after_working_product",
+  "supplementary_development_reference_count": 4,
+  "application_inference_calls": 0
 }
